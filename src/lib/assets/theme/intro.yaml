@@ -1,0 +1,145 @@
+- theme: 7
+  slug: css/position
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-layout-5-line
+  title: El out of box de CSS
+  description: >-
+    La propiedad position. Qué es y para qué sirve la propiedad favorita por los diseñadores gráficos.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-layout-5-line
+  title: La propiedad position
+  description: >-
+    Como bien sabemos, cuando creamos elementos en HTML, por defecto se posiciona en el flujo normal del documento.
+    Sin embargo, con la propiedad position, podemos cambiar este comportamiento y posicionar los elementos de manera absoluta o relativa.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-layout-5-line
+  title: La propiedad position
+  description: >-
+    ¿No te has preguntado en algún momento cómo dejar fijado el header en la parte superior? ¿Cómo poner el corazon de favorito sobre la imagen de un producto?
+
+- template: card
+  subtemplate: list
+  sideblockopen: true
+  title: Position y sus valores
+  description: >-
+    Dependiendo de cómo queremos que se comporte un elemento dentro de su contenedor, podemos utilizar diferentes formas de posicionarlo.
+  listItems: 
+    - num: '1'
+      title: static
+    - num: '2'
+      title: relative
+    - num: '3'
+      title: absolute
+    - num: '4'
+      title: fixed
+    - num: '5'
+      title: sticky
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Static
+  description: >-
+    El valor por defecto de la propiedad position es static. Esto significa que el elemento se posiciona en el flujo normal del documento. Es decir, como si no hubiera aplicado la propiedad position.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: static;
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Relative
+  description: >-
+    El valor relative significa que el elemento se posiciona relativo a su posición original en el flujo normal del documento. Es decir, podremos moverlo en cualquier dirección libremente.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: relative;
+    ```
+- template: card
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-pause-circle-fill
+  title: Pero antes de continuar...
+  description: >-
+    Cuando un elemento deja de ser estático, se nos desbloqueará un nuevo super poder: la posibilidad de mover el elemento a nuestro antojo.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-pause-circle-fill
+  title: Pero antes de continuar...
+  description: >-
+    Utilizando estas nuevas propiedades agregamos una presión en la dirección que queramos, ya sea arriba, abajo, izquierda o derecha.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: relative;
+      top: 50px;
+      left: 50px;
+    ```
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-pause-circle-fill
+  title: Pero antes de continuar...
+  description: >-
+    Sabiendo esto, ya podemos mover nuestro elemento libremente, pero siempre y cuando su position no sea static.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: relative;
+      top: 50px;
+      left: 50px;
+    ```
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Absolute
+  description: >-
+    Actuará de manera similar a como lo hace relative, pero en vez de moverlo relativo a su posición original, lo moverá relativo al primer elemento padre con position diferente de static.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: absolute;
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Fixed
+  description: >-
+    El valor fixed significa que el elemento se posiciona fijo en la pantalla, independientemente de cómo se desplace el resto del contenido. Es decir, siempre estará visible en la misma posición.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: fixed;
+    ```
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Sticky
+  description: >-
+    El valor sticky significa que el elemento se posiciona fijo en la pantalla, pero cuando el usuario scrollea por encima de él, se vuelve a su posición original.
+  mgCode: css
+  mgContent: >-
+    ```css
+      position: sticky;
+    ```
