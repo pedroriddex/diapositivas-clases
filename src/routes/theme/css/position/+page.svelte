@@ -88,7 +88,7 @@
         <!-- Aquí el div, contiene todo lo que va a ser visible -->
         <div style="
             {currentTheme.coverImg && currentTheme.template === 'cover'
-                ? `background-image: url('../../src/lib/assets/media/${themeSlug}/${currentTheme.coverImg}.webp');` 
+                ? `background-image: url('/media/${themeSlug}/${currentTheme.coverImg}.webp');` 
                 : ''}" 
                 
             class="rounded-xl object-cover object-center p-2
