@@ -17,7 +17,7 @@ html {
 
 /* También es posible crear clases que englobe otras clases de Tailwind para evitar un código HTML demasiado largo y dificil de entender, utilizando @apply */
 .wrap--containter {
-    @apply animate-fade-in flex flex-col items-center justify-center h-screen gap-4 bg-white rounded-2xl max-w-[1500px] m-auto relative max-h-[1200px] w-full ;
+    @apply animate-fade-in animate-duration-500 animate-bezier-cubic-out flex flex-col items-center justify-center h-screen gap-4 bg-white rounded-2xl max-w-[1500px] m-auto relative max-h-[1200px] w-full ;
 }
 
 .footer__button {

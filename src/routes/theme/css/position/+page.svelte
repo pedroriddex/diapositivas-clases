@@ -155,35 +155,76 @@
         
     </article>
 
-    <footer class="
-    fixed bottom-3 flex items-center justify-between bg-white py-2 px-2 gap-2 rounded-full group hover:bg-zinc-950
-    hover:text-white hover:scale-110 hover:w-auto cursor-pointer transition-all ease-[cubic-bezier(0,.98,.26,1)] 
-    border border-white hover:border-white duration-500 delay-100">
+    <footer class="w-full bg-amber-600 flex items-center justify-center">
+        <div class="
+            fixed bottom-3 flex items-center justify-between bg-white py-2 px-2 gap-2 rounded-full group hover:bg-zinc-950
+            hover:text-white hover:scale-110 hover:w-auto cursor-pointer transition-all ease-[cubic-bezier(0,.98,.26,1)] 
+            border border-white hover:border-white duration-500 delay-100">
 
-        {#if themeId > 0}
-        <button class="footer__button hover:-translate-x-1"
-        on:click={() => {
-            themeId--;
-            currentTheme = theme[themeId];
-        }}>
-        <i class="ri-arrow-left-line" title="Go back" aria-label="Go back"></i>
-        <span class="hidden">Back</span>
-        </button>
-        {/if}
+            {#if themeId > 0}
+            <button class="footer__button hover:-translate-x-1"
+            on:click={() => {
+                themeId--;
+                currentTheme = theme[themeId];
+            }}>
+            <i class="ri-arrow-left-line" title="Go back" aria-label="Go back"></i>
+            <span class="hidden">Back</span>
+            </button>
+            {/if}
 
-        <a class="footer__button" href="./">
-        <i class="ri-home-5-fill" title="Go to home" aria-label="Go to home"></i>
-        <span class="hidden">Home</span>
-        </a>
+            <a class="footer__button" href="./">
+            <i class="ri-home-5-fill" title="Go to home" aria-label="Go to home"></i>
+            <span class="hidden">Home</span>
+            </a>
 
-        {#if themeId < theme.length - 1}
-        <button class="footer__button hover:translate-x-1"
-        on:click={() => {
-            themeId++;
-            currentTheme = theme[themeId];
-        }}>
-        <i class="ri-arrow-right-line" title="Next page" aria-label="Next page"></i>
-        <span class="hidden">Next</span>
-        </button>
-        {/if}
+            {#if themeId < theme.length - 1}
+            <button class="footer__button hover:translate-x-1"
+            on:click={() => {
+                themeId++;
+                currentTheme = theme[themeId];
+            }}>
+            <i class="ri-arrow-right-line" title="Next page" aria-label="Next page"></i>
+            <span class="hidden">Next</span>
+            </button>
+            {/if}
+        </div>
+
+
+        <div class="
+            fixed bottom-3 flex-col right-3 flex items-center justify-between bg-white py-2 px-2 gap-2 rounded-full group 
+            hover:text-white hover:w-auto cursor-pointer transition-all ease-[cubic-bezier(0,.98,.26,1)] 
+            border border-white hover:border-white duration-500 delay-100">
+
+            <button id="upButton" class="footer__button hover:scale-120 hidden absolute top-2"
+            on:click={() => {                
+                
+            }}>
+            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
+            <span class="hidden">Up</span>
+            </button>
+
+            <button id="downButton" class="footer__button hover:scale-120 hidden absolute top-2"
+            on:click={() => {
+
+            }}>
+            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
+            <span class="hidden">Down</span>
+            </button>
+
+
+            <button class="footer__button hover:scale-120 "
+            on:click={() => {
+                const upButton = document.getElementById('upButton');
+                const downButton = document.getElementById('downButton');
+                if (!upButton || !downButton) return;
+
+                upButton.classList.toggle('hidden absolute top-2');
+                downButton.classList.toggle('hidden absolute top-2');
+                
+            }}>
+            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
+            <span class="hidden">Settings</span>
+            </button>
+        </div>
     </footer>
+    

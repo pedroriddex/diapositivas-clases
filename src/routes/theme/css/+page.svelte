@@ -5,33 +5,63 @@
 
     const themeIndex = [
         {
-            title: 'Introducción CSS',
+            title: 'Introducción',
             color: 'blue',
             icon: 'ri-arrow-up-box-fill',
-            href: '/theme/css/position'
+            href: ''
         },
         {
             title: 'Box-model',
             color: 'blue',
             icon: 'ri-box-2-line',
-            href: '/theme/css/position'
+            href: ''
         },
         {
             title: 'Flex',
             color: 'blue',
             icon: 'ri-layout-row-fill',
-            href: '/theme/css/position'
+            href: ''
         },
         {
             title: 'Grid',
             color: 'blue',
             icon: 'ri-grid-fill',
-            href: '/theme/css/position'
+            href: ''
+        },
+        {
+            title: 'Responsive',
+            color: 'blue',
+            icon: 'ri-smartphone-fill',
+            href: ''
         },
         {
             title: 'Position',
             color: 'blue',
             icon: 'ri-layout-3-fill',
+            href: 'css/position'
+        },
+        {
+            title: 'Pseudo-clases',
+            color: 'blue',
+            icon: 'ri-cursor-fill',
+            href: 'css/position'
+        },
+        {
+            title: 'Transiciones y bezier curves',
+            color: 'blue',
+            icon: 'ri-drag-drop-fill',
+            href: 'css/position'
+        },
+        {
+            title: 'Pseudo-elementos',
+            color: 'blue',
+            icon: 'ri-check-double-line',
+            href: 'css/position'
+        },
+        {
+            title: 'Animaciones',
+            color: 'blue',
+            icon: 'ri-heart-2-fill',
             href: 'css/position'
         }
     ];
