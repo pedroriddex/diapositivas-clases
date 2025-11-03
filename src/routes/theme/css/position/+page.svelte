@@ -12,6 +12,8 @@
     import Cover from '$lib/assets/components/cover.svelte';
     import TextContent from '$lib/assets/components/textContent.svelte';
 
+    let configOpen = false;
+
     let themeId = 0;
     let currentTheme = theme[themeId];
     let themeSlug = theme[0].slug
@@ -195,35 +197,39 @@
             hover:text-white hover:w-auto cursor-pointer transition-all ease-[cubic-bezier(0,.98,.26,1)] 
             border border-white hover:border-white duration-500 delay-100">
 
-            <button id="upButton" class="footer__button hover:scale-120 hidden absolute top-2"
-            on:click={() => {                
-                
-            }}>
-            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
-            <span class="hidden">Up</span>
-            </button>
+            {#if configOpen}
+                <button id="upButton"
+                    in:fly={{ y: 10, duration: 200, delay: 100 }}
+                    out:fly={{ y: 5, duration: 200, delay: 100 }}
+                class="footer__button hover:scale-120 absolute -top-20"
+                    on:click={() => {                
+                        
+                    }}>
+                    <i class="ri-add-large-fill" title="Font size up" aria-label="Font size up"></i>
+                    <span class="hidden">Up</span>
+                </button>
+            {/if}
 
-            <button id="downButton" class="footer__button hover:scale-120 hidden absolute top-2"
-            on:click={() => {
-
-            }}>
-            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
-            <span class="hidden">Down</span>
-            </button>
+            {#if configOpen}
+                <button id="DownButton"
+                    in:fly={{ y: 10, duration: 200 }}
+                    out:fly={{ y: 5, duration: 200 }}
+                class="footer__button hover:scale-120 absolute -top-10"
+                    on:click={() => {                
+                        
+                    }}>
+                    <i class="ri-subtract-fill" title="Font size down" aria-label="Font size down"></i>
+                    <span class="hidden">Down</span>
+                </button>
+            {/if}
 
 
             <button class="footer__button hover:scale-120 "
             on:click={() => {
-                const upButton = document.getElementById('upButton');
-                const downButton = document.getElementById('downButton');
-                if (!upButton || !downButton) return;
-
-                upButton.classList.toggle('hidden absolute top-2');
-                downButton.classList.toggle('hidden absolute top-2');
-                
+                configOpen = !configOpen;
             }}>
-            <i class="ri-settings-fill" title="Go back" aria-label="Go back"></i>
-            <span class="hidden">Settings</span>
+            <i class="ri-font-size" title="Font size" aria-label="Font size"></i>
+            <span class="hidden">Font size</span>
             </button>
         </div>
     </footer>
