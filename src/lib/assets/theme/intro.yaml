@@ -18,6 +18,8 @@
   description: >-
     Como bien sabemos, cuando creamos elementos en HTML, por defecto se posiciona en el flujo normal del documento.
     Sin embargo, con la propiedad position, podemos cambiar este comportamiento y posicionar los elementos de manera absoluta o relativa.
+  download: true
+  downloadLink: ./src/lib/assets/files/css/position-example.zip
 
 - template: text
   subtemplate: simple

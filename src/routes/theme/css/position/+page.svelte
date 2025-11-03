@@ -29,7 +29,7 @@
         </span>
 
     <article class="animate-fade-in flex items-center justify-between h-screen w-full p-5 m-auto gap-4">
-        <section class=" animate-fade-in delay-300 flex flex-col p-4 flex-1 w-full max-w-[1200px] 
+        <section class=" animate-fade-in delay-300 flex flex-col p-10 flex-1 w-full max-w-[1200px] 
             {currentTheme.template === 'cover' ? 'items-start' : 'items-center'}"> 
 
             <!-- Cover -->
@@ -76,6 +76,8 @@
                         title="{currentTheme.title || ''}" 
                         description="{currentTheme.description || ''}" 
                         icon="{currentTheme.icon || ''}" 
+                        download={currentTheme.download}
+                        downloadLink={currentTheme.downloadLink}
                     />
             {/if}
 
@@ -86,7 +88,7 @@
         <!-- Aquí el div, contiene todo lo que va a ser visible -->
         <div style="
             {currentTheme.coverImg && currentTheme.template === 'cover'
-                ? `background-image: url('../src/lib/assets/media/${themeSlug}/${currentTheme.coverImg}.webp');` 
+                ? `background-image: url('../../src/lib/assets/media/${themeSlug}/${currentTheme.coverImg}.webp');` 
                 : ''}" 
                 
             class="rounded-xl object-cover object-center p-2
@@ -142,6 +144,8 @@
                         title="{currentTheme.title || ''}" 
                         description="{currentTheme.description || ''}" 
                         icon="{currentTheme.icon || ''}" 
+                        download={currentTheme.download}
+                        downloadLink={currentTheme.downloadLink}
                     />
             {/if}
             
