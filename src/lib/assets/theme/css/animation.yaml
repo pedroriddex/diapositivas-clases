@@ -1,0 +1,21 @@
+- theme: 11
+  slug: css/animations
+  color: blue
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-heart-2-fill
+  title: Animaciones en CSS
+  description: >-
+    Dale vida a tus páginas web. Aprende a crear animaciones fluidas y profesionales usando únicamente CSS.
+  coverImg: cover
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-heart-2-fill
+  title: Animación en CSS
+  description: >-
+    Dale vida a tus páginas web. Aprende a crear animaciones fluidas y profesionales usando únicamente CSS.
+  iframe: animation-example

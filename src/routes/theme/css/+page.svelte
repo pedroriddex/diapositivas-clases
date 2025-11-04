@@ -41,10 +41,16 @@
             href: 'css/position'
         },
         {
+            title: 'Formularios',
+            color: 'blue',
+            icon: 'ri-survey-line',
+            href: 'css/forms'
+        },
+        {
             title: 'Pseudo-clases',
             color: 'blue',
             icon: 'ri-cursor-fill',
-            href: 'css/position'
+            href: 'css/pseudoclasses'
         },
         {
             title: 'Transiciones y bezier curves',
@@ -56,13 +62,13 @@
             title: 'Pseudo-elementos',
             color: 'blue',
             icon: 'ri-check-double-line',
-            href: 'css/position'
+            href: 'css/pseudoclasses'
         },
         {
             title: 'Animaciones',
             color: 'blue',
             icon: 'ri-heart-2-fill',
-            href: 'css/position'
+            href: 'css/animation'
         }
     ];
 </script>
@@ -71,5 +77,5 @@
         <i class="ri-css3-fill text-5xl font-black text-blue-600 mb-10"></i>
     </div>
 
-    <ThemeIndex themeIndex={themeIndex} />
+    <ThemeIndex backLink="/theme" themeIndex={themeIndex.map(item => ({ ...item, target: '_self' }))} goBackLink={true} />
 

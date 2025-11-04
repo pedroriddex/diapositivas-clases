@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import { fly, fade } from 'svelte/transition';
     import YAML from 'yaml';
-    import themeSource from '$lib/assets/theme/css/position.yaml?raw';
+    import themeSource from '$lib/assets/theme/css/animation.yaml?raw';
     const theme = YAML.parse(themeSource);
 
     // Loading components
@@ -21,6 +21,7 @@
     let themeColor = theme[0].color
     console.log(currentTheme);
 </script>
+
         <span class="font-bold text-white absolute  transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-4' : 'text-[30em] -top-20 -left-10'}" 
         style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
             {themeNumb}

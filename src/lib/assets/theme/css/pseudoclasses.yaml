@@ -1,0 +1,82 @@
+- theme: 8
+  slug: css/pseudoclasses
+  color: blue
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-cursor-fill
+  title: Interacciones y pseudoclasses
+  description: >-
+    Aprende a utilizar pseudoclasses para crear interacciones chulísimas y la mar de bonitas.
+  coverImg: cover
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: ¿Qué es esto de las pseudoclasses?
+  description: >-
+    No te preocupes si a simple vista el nombre no te dice nada, es normal. En un momento vas a entender a la perfección lo que es una pseudoclass.
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: ¿Qué es esto de las pseudoclasses?
+  description: >-
+    No te preocupes si a simple vista el nombre no te dice nada, es normal. En un momento vas a entender a la perfección lo que es una pseudoclass.
+  iframe: button-example
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: 
+  description: >-
+    Como puedes comprobar, al pasar el cursor sobre el botón ocurre algo, el botón cambia de forma y opacidad, y esto es algo muy común, son efectos que se utilizan para darle interactividad a los elementos de la web y de esta forma indicar al usuario que el elemento es interactivo. Entre otros, este es una de las utilidades de las pseudoclasses.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Entendiendo las pseudoclasses
+  description: >-
+    Una pseudoclass en términos generales se trata de un estado de un elemento. Es decir, es una clase que se aplica a un elemento cuando se cumple una condición. Por ejemplo, cuando el cursor está sobre un botón, se aplica la pseudoclass :hover.
+
+- template: card
+  subtemplate: list
+  sideblockopen: true
+  title: Entendiendo las pseudoclasses
+  description: >-
+    Existen diversas pseudoclasses, cada una con una utilidad diferente. Dependiendo de la necesidad de nuestro diseño utilizaremos unas u otras. Vamos a dividirlo en diferentes grupos para poder comprender de qué se encargan.
+  listItems: 
+    - num: '1'
+      title: Interactivos
+    - num: '2'
+      title: Estructurales
+    - num: '3'
+      title: Enlaces
+    - num: '4'
+      title: Idioma
+    - num: '5'
+      title: Otros
+
+- template: card
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Interactivos
+  description: >-
+    En este grupo se encuentran las pseudoclasses que se aplican cuando el usuario interactúa con el elemento. Por ejemplo, cuando el cursor está sobre un botón o los controles sobre campos de formulario.
+  mgCode: css
+  mgContent: >- 
+    ```css
+
+    a { /* Estado normal */
+        background-color: red;
+    }
+    
+    a:hover { /* Estado hover */
+        background-color: blue;
+    }

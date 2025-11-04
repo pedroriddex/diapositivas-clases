@@ -4,16 +4,17 @@
     export let linkIcon;
     export let color;
     export let className;
+    export let target;
 </script>
 
-<a class="
+<a target={target || '_self'} class="
     {className}
     flex items-center justify-between
     font-regular text-zinc-800 w-full bg-zinc-100 p-3 
     rounded-sm
     
     group hover:bg-zinc-200 hover:scale-102 transition-all" 
-    href="/theme/{theme}">
+    href="{theme}">
     <div class="flex items-center justify-center gap-3">
         <Icon icon={linkIcon} color={color} />
         <slot />

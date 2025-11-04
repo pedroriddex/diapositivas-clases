@@ -15,7 +15,20 @@
     export let mgTitle: string;
     export let mgUrl: string;
     export let mgUrlTitle: string;
+    export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';
 
+    const colorClass = {
+        red: 'text-red-600',
+        blue: 'text-blue-600',
+        yellow: 'text-yellow-600',
+        black: 'text-zinc-960',
+    }
+    const bgColorClass = {
+        red: 'bg-red-600',
+        blue: 'bg-blue-600',
+        yellow: 'bg-yellow-600',
+        black: 'bg-zinc-960',
+    }
     // Conexión con el MagicBox
 
     import NumberList from '$lib/assets/components/numberList.svelte';
@@ -33,13 +46,13 @@
 
     <div class="flex justify-center items-center gap-2 mb-6">
         {#if icon}
-            <Icon icon={icon} size="large" color="red" />
+            <Icon icon={icon} size="large" color={color} />
         {/if}
 
         {#key title}
             <h2
             in:fly="{{ y: 5, duration: 200 }}"
-            class="text-2xl font-regular text-red-600  max-sm:text-4xl">{title}</h2>
+            class="text-2xl font-regular {colorClass[color]} max-sm:text-4xl">{title}</h2>
         {/key}
         
     </div>
@@ -47,13 +60,13 @@
         <p in:fade="{{ duration: 200 }}" class="text-zinc-800 font-medium text-md">{description}</p>
     {/key}
     {#if numberListItemsToShow}
-        <NumberList numberListItems={numberListItemsToShow} />
+        <NumberList numberListItems={numberListItemsToShow} color={color} />
     {/if}
     {#if normalListItemsToShow}
         <NormalList normalListItems={normalListItemsToShow} />
     {/if}
     {#if iconListItemsToShow}
-        <IconList iconListItems={iconListItemsToShow} />
+        <IconList iconListItems={iconListItemsToShow} color={color} />
     {/if}
     <p class="text-zinc-950 font-regular text-md">{postDescription}</p>
 

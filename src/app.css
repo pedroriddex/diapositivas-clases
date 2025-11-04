@@ -12,6 +12,8 @@ html {
 @theme {
     --h-s-full: calc(100vh - 2em);
     --color-red-600: #FF2D55;
+    --color-zinc-100: #F2F2F7;
+    --color-zinc-200: #E5E5EA;
 }
 
 

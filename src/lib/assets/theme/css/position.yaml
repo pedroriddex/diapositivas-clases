@@ -1,5 +1,6 @@
-- theme: 7
+- theme: 6
   slug: css/position
+  color: blue
 
   template: cover
   subtemplate: simple

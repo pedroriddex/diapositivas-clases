@@ -59,5 +59,5 @@
         <i class="ri-html5-fill text-5xl font-black text-red-600 mb-10"></i>
     </div>
 
-    <ThemeIndex themeIndex={themeIndex} />
+    <ThemeIndex backLink="/theme" themeIndex={themeIndex.map(item => ({ ...item, target: '_self' }))} goBackLink={true} />
 

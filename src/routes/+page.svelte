@@ -11,22 +11,22 @@
             href: 'intro'
         },
         {
-            title: 'HTML',
-            color: 'red',
-            icon: 'ri-html5-fill',
-            href: 'html'
+            title: 'Temarios',
+            color: 'black',
+            icon: 'ri-bookmark-fill',
+            href: 'theme'
         },
         {
-            title: 'CSS',
-            color: 'blue',
-            icon: 'ri-css3-fill',
-            href: 'css'
+            title: 'Ejercicios',
+            color: 'black',
+            icon: 'ri-apps-2-fill',
+            href: 'ejercicios'
         },
         {
-            title: 'JavaScript',
-            color: 'yellow',
-            icon: 'ri-javascript-fill',
-            href: 'js'
+            title: 'Enlaces importantes',
+            color: 'black',
+            icon: 'ri-link',
+            href: 'enlaces'
         }
     ];
     
@@ -41,8 +41,9 @@
 
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-7xl font-regular text-zinc-800 mb-4">¡Hola!</h1>
-        <h3 class="text-xl font-regular text-zinc-800 mb-4">Elige un tema</h3>
+        <h3 class="text-xl font-regular text-zinc-800 mb-4">¿Dónde vamos hoy?</h3>
     </div>
 
-    <ThemeIndex themeIndex={themeIndex} goBackLink={false} />
+    <ThemeIndex backLink="/theme" themeIndex={themeIndex.map(item => ({ ...item, target: '_self' }))} goBackLink={false} />
+
 

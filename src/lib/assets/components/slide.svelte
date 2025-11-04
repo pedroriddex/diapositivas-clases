@@ -1,26 +1,25 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import { fly, fade } from 'svelte/transition';
+    import { fly } from 'svelte/transition';
     import YAML from 'yaml';
-    import themeSource from '$lib/assets/theme/css/position.yaml?raw';
+    import themeSource from '$lib/assets/theme/css/pseudoclasses.yaml?raw';
     const theme = YAML.parse(themeSource);
 
     // Loading components
-    import Icon from '$lib/assets/components/icon.svelte';
     import Card from '$lib/assets/components/card.svelte';
     import ImageContent from '$lib/assets/components/imageContent.svelte';
     import Cover from '$lib/assets/components/cover.svelte';
     import TextContent from '$lib/assets/components/textContent.svelte';
 
     let configOpen = false;
-
     let themeId = 0;
+
     let currentTheme = theme[themeId];
     let themeSlug = theme[0].slug
     let themeNumb = theme[0].theme
     let themeColor = theme[0].color
     console.log(currentTheme);
 </script>
+
         <span class="font-bold text-white absolute  transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-4' : 'text-[30em] -top-20 -left-10'}" 
         style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
             {themeNumb}
