@@ -41,12 +41,6 @@
             href: 'css/position'
         },
         {
-            title: 'Formularios',
-            color: 'blue',
-            icon: 'ri-survey-line',
-            href: 'css/forms'
-        },
-        {
             title: 'Pseudo-clases',
             color: 'blue',
             icon: 'ri-cursor-fill',

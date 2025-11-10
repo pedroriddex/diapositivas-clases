@@ -1,0 +1,323 @@
+- theme: 8
+  slug: html/forms
+  color: red
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-survey-line
+  title: Formularios
+  description: >-
+    Formularios HTML, básicos, pero necesarios para capturar información de los usuarios.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Los formularios HTML
+  description: >-
+    Los formularios son una parte fundamental de cualquier página web. Necesarios para recopilar información y permitir a los usuarios conectar con el cliente.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: ¿Cómo funcionan?
+  description: >-
+    De la misma forma que elementos como listas o tablas requieren de un contenedor para funcionar, los formularios necesitan de un contenedor para agrupar los elementos de entrada.
+  
+- template: card
+  subtemplate: list
+  sideblockopen: true
+  title: ¿Cómo funcionan?
+  description: >-
+    Pero antes de meternos en faena, entendamos algunos conceptos de los formularios.
+  listItems: 
+    - num: '1'
+      title: Label
+    - num: '2'
+      title: Input
+    - num: '3'
+      title: Select
+    - num: '4'
+      title: Textarea
+    - num: '5'
+      title: Submit
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Label
+  description: >-
+    El elemento label se utiliza para asignar un texto descriptivo a otro elemento de formulario, como un campo de entrada. Esto mejora la accesibilidad y la usabilidad del formulario, permitiendo a los usuarios entender el propósito de cada campo.
+  iframe: label
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Input
+  description: >-
+    El input es el elemento más básico de un formulario. Se utiliza para recopilar información del usuario, como texto, números, contraseñas, etc. Es un elemento muy versátil que puede ser utilizado para una amplia variedad de propósitos.
+  iframe: input
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Select
+  description: >-
+    Select es un elemento de formulario que permite a los usuarios seleccionar una opción de una lista predefinida. Es similar a un menú desplegable y es muy útil para recopilar información sobre preferencias, categorías o cualquier otra información que requiera una selección única.
+  iframe: select
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Textarea
+  description: >-
+    Textarea es un elemento de formulario que permite a los usuarios ingresar texto de varias líneas. Es útil para recopilar comentarios, mensajes largos o cualquier otro tipo de entrada que requiera más espacio.
+  iframe: textarea
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Submit
+  description: >-
+    Submit es un botón de formulario que se utiliza para enviar los datos del formulario al servidor. Es esencial para que los usuarios puedan interactuar con los formularios y enviar la información necesaria. Aunque, que no os engañe, no es simplemente un botón, sino un input de tipo submit.
+  iframe: submit
+
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Traducción a HTML
+  description: >-
+    Ahora que entendemos los conceptos básicos de los formularios, veamos cómo traducirlos a HTML.
+
+- template: card
+  subtemplate: 
+  sideblockopen: true
+  icon: 
+  title: Contenedor de formulario
+  description: >-
+    Todo el formulario se envuelve en una etiqueta `<form>`.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form>
+        <!-- Aquí va el contenido del formulario -->
+    </form>
+
+- template: card
+  subtemplate: 
+  sideblockopen: true
+  icon: 
+  title: Contenedor de formulario
+  description: >-
+    Pero este contenedor no solo sirve para agrupar los elementos de entrada. También se utiliza para especificar la acción que se debe realizar cuando se envía el formulario y cómo debe hacerlo.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="" method="">
+        <!-- Aquí va el contenido del formulario -->
+    </form>
+
+- template: card
+  subtemplate: 
+  sideblockopen: true
+  icon: 
+  title: Contenedor de formulario - Action
+  description: >-
+    Por un lado tenemos el atributo `action`, que especifica la URL a la que se enviarán los datos del formulario cuando se presione el botón de envío. Es como el la dirección postal donde envias un paquete, en este caso lo que envias son los datos que estén rellenos en el formulario.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="">
+        <!-- Aquí va el contenido del formulario -->
+    </form>
+
+- template: card
+  subtemplate: 
+  sideblockopen: true
+  icon: 
+  title: Contenedor de formulario - Method
+  description: >-
+    Después tenemos el método `method`, que especifica cómo se enviarán los datos del formulario. Puede ser `GET` o `POST`. Con el primero de estos la información se mandará en la URL, visible para todos. En cambio con la segunda opción, la información se enviará en el cuerpo de la solicitud, más seguro para información sensible, como contraseñas.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <!-- Aquí va el contenido del formulario -->
+    </form>
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El label
+  description: >-
+    Siempre que tengamos un input, debemos asociarlo con un label. Esto se logra mediante el atributo `for` en el label y el atributo `id` en el input, donde el valor de `for` debe coincidir con el valor de `id`.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre">
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El input
+  description: >-
+    Cuando hablamos del input podemos estar hablando de cualquier tipo de campo, excepturando áreas de texto y selectores. Entonces ¿Cómo definimos qué tipo de input que queremos usar? Ahí entra en juego el atributo `type`.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text"> <!-- En este caso es un campo de texto simple -->
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El input
+  description: >-
+    Existen un montón de tipos de input, cada uno con sus utilidades.
+  list: 
+    - title: text
+    - title: password
+    - title: email
+    - title: number
+    - title: date
+    - title: radio
+    - title: checkbox
+    - title: submit
+    - title: file
+    - title: hidden
+    - title: color
+    - title: range
+    - title: search
+    - title: ...
+  postDescription: >-
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El input
+  description: >-
+    Vale, con esto no basta. En un campo de formulario suele existir un texto que indica cómo deberia verse el contenido a rellenar. Este texto se denomina como placeholder.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" placeholder="Ingresa tu nombre">
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El input
+  description: >-
+    Por otro lado, debemos indicar el nombre del input, mediante el atributo `name`, para cuando hagamos el envío del formulario sepa qué información está enviando. Este dato lo recibirá el servidor en el cuerpo de la solicitud.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" placeholder="Ingresa tu nombre" name="nombre">
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El input
+  description: >-
+    Existen muchas otras opciones relacionadas con los inputs, las iremos viendo poco a poco y comprendiendo el uso que tienen.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" placeholder="Ingresa tu nombre" name="nombre" value="Pedro" readonly required>
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El select
+  description: >-
+    Con select podemos crear un menú desplegable con múltiples opciones. Utilizando la etiqueta select y la etiqueta option.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="theme">Listado:</label>
+        <select id="theme" name="theme">
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+            <option>Opción 3</option>
+        </select>
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El select
+  description: >-
+    Las opciones del select se definen mediante la etiqueta option. Cada opción debe tener un valor único, que se enviará al servidor cuando se seleccione. Este valor se puede acceder mediante el atributo `value` de la etiqueta option.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="theme">Listado:</label>
+        <select id="theme" name="theme">
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+        </select>
+    </form>
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: El select
+  description: >-
+    También es posible agregar un atributo `selected` a una opción para que se muestre como seleccionada por defecto.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <form action="/url_de_destino" method="POST">
+        <label for="theme">Listado:</label>
+        <select id="theme" name="theme">
+            <option value="1">Opción 1</option>
+            <option value="2" selected>Opción 2</option> 
+            <option value="3">Opción 3</option>
+        </select>
+    </form>

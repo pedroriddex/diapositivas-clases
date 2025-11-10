@@ -47,6 +47,12 @@
             href: ''
         },
         {
+            title: 'Formularios',
+            color: 'red',
+            icon: 'ri-survey-line',
+            href: 'html/forms'
+        },
+        {
             title: 'Iframe',
             color: 'red',
             icon: 'ri-pin-distance-fill',
