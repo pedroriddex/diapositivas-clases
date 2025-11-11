@@ -56,7 +56,7 @@
             title: 'Iframe',
             color: 'red',
             icon: 'ri-pin-distance-fill',
-            href: ''
+            href: 'html/iframes'
         }
     ];
 </script>

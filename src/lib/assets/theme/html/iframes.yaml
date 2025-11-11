@@ -1,0 +1,89 @@
+- theme: 9
+  slug: html/iframes
+  color: red
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-pin-distance-fill
+  title: Iframes
+  description: >-
+    Agregar elementos externos a una página web, como videos, mapas o contenido de otro sitio.
+  coverImg: cover
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: ¿Añadir elementos externos?
+  description: >-
+    Un iframe es un elemento que nos permite abrir una "ventana" hacia otro sitio web. Permitiéndonos ver contenido de otro sitio dentro del nuestro propio. Un ejemplo de esto sería un mapa de Google Maps.
+  iframe: map
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Mucho más de lo que parece
+  description: >-
+    Un iframe puede hacer más de lo que parece. Podemos incrustar otra web completa en esa ventana y darle el tamaño que queramos. Tenemos el control total de la ventana que generamos, pero ojo: no podemos acceder a sus elementos ni modificar sus estilos.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: ¿Cómo funciona?
+  description: >-
+    Aunque es cierto que habitualmente copiaremos y pegaremos el código de iframe en nuestra web, es importante entender cómo se construye.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <iframe></iframe>
+
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: ¿Cómo funciona?
+  description: >-
+    En este caso este iframe no está mostrando nada, pero podemos agregar el atributo 'src' para indicar la web que queremos añadir.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <iframe src="url_que_queremos_añadir"></iframe>
+
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: ¿Cómo funciona?
+  description: >-
+    En este caso este iframe no está mostrando nada, pero podemos agregar el atributo 'src' para indicar la web que queremos añadir.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <iframe src="url_que_queremos_añadir"></iframe>
+
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: ¿Cómo funciona?
+  description: >-
+    También debemos ponerle un título a este iframe igual que hacemos con los enlaces.
+  mgCode: html
+  mgContent: >-
+    ```html
+
+    <iframe src="url_que_queremos_añadir" title="mi_primer_iframe"></iframe>
+
+    ```
