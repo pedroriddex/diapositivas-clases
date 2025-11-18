@@ -1,0 +1,88 @@
+- theme: 6
+  slug: js/dom
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-instance-line
+  title: "DOM"
+  description: >-
+    El poder de convertir el HTML en objetos que puedes manipular con JavaScript.
+  coverImg: cover
+
+- template: image
+  subtemplate: simple
+  sideblockopen:
+  icon: 
+  title: "Bueno, pero... ¿Qué es el DOM?"
+  description: >-
+    El Document Object Model (DOM) es una representación en forma de árbol de la estructura de un documento HTML. Cada elemento HTML es un nodo en este árbol, y puedes acceder y manipular estos nodos con JavaScript.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: "El objeto 'document'"
+  description: >-
+    Con el objeto 'document', puedes acceder y manipular cualquier elemento HTML en la página.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    document
+    
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: "El objeto 'document'"
+  description: >-
+    Con el operador '.' puedes acceder a propiedades y métodos del objeto 'document'.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    document.
+    
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: "El objeto 'document'"
+  description: >-
+    Habiendo accedido al objeto 'document' se abre un puente entre JavaScript y el HTML, permitiéndote manipular y cambiar dinámicamente el contenido de la página.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    document.getElementById('miElemento'); // Acceder al elemento con id 'miElemento'
+    
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: "El objeto 'document'"
+  description: >-
+    Lo más habitual es guardar estos elementos dentro de una variable para poder manipularlos más tarde.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    const miElemento = document.getElementById('miElemento'); // Acceder al elemento con id 'miElemento'
+
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  icon: 
+  title: "¿Qué puedo hacer con el DOM?"
+  description: >-
+    Algunas de las cosas más simples que puedes hacer con el DOM son:
+  list: 
+    - title: Coger un elemento como objeto
+    - title: Modificar el contenido de un elemento
+    - title: Modificar los estilos de un elemento
+    - title: Añadir y eliminar elementos
+    - title: Responder a eventos del usuario
+  postDescription: >-
+    Y muchas más cosas avanzadas que iremos viendo a lo largo del módulo.

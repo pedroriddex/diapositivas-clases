@@ -1,0 +1,139 @@
+- theme: 12
+  slug: intro
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-javascript-fill
+  title: "Introducción a JavaScript"
+  description: >-
+    Qué es JavaScript, dónde corre y cómo se usa para construir aplicaciones web modernas.
+  coverImg: intro
+
+- template: image
+  subtemplate: simple
+  sideblockopen:
+  icon: ri-javascript-fill
+  title: "¿Qué es JavaScript?"
+  description: >-
+    Lenguaje de programación estándar (ECMAScript) que se ejecuta en navegadores y servidores (Node.js). Es la capa de lógica que complementa HTML y CSS.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "¿Qué es ECMAScript?"
+  description: >-
+    Es el conjunto de reglas del lenguaje JavaScript. Define cómo funciona y qué cosas nuevas se van sumando cada año. No es una herramienta: es el estándar que todos siguen.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "¿Dónde se ejecuta?"
+  description: >-
+    Principalmente en tu navegador: es lo que hace que tu página reaccione a clics y cambie cosas en pantalla. También puede ejecutarse en servidores (como Node.js), pero eso lo vemos más adelante.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "Añadir JavaScript al HTML"
+  description: >-
+    Hay varias formas de incluir JavaScript en una página: inline con etiqueta <script> y desde un archivo externo con el atributo src. También puedes usar módulos ES y atributos como defer.
+  listItems:
+    - num: '1'
+      title: "Inline con <script>"
+    - num: '2'
+      title: "Archivo externo con src"
+    - num: '3'
+      title: "type=\"module\""
+    - num: '4'
+      title: "defer y async"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "Ejemplo inline"
+  description: >-
+    Incluir código directamente en el documento HTML dentro de la etiqueta <script>.
+  mgCode: html
+  mgContent: >-
+    ```html
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Inline JS</title>
+      </head>
+      <body>
+        <button id="btn">Haz clic</button>
+        <script>
+          document.getElementById('btn').addEventListener('click', () => {
+            console.log('Hola desde inline JS');
+          });
+        </script>
+      </body>
+    </html>
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "Ejemplo con archivo externo"
+  description: >-
+    Referenciar un archivo `.js` usando el atributo src de la etiqueta <script>.
+  mgCode: html
+  mgContent: >-
+    ```html
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Script externo</title>
+      </head>
+      <body>
+        <button id="btn">Haz clic</button>
+        <script src="/scripts/app.js" defer></script>
+      </body>
+    </html>
+    ```
+    
+    ```javascript
+    // /scripts/app.js
+    document.getElementById('btn').addEventListener('click', () => {
+      console.log('Hola desde archivo externo');
+    });
+    ```
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "defer y async"
+  description: >-
+    `defer` carga el archivo y lo ejecuta cuando el HTML ya está listo. `async` lo ejecuta en cuanto llega (útil para scripts que no dependen del HTML). Para empezar, usa `defer`.
+  mgCode: html
+  mgContent: >-
+    ```html
+    <!-- Carga sin bloquear y ejecuta al final -->
+    <script src="/scripts/app.js" defer></script>
+
+    <!-- Descarga y ejecuta lo antes posible (no espera al HTML) -->
+    <script src="/scripts/analytics.js" async></script>
+    ```
+
+ 
+
+ 
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: "Primeros pasos con console.log"
+  description: >-
+    Usa la consola para depurar y entender el flujo de ejecución. Abre DevTools y observa valores.
+  mgCode: javascript
+  mgContent: >-
+    ```javascript
+    console.log('Hola JS');
+    const usuario = { nombre: 'Ada', edad: 28 };
+    console.table(usuario);
+    ```

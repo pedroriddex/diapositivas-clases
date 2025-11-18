@@ -8,7 +8,7 @@
             title: 'Introducción',
             color: 'yellow',
             icon: 'ri-arrow-up-box-fill',
-            href: ''
+            href: '/theme/js/intro'
         },
         {
             title: 'Console.log',
@@ -33,6 +33,12 @@
             color: 'yellow',
             icon: 'ri-divide-line',
             href: ''
+        },
+        {
+            title: 'DOM',
+            color: 'yellow',
+            icon: 'ri-instance-line',
+            href: '/theme/js/dom'
         },
         {
             title: 'Funciones',
@@ -78,5 +84,4 @@
     </div>
 
     <ThemeIndex backLink="/theme" themeIndex={themeIndex.map(item => ({ ...item, target: '_self' }))} goBackLink={true} />
-
 
