@@ -24,7 +24,7 @@
         style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
             {themeNumb}
         </span>
-        <span class="font-bold text-white absolute opacity-50 transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-9' : 'text-[30em] -top-20 -left-2'}" 
+        <span class="font-mono font-bold text-white absolute opacity-50 transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-9' : 'text-[30em] -top-20 -left-2'}" 
         style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
             {themeNumb}
         </span>

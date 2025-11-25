@@ -68,9 +68,9 @@
     {#if iconListItemsToShow}
         <IconList iconListItems={iconListItemsToShow} color={color} />
     {/if}
-    <p class="text-zinc-950 font-regular text-md">{postDescription}</p>
 
     {#if mgContent}
         <MagicBox mgContent={mgContent} mgCode={mgCode} currentSlug={currentSlug} mgLogo={mgLogo} mgTitle={mgTitle} mgUrl={mgUrl} mgUrlTitle={mgUrlTitle} />
     {/if}
+    <p class="text-zinc-950 font-regular text-md">{postDescription}</p>
 </div>  

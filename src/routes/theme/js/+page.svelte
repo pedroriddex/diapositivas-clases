@@ -26,7 +26,7 @@
             title: 'Datos',
             color: 'yellow',
             icon: 'ri-numbers-fill',
-            href: ''
+            href: '/theme/js/datos'
         },
         {
             title: 'Operadores',
