@@ -1,0 +1,64 @@
+meta:
+  title: JavaScript
+  icon: ri-javascript-fill
+  color: yellow
+items:
+  - title: Introducción
+    color: yellow
+    icon: ri-arrow-up-box-fill
+    href: 'js/introduccion'
+
+  - title: Console
+    color: yellow
+    icon: ri-terminal-box-fill
+    href: 'js/console'
+
+  - title: Variables
+    color: yellow
+    icon: ri-price-tag-3-fill
+    href: 'js/variables'
+
+  - title: Tipos de datos
+    color: yellow
+    icon: ri-numbers-fill
+    href: 'js/datos'
+
+  - title: Operadores
+    color: yellow
+    icon: ri-divide-line
+    href: 'js/operadores'
+
+  - title: DOM
+    color: yellow
+    icon: ri-instance-line
+    href: 'js/dom'
+
+  - title: Funciones
+    color: yellow
+    icon: ri-functions
+    href: 'js/funciones'
+
+  - title: Eventos
+    color: yellow
+    icon: ri-mouse-fill
+    href: 'js/eventos'
+
+  - title: Estructuras de control
+    color: yellow
+    icon: ri-repeat-2-line
+    href: 'js/estructuras'
+
+  - title: Fetch
+    color: yellow
+    icon: ri-links-line
+    href: 'js/fetch'
+
+  - title: Paquetes
+    color: yellow
+    icon: ri-npmjs-line
+    href: 'js/paquetes'
+
+  - title: Bounding
+    color: yellow
+    icon: ri-scroll-to-bottom-fill
+    href: 'js/bounding'

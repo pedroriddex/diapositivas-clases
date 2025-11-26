@@ -1,0 +1,15 @@
+meta:
+  title: Enlaces de utilidad
+  icon: ri-link
+items:
+  - title: Documentación oficial
+    color: black
+    icon: ri-book-shelf-fill
+    href: https://developer.mozilla.org/en-US/
+    target: _blank
+
+  - title: Manual de la asignatura
+    color: black
+    icon: ri-book-fill
+    href: https://drive.google.com/file/d/1h_lTE4ApTGL6Byimp9O33xin54kixgF1/view
+    target: _blank

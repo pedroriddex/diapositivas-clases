@@ -1,0 +1,102 @@
+- theme: 8
+  slug: js/eventos
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-mouse-fill
+  title: Eventos
+  description: >-
+    Interacción del usuario con la página web, el poder de los eventos.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: Qué es un evento
+  description: >-
+    Un evento es una interacción del usuario con la página web, como hacer clic en un botón, rellenar un campo de formulario, etc.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: addEventListener
+  description: >-
+    Veamos como comenzar a trabajar con eventos. Para ello necesitamos un elemento HTML que deba escuchar elemento, y acto seguido utilizaremos el método 'addEventListener' para escuchar el evento.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    const btn = document.querySelector('button');
+
+    btn.addEventListener()
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: addEventListener
+  description: >-
+    Ahora debemos indicarle en el argumento de 'addEventListener' dos cosas: el tipo de evento y la función que se ejecutará cuando el evento ocurra.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', () => {
+      console.log('hola');
+    });
+  postDescription: >-
+    Para hacer mucho más simple la sintaxis de 'addEventListener' podemos utilizar una función arrow, lo que la hace más compacta. Ojo, debes fijarte muy bien en que la función se encuentra dentro del argumento de 'addEventListener'.
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Tipos de eventos
+  description: >-
+    Existen muchos tipos de eventos, vamos a ver algunos de los más comunes.
+  listItems: 
+    - num: '1'
+      title: Click
+    - num: '2'
+      title: Change
+    - num: '3'
+      title: Input
+    - num: '4'
+      title: Keydown
+    - num: '5'
+      title: Keyup
+    - num: '6'
+      title: Mouseenter
+    - num: '7'
+      title: Mouseleave
+    - num: '8'
+      title: Submit
+    - num: '9'
+      title: Load
+    - num: '10'
+      title: Scroll
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Objeto evento
+  description: >-
+    Cuando un evento es activado, el navegador crea un objeto evento que contiene información sobre el evento, por ejemplo: el objeto que lo activa, la posición del cursor, etc.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', (e) => {
+      console.log(e);
+    });
+  postDescription: >-
+    Para cargar ese objeto debemos pasar como argumento la función 'e' que es el objeto evento. Al recibirlo podemos acceder a sus propiedades y métodos.
+    

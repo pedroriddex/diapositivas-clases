@@ -1,0 +1,14 @@
+meta:
+  title: Tipos de datos
+  icon: ri-numbers-fill
+  color: yellow
+items:
+  - title: Primitivos
+    color: yellow
+    icon: ri-checkbox-blank-circle-line
+    href: 'datos/primitivos'
+
+  - title: Objeto
+    color: yellow
+    icon: ri-box-3-line
+    href: 'datos/objeto'
