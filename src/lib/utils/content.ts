@@ -1,27 +1,29 @@
-import { readFileSync, existsSync, lstatSync } from 'fs';
-import { join } from 'path';
 import YAML from 'yaml';
 
-const CONTENT_DIR = 'src/lib/content';
+const allContent = import.meta.glob('/src/lib/content/**/*.yaml', { query: '?raw', import: 'default', eager: true });
 
 export function getContent(path: string) {
-    const fullPath = join(process.cwd(), CONTENT_DIR, path);
+    // Normalize path to ensure no leading/trailing slashes for consistency in logic, 
+    // though we will add them back for the lookup.
+    const normalizedPath = path.replace(/^\/+|\/+$/g, '');
 
-    // Check if it's a directory (Index)
-    if (existsSync(fullPath) && lstatSync(fullPath).isDirectory()) {
-        const metaPath = join(fullPath, '_meta.yaml');
-        if (existsSync(metaPath)) {
-            const file = readFileSync(metaPath, 'utf8');
-            return { type: 'index', data: YAML.parse(file) };
-        }
+    // Construct paths to look for
+    // 1. Index: /src/lib/content/{path}/_meta.yaml
+    const indexPath = `/src/lib/content/${normalizedPath}/_meta.yaml`;
+    
+    // 2. Slides: /src/lib/content/{path}.yaml
+    const slidesPath = `/src/lib/content/${normalizedPath}.yaml`;
+
+    // Check for Index
+    if (indexPath in allContent) {
+        const fileContent = allContent[indexPath] as string;
+        return { type: 'index', data: YAML.parse(fileContent) };
     }
 
-    // Check if it's a file (Slides)
-    // Try adding .yaml extension
-    const filePath = fullPath + '.yaml';
-    if (existsSync(filePath)) {
-        const file = readFileSync(filePath, 'utf8');
-        return { type: 'slides', data: YAML.parse(file) };
+    // Check for Slides
+    if (slidesPath in allContent) {
+        const fileContent = allContent[slidesPath] as string;
+        return { type: 'slides', data: YAML.parse(fileContent) };
     }
 
     return null;
