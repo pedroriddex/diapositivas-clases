@@ -33,6 +33,7 @@
         coverImg?: string;
         slug?: string;
         theme?: string;
+        linksList?: {title: string, link: string}[];
     }
 
     interface PageData {
@@ -144,6 +145,7 @@
                         download={currentTheme.download}
                         downloadLink={currentTheme.downloadLink}
                         color="{themeColor}"
+                        linksList="{currentTheme.linksList || []}"
                     />
             {/if}
 
@@ -216,6 +218,7 @@
                         download={currentTheme.download}
                         downloadLink={currentTheme.downloadLink}
                         color="{themeColor}"
+                        linksList="{currentTheme.linksList || []}"
                     />
             {/if}
             

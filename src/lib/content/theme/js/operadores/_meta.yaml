@@ -1,0 +1,49 @@
+meta:
+  title: Operadores
+  icon: ri-divide-line
+  color: yellow
+items:
+  - title: Aritméticos
+    color: yellow
+    icon: ri-calculator-line
+    href: 'operadores/aritméticos'
+
+  - title: Asignación
+    color: yellow
+    icon: ri-arrow-left-right-line
+    href: 'operadores/asignación'
+
+  - title: Comparación
+    color: yellow
+    icon: ri-scales-3-line
+    href: 'operadores/comparación'
+
+  - title: Lógicos
+    color: yellow
+    icon: ri-toggle-line
+    href: 'operadores/lógicos'
+
+  - title: Bitwise
+    color: yellow
+    icon: ri-cpu-line
+    href: 'operadores/bitwise'
+
+  - title: Ternario
+    color: yellow
+    icon: ri-question-line
+    href: 'operadores/ternario'
+
+  - title: Type
+    color: yellow
+    icon: ri-fingerprint-line
+    href: 'operadores/type'
+
+  - title: Spread
+    color: yellow
+    icon: ri-more-fill
+    href: 'operadores/spread'
+
+  - title: Nullish Coalescing y Optional Chaining
+    color: yellow
+    icon: ri-shield-check-line
+    href: 'operadores/nullish-coalescing'

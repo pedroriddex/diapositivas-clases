@@ -1,0 +1,12 @@
+- theme: 23
+  slug: js/arrays
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-list-ordered-2
+  title: Arrays
+  description: >-
+
+  coverImg: cover

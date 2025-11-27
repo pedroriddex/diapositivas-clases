@@ -1,4 +1,4 @@
-- theme: 7
+- theme: 24
   slug: js/funciones
   color: yellow
 
@@ -13,7 +13,7 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen: 
+  sideblockopen:
   icon: ri-functions
   title: Las funciones
   description: >-
@@ -21,7 +21,7 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen: 
+  sideblockopen:
   icon: ri-functions
   title: Las funciones
   description: >-
@@ -30,7 +30,7 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Cómo se declara
   description: >-
     Para declarar una función nombrada utilizaremos la palabra reservada 'function' seguida del nombre de la función y los paréntesis '()'.
@@ -41,26 +41,11 @@
     function nombreFuncion() {
       // código
     }
-    
-- template: card
-  subtemplate: simple
-  sideblockopen: true
-  icon: 
-  title: Cómo se declara
-  description: >-
-    Es importante entender que los paréntesis '()' son necesarios juto después del nombre de la función. Piensa en un método de objeto como 'console.log()', donde siempre se ponen los paréntesis donde añadimos un argumento.
-  mgCode: javascript
-  mgContent: >-
-    ```js
 
-    function nombreFuncion() {
-      // código
-    }
-    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Cómo se declara
   description: >-
     Es importante entender que los paréntesis '()' son necesarios juto después del nombre de la función. Piensa en un método de objeto como 'console.log()', donde siempre se ponen los paréntesis donde añadimos un argumento.
@@ -75,7 +60,22 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
+  title: Cómo se declara
+  description: >-
+    Es importante entender que los paréntesis '()' son necesarios juto después del nombre de la función. Piensa en un método de objeto como 'console.log()', donde siempre se ponen los paréntesis donde añadimos un argumento.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    function nombreFuncion() {
+      // código
+    }
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
   title: Cómo se invoca
   description: >-
     Invocar una función significa ejecutarla. Para invocar una función nombrada utilizaremos el nombre de la función seguida de los paréntesis '()'.
@@ -88,22 +88,22 @@
     }
 
     nombreFuncion();
-    
+
   postDescription: >-
     De esta forma la función se ejecutará y realizará las acciones que se encuentren dentro de ella.
 
 - template: text
   subtemplate: simple
-  sideblockopen: 
-  icon: 
+  sideblockopen:
+  icon:
   title: Return
   description: >-
     ¿Te has preguntado en algún momento para sirven los paréntesis '()' de la declaración de una función? ¿Cómo podemos frenar la ejecución de una función? Estas preguntas tienen una respuesta que se llama 'return'.
-  
+
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Return
   description: >-
     Lo primero que debes entender es que 'return' es una palabra reservada que se utiliza para devolver un valor de una función. Lo cual pronto lo entenderás, pero aún más básico que esto es que 'return' detiene la ejecución de una función.
@@ -124,10 +124,10 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Return
   description: >-
-      Pero ahora viene lo más interesante, 'return' también puede devolver un valor.
+    Pero ahora viene lo más interesante, 'return' también puede devolver un valor.
   mgCode: javascript
   mgContent: >-
     ```js
@@ -143,10 +143,10 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Return
   description: >-
-      Estos parámetros contendran lo que se denomina como 'parámetros', son como variables que se declaran dentro de la función y que le damos un valor desde la invocación de la función utilizando el argumento.
+    Estos parámetros contendran lo que se denomina como 'parámetros', son como variables que se declaran dentro de la función y que le damos un valor desde la invocación de la función utilizando el argumento.
   mgCode: javascript
   mgContent: >-
     ```js
@@ -161,8 +161,8 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen: 
-  icon: 
+  sideblockopen:
+  icon:
   title: Otros tipos de funciones
   description: >-
     Existen muchos tipos de funciones y vamos a dividirlas para entender como funciona cada una de ellas.
@@ -170,10 +170,10 @@
 - template: card
   subtemplate: list
   sideblockopen: false
-  title: Otros tipos de funciones 
+  title: Otros tipos de funciones
   description: >-
-    
-  listItems: 
+
+  listItems:
     - num: '1'
       title: Funciones nombradas
     - num: '2'
@@ -188,7 +188,7 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Funciones nombradas
   description: >-
     Son las que acabamos de ver como ejemplo. Se declaran con el nombre de la función y los paréntesis '()' utilizando la palabra reservada 'function'.
@@ -199,13 +199,13 @@
     function nombreFuncion() {
       // código
     }
-    
+
   postDescription: >-
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Funciones anónimas
   description: >-
     Son funciones donde no tienen nombre y se declaran en una variable o como argumento de otra función. Lo cual es muy util para crear funciones de un solo uso.
@@ -216,13 +216,13 @@
     const nombreFuncion = function() {
       // código
     }
-    
+
   postDescription: >-
-    
+
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Funciones arrow
   description: >-
     Son funciones que se declaran en una variable o argumento de otra función y que utilizan la sintaxis de flecha '=>', lo cual las convierte en funciones más cortas y fáciles de leer. Un detalle interesante es que si no usamos más de un parámetro, podemos omitir los paréntesis '()'.
@@ -233,13 +233,13 @@
     const nombreFuncion = () => {
       // código
     }
-    
+
   postDescription: >-
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Funciones generadoras
   description: >-
     Son funciones que utilizan la palabra reservada 'function*' y que pueden pausar su ejecución utilizando la palabra reservada 'yield'. Aunque son más complejas, cada vez están más en desuso.
@@ -255,14 +255,14 @@
       // código
       return;
     }
-    
+
   postDescription: >-
     Estas variables se almacenan en una variable y se invocan con el nombre de la variable seguida de los paréntesis '()'. Se puede ir saltando de una pausa a otra utilizando la palabra reservada 'next'.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon: 
+  icon:
   title: Funciones IIFE
   description: >-
     Son funciones que se invocan inmediatamente después de su declaración. Lo cual es muy util para crear funciones de un solo uso.
@@ -273,6 +273,6 @@
     (function() {
       // código
     })();
-    
+
   postDescription: >-
     Pueden ser complejas por su sintaxis, pero son muy útiles para crear funciones de un solo uso. Van envueltas en paréntesis '()' para que se interpreten como una expresión y no como una declaración. Los paréntesis '()' al final invocan la función.

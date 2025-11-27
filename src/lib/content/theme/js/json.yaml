@@ -1,0 +1,12 @@
+- theme: 33
+  slug: js/json
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-mouse-fill
+  title: JSON
+  description: >-
+
+  coverImg: cover

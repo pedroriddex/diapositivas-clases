@@ -1,0 +1,12 @@
+- theme: 20
+  slug: js/introduccion
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-mouse-fill
+  title: Introducción a JavaScript
+  description: >-
+
+  coverImg: cover

@@ -1,0 +1,12 @@
+- theme: 21
+  slug: js/constantes-y-variables
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-mouse-fill
+  title: Constantes y variables
+  description: >-
+    Constantes y variables en JavaScript.
+  coverImg: cover

@@ -4,6 +4,7 @@
     export let icon: string;
     export let download: boolean = false;
     export let downloadLink: string = '';
+    export let linksList: {title: string, link: string}[] = [];
     export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';
 
     const colorClass = {
@@ -41,6 +42,20 @@
                     <Icon icon="ri-download-line" color={color} size="medium" />
                     Descargar proyecto de ejemplo
                 </a>
+            {/if}
+            {#if linksList.length > 0}
+                <div class="flex flex-col gap-3 mt-10">
+                    <ul class="flex flex-col gap-3">
+                        {#each linksList as link}
+                            <li class="flex items-center justify-start gap-3">
+                                <Icon icon="ri-link" color={color} size="medium" />
+                                <a href={link.link} target="_blank" class="font-regular text-md text-zinc-950 hover:opacity-50 transition-all">
+                                    {link.title}
+                                </a>
+                            </li>
+                        {/each}
+                    </ul>
+                </div>
             {/if}
         </div>
     </div>

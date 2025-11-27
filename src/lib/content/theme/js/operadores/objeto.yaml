@@ -1,4 +1,4 @@
-- theme: 22.2
+- theme: 4.2
   slug: js/datos/objeto
   color: yellow
 
@@ -6,7 +6,7 @@
   subtemplate: simple
   sideblockopen: false
   icon: ri-box-3-line
-  title: 'Objeto'
+  title: "Objeto"
   description: >-
     Los datos de tipo 'object' y su estructura.
   coverImg: cover
@@ -14,18 +14,18 @@
 - template: card
   subtemplate: simple
   sideblockopen: false
-  icon:
-  title: 'Tipos de datos Object'
+  icon: 
+  title: "Tipos de datos Object"
   description: >-
     Los datos de tipo objeto son contenedores inteligentes que almacenan no solo valores, sino también comportamientos organizados bajo un mismo techo conceptual.
-
+    
 - template: card
   subtemplate: list
   sideblockopen: false
-  title: 'Tipos de datos Object'
+  title: "Tipos de datos Object"
   description: >-
-
-  listItems:
+    
+  listItems: 
     - num: '1'
       title: 'Objeto'
     - num: '2'
@@ -43,23 +43,23 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
-  icon: ri-box-3-line
-  title: 'Objeto'
+  sideblockopen: 
+  icon: ri-box-3-line	
+  title: "Objeto"
   description: >-
     Los datos de tipo objeto son contenedores inteligentes que almacenan no solo valores, sino también comportamientos organizados bajo un mismo techo conceptual. Como ya hemos visto en clase muchas veces, y he sido muy pesado con ello: los objetos tienen propiedades y métodos.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Objeto'
+  icon: 
+  title: "Objeto"
   description: >-
     Creamos un objeto utilizando las llaves `{}` y asignamos propiedades y métodos a través de pares clave-valor.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miObjeto = {
       clave: valor;
     };
@@ -67,14 +67,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Objeto'
+  icon: 
+  title: "Objeto"
   description: >-
     Un objeto es una entidad que contiene propiedades y métodos. Se genera dentro de una variable y se accede a sus propiedades y métodos mediante la notación de puntos.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const alumno = {
       nombre: 'Juan',
       edad: 30,
@@ -86,14 +86,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Objeto'
+  icon: 
+  title: "Objeto"
   description: >-
     Un objeto es una entidad que contiene propiedades y métodos. Se genera dentro de una variable y se accede a sus propiedades y métodos mediante la notación de puntos.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const alumno = {
       nombre: 'Juan',
       edad: 30,
@@ -107,27 +107,27 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Objeto'
+  icon: 
+  title: "Objeto"
   description: >-
     Si te preguntas para qué serviría un objeto, imagínate un carrito de una tienda online. Cada producto en el carrito es un objeto, que contiene propiedades como el nombre, el precio y la cantidad.
-  list:
-    - title: 'nombre'
-    - title: 'precio'
-    - title: 'cantidad'
+  list: 
+    - title: "nombre"
+    - title: "precio"
+    - title: "cantidad"
   postDescription: >-
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Objeto'
+  icon: 
+  title: "Objeto"
   description: >-
     Podemos cambiar el valor de una propiedad de un objeto accediendo a ella mediante la notación de puntos y asignando un nuevo valor, tal como haríamos en una variable.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     let alumno = {
       nombre: 'Juan',
       edad: 30,
@@ -140,63 +140,63 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
-  icon: ri-list-ordered-2
-  title: 'Array'
+  sideblockopen: 
+  icon: ri-list-ordered-2	
+  title: "Array"
   description: >-
     Los datos de tipo array son contenedores inteligentes que almacenan no solo valores, sino también comportamientos. Aunque muy similares a los objetos, los arrays se utilizan principalmente para almacenar colecciones de datos ordenados y acceder a ellos mediante índices numéricos en lugar de claves.
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Array'
+  icon: 
+  title: "Array"
   description: >-
     Un array es una entidad que contiene propiedades y métodos. Se genera dentro de una variable y se accede a sus propiedades y métodos mediante la notación de corchetes '[]'.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miArray = [1, 2, 3, 4, 5];
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: Array
   description: >-
     No solo podemos añadir números a una array, sino también strings, booleanos, objetos, funciones, etc.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miArray = ['Juan', 'María', 'Pedro', 'Ana', 'Luis'];
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: Array
   description: >-
     Para acceder a estos valores no utilizamos la notación de puntos, sino la notación de corchetes, ya que los arrays utilizan índices numéricos para acceder a sus elementos.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miArray = ['Juan', 'María', 'Pedro', 'Ana', 'Luis'];
     miArray[0]; // Juan
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: Array
   description: >-
     Las arrays pueden ser modificadas añadiendo, eliminando o cambiando elementos con métodos como push(), pop(), shift(), unshift(), splice(), slice(), etc.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miArray = ['Juan', 'María', 'Pedro', 'Ana', 'Luis', 'Marcos'];
 
     miArray.push('Marcos'); // Añade 'Marcos' al final del array
@@ -206,27 +206,27 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Array'
+  icon: 
+  title: "Array"
   description: >-
     Si te preguntas para qué serviría una array, volviendo a la tienda online, el carrito sería una array que contendría objetos, cada uno representando un producto en el carrito.
-  list:
-    - title: 'Objeto 1'
-    - title: 'Objeto 2'
-    - title: 'Objeto 3'
+  list: 
+    - title: "Objeto 1"
+    - title: "Objeto 2"
+    - title: "Objeto 3"
   postDescription: >-
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Array'
+  icon: 
+  title: "Array"
   description: >-
     Si te preguntas para qué serviría una array, volviendo a la tienda online, el carrito sería una array que contendría objetos, cada uno representando un producto en el carrito.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const carrito = [
       { nombre: 'Producto 1', precio: 100, cantidad: 2 },
       { nombre: 'Producto 2', precio: 200, cantidad: 1 },
@@ -235,23 +235,23 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
+  sideblockopen: 
   icon: ri-functions
-  title: 'Función'
+  title: "Función"
   description: >-
     Ya hemos visto las funciones, pero ahora veremos como agregarla como un dato en una variable, array, objeto, etc.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Función'
+  icon: 
+  title: "Función"
   description: >-
     Para ello vamos a aprender a realizar un tipo de función llamada "función anónima".
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miFuncion = function() {
       console.log('¡Hola!');
     };
@@ -259,14 +259,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Función'
+  icon: 
+  title: "Función"
   description: >-
     Para ello vamos a aprender a realizar un tipo de función llamada "función anónima".
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miFuncion = function() {
       console.log('¡Hola!');
     };
@@ -276,14 +276,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Función'
+  icon: 
+  title: "Función"
   description: >-
     Ahora vamos a ver como ejecutar una función anónima.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     miFuncion(); // ¡Hola!
   postDescription: >-
     Como ves, como nombre usaríamos el nombre de la propia variable 'miFuncion'.
@@ -291,14 +291,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Función'
+  icon: 
+  title: "Función"
   description: >-
     Pero existe una forma más limpia y eficiente de generar una función, la cual se denomina "función flecha".
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miFuncion = () => {
       console.log('¡Hola!');
     };
@@ -307,23 +307,23 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
+  sideblockopen: 
   icon: ri-calendar-line
-  title: 'Date'
+  title: "Date"
   description: >-
     El objeto Date en JavaScript se utiliza para trabajar con fechas y horas.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Date'
+  icon: 
+  title: "Date"
   description: >-
-
+    
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const hoy = new Date();
     console.log(hoy); // Imprime la fecha y hora actual
   postDescription: >-
@@ -332,14 +332,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Date'
+  icon: 
+  title: "Date"
   description: >-
     Tenemos métodos que nos permiten acceder a valores específicos dentro de la fecha.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const hoy = new Date();
 
 
@@ -357,23 +357,23 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
-  icon:
-  title: 'RegExp'
+  sideblockopen: 
+  icon: 
+  title: "RegExp"
   description: >-
     El objeto RegExp en JavaScript se utiliza para hacer una búsqueda de patrones en cadenas de texto, por ejemplo para seleccionar todas las palabras de un string que empiecen por una letra mayúscula.
-
+  
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
     Se guarda el patron en una variable la expresion que se va a utilizar para buscar en el string.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /[a-z]/g;
   postDescription: >-
     Aunque la forma en la que se escribe no es muy intuitiva, voy a intentar explicar cada detalle.
@@ -381,14 +381,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
     Se escribe entre barras diagonales '/' el patrón que se va a buscar. Por ejemplo si quiero verificar si el usuario ha introducido un arroba en su correo electrónico, el patrón sería '/@/'.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /@/;
 
     const correo = 'usuario@example.com';
@@ -400,14 +400,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
-    Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
+      Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /@./;
   postDescription: >-
     Añadimos un '.' justo después del arroba, pero cuidado, este punto es lo que se conoce como un 'metacaracter', imagínalo como el '*' de CSS, que busca cualquier cosa. En este caso se añade para detectar que después del arroba hay más carácteres. por ejemplo '@profesorado'.
@@ -415,14 +415,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
-    Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
+      Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /@.*/;
   postDescription: >-
     Ahora añadimos un '*' justo después del punto, que también es un metacaracter, pero este lo que hace es buscar la cantidad de carácteres del caracter anterior, en este caso el caracter anterior es 'cualquier caracter después del arroba'. En resumen, estamos diciéndole: "Oye, busca que haya un arroba, y después de él, cualquier cantidad de carácteres".
@@ -430,29 +430,29 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
-    Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
+      Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /@.*\./;
   postDescription: >-
     Como hemos visto que el punto '.' es un metacaracter, para detectar el punto literal, debemos escaparlo con una barra invertida '\'. Esto quiere decir que para que JavaScript entienda que lo que busco es literalmente un punto en el texto, debemos escribir '\.', si no lo hiciéramos, pensaría que estamos buscando cualquier caracter nuevamente.
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
     Ahora bien, si quiero detectar por ejemplo si el usuario ha añadido también un punto, por ejemplo para poner '.com', debemos concatenar varias búsquedas, vamos a ir paso a paso
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const patron = /@.*\./;
 
     const correo = 'usuario@example.com';
@@ -464,51 +464,51 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
     Existen muchas posibilidades de utilizar expresiones regulares, por ejemplo para validar un número de teléfono, una dirección de correo electrónico, una contraseña, etc. Además, se pueden utilizar para reemplazar partes de una cadena de texto, dividir una cadena en partes. En resumen, RegExp es una poderosa herramienta para trabajar con cadenas de texto en JavaScript.
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'RegExp'
+  icon: 
+  title: "RegExp"
   description: >-
     Si te preguntas para qué serviría un RegExp. Imagínate el búscador de palabras del navegador o de una aplicación como Word, donde puedes buscar una palabra específica en un texto largo. En ese caso, podrías utilizar una expresión regular para buscar todas las ocurrencias de esa palabra en el texto.
 
 - template: text
   subtemplate: simple
-  sideblockopen:
+  sideblockopen: 
   icon: ri-map-pin-line
-  title: 'Map'
+  title: "Map"
   description: >-
     Un Map es otra manera de almacenar datos en JavaScript, similar a un objeto, pero con una sintaxis diferente. En lugar de utilizar propiedades y valores, un Map utiliza pares clave-valor que pueden ser cualquier tipo de dato, incluyendo objetos, funciones, y más.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Map'
+  icon: 
+  title: "Map"
   description: >-
     Se genera de manera similar a un dato de tipo Date, y puede generarse vacio o con valores iniciales.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const map = new Map();
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Map'
+  icon: 
+  title: "Map"
   description: >-
     Ahora, podemos agregar elementos al Map utilizando el método 'set()', que recibe dos argumentos: la clave y el valor, que repito, puede ser cualquier tipo de dato.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const map = new Map();
 
     map.set('nombre', 'Pedro');
@@ -518,32 +518,32 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Map'
+  icon: 
+  title: "Map"
   description: >-
     Podemos llamar a elementos dentro de un Map utilizando el método 'get()', que recibe como argumento la clave del elemento que queremos obtener.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const map = new Map();
 
     map.set('nombre', 'Pedro');
     console.log(map.get('nombre')); // 'Pedro'
   postDescription: >-
     ¿Qué pasaría si quisiera que mi clave en lugar de ser un string, fuera un número? Por ejemplo como ocurre en una array.
-
+  
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Map'
+  icon: 
+  title: "Map"
   description: >-
     Podemos darle cualquier tipo de dato como clave, no solo strings, lo cual es muy flexible para muchos casos.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const map = new Map();
 
     map.set(123, 'Pedro');
@@ -551,36 +551,36 @@
 
 - template: text
   subtemplate: simple
-  sideblockopen:
+  sideblockopen: 
   icon: ri-checkbox-line
-  title: 'Set'
+  title: "Set"
   description: >-
     Igual que los anteriores, Set permite almacenar datos, pero en vez de claves y valores, solo valores. Además, hace algo muy especial con estos valores.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Set'
+  icon: 
+  title: "Set"
   description: >-
     Se genera de manera similar a un dato de tipo Date o Map, y puede generarse vacio o con valores iniciales.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const set = new Set();
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Set'
+  icon: 
+  title: "Set"
   description: >-
     Para agregar elementos a un Set, utilizamos el método 'add()', que recibe como argumento el valor que queremos agregar.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const set = new Set();
 
     set.add('Lucía');
@@ -588,14 +588,14 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Set'
+  icon: 
+  title: "Set"
   description: >-
     Lo interesante de Set es que no permite agregar valores duplicados. Si intentamos agregar un valor que ya existe en el Set, no se hará nada.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const set = new Set();
 
 
@@ -610,21 +610,21 @@
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
-  title: 'Set'
+  icon: 
+  title: "Set"
   description: >-
     Imagínate que tienes las entradas de una fiesta y no quieres que una persona con una agreditación se duplique en la lista. En ese caso, podrías utilizar un Set para almacenar el número de acreditado de las personas que entraron.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const set = new Set();
 
 
     set.add('01');
 
     set.add('02');
-
+    
     set.add('03');
 
   postDescription: >-

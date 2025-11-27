@@ -42,7 +42,6 @@ html {
     animation-delay: 500ms;
 }
 
-/* Estilos básicos para contenido Markdown del MagicBox */
 .magicbox__content ul { list-style: disc; }
 .magicbox__content ol { list-style: decimal; }
 .magicbox__content pre {
@@ -59,3 +58,8 @@ html {
   padding: 0;
 }
 .magicbox__content .hljs { background-color: transparent !important; }
+
+
+* {
+  scrollbar-width: none;           
+}

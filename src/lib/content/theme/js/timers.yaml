@@ -1,0 +1,176 @@
+- theme: 34
+  slug: js/timers
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-time-line
+  title: Timers
+  description: >-
+    El poder de los temporizadores en JavaScript, animaciones y más.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen:
+  icon: ri-time-line
+  title: Los temporizadores
+  description: >-
+    Los temporizadores son una herramienta poderosa que nos permite ejecutar código en un momento determinado o repetirlo en intervalos de tiempo. Se utilizan sobre todo para animaciones y efectos visuales, pero tambien para ejecutar código en un momento determinado.
+
+- template: card
+  subtemplate: simple
+  sideblockopen:
+  icon:
+  title: setTimeout
+  description: >-
+    Tenemos dos herramientas, pero empecemos por 'setTimeout'.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setTimeout
+  description: >-
+    Veamos las herramientas que nos ofrecen los temporizadores. La primera es 'setTimeout' que nos permite ejecutar código en un segundo determinado. Sería algo así como una alarma a la que le decimos: 'quiero que hagas esto dentro de 1 segundo'.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setTimeout(función, tiempo)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setTimeout
+  description: >-
+    Podemos llamar a una función dentro de 'setTimeout' o también podemos pasarle una función anónima o arrow function.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setTimeout(() => {
+      // código
+    }, tiempo)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setTimeout
+  description: >-
+    El tiempo que se define en el segundo parámetro es en milisegundos, es decir, 1000 = 1 segundo.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setTimeout(() => {
+      // código
+    }, 1000)
+  postDescription: >-
+    Es importante que se comprenda que tanto la función como el tiempo son parámetros que se definen en el argumento, por lo que se encuentran dentro de los paréntesis y separados por una coma.
+
+- template: card
+  subtemplate: simple
+  sideblockopen:
+  icon:
+  title: setInterval
+  description: >-
+    La segunda herramienta que nos ofrece JavaScript es 'setInterval' que nos permite ejecutar código en intervalos de tiempo. Veamoslo.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setInterval
+  description: >-
+    SetInterval nos permite ejecutar código en intervalos de tiempo. como una alarma que se repite cada cierto tiempo y ejecuta un código. Muy util códigos que deben ejecutarse repetidamente con un intervalo de tiempo.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setInterval(función, tiempo)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setInterval
+  description: >-
+    Podemos llamar a una función dentro de 'setInterval' o también podemos pasarle una función anónima o arrow function.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setInterval(() => {
+      // código
+    }, tiempo)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setInterval
+  description: >-
+    El tiempo que se define en el segundo parámetro es en milisegundos, exactamente igual que en 'setTimeout'. En este caso ese tiempo es el intervalo, por ejemplo para que se repita cada 1 segundo.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setInterval(() => {
+      // código
+    }, 1000)
+  postDescription: >-
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setInterval
+  description: >-
+    Si en algún momento queremos detener el intervalo, podemos usar 'clearInterval' que nos permite detener el intervalo y parar la ejecución.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    setInterval(() => {
+      // código
+    }, 1000)
+
+    clearInterval()
+  postDescription: >-
+    Y mucho cuidado en este punto, porque setInerval tiene un secreto oculto.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: setInterval
+  description: >-
+    Cuando generamos un setInerval, el navegador le da un identificador único que lo identifica. Si quisiéramos pararlo utilizando clearInterval, debemos pasarle ese identificador, pero... ¿Cómo lo consigo? Fácil, lo guardamos en una variable.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+
+    const interval = setInterval(() => {
+      // código
+    }, 1000)
+
+    clearInterval(interval)
+  postDescription: >-
+    De esta forma esa constante está guardando el identificador único que le da el navegador al intervalo, y con eso podemos decirle al 'clearInterval' cual de nuestros intervalos queremos parar.
+
+- template: text
+  subtemplate: simple
+  sideblockopen:
+  icon:
+  title: Docuentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: setInterval
+      link: https://developer.mozilla.org/es/docs/Web/API/setInterval
+    - title: setTimeout
+      link: https://developer.mozilla.org/es/docs/Web/API/setTimeout
