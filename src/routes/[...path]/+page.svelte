@@ -81,17 +81,19 @@
     <ThemeIndex backLink="../" themeIndex={data.data.items.map((item: ThemeItem) => ({ ...item, target: item.target || '_self' }))} goBackLink={true} />
 
 {:else if data.type === 'slides'}
-    <span class="font-bold text-white absolute  transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-4' : 'text-[30em] -top-20 -left-10'}" 
-    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
+    <span class="font-mono font-bold text-white absolute  transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'tracking-[-1rem] max-md:tracking-[0rem] text-[10em] max-md:text-[5em] top-0 left-4' : 'tracking-[-2rem] max-md:tracking-[0rem] text-[20em] max-md:text-[10em] -top-20 max-md:-top-4 max-md:-left-8 -left-10'}" 
+    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-600);">
         {themeNumb}
     </span>
-    <span class="font-bold text-white absolute opacity-50 transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'text-[10em] top-0 left-9' : 'text-[30em] -top-20 -left-2'}" 
-    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor}-600);">
+    <span class="font-mono font-bold text-white absolute max-md:hidden opacity-50 transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'tracking-[-1rem] text-[10em] max-md:text-[5em] top-0 left-9' : 'tracking-[-2rem] text-[20em] max-md:text-[10em] -top-20 max-md:top-0 -left-2'}" 
+    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-600);">
         {themeNumb}
     </span>
 
-    <article class="animate-fade-in flex items-center justify-between h-screen w-full p-5 m-auto gap-4">
+    <article class="animate-fade-in flex items-center justify-between h-screen w-full p-5 m-auto gap-4
+        max-md:flex-col max-md:p-1">
         <section class=" animate-fade-in delay-300 flex flex-col p-10 flex-1 w-full max-w-[1200px] 
+            max-md:p-4 {currentTheme.template === 'cover' ? 'max-md:justify-end' : 'max-md:justify-center'}
             {currentTheme.template === 'cover' ? 'items-start' : 'items-center'}"> 
 
             <!-- Cover -->
@@ -162,14 +164,15 @@
             class="rounded-xl object-cover object-center p-2
 
                 {currentTheme.coverImg && currentTheme.template === 'cover'
-                ? `max-w-[800px]` 
-                : 'bg-zinc-100 max-w-[200px] flex-[1.5]'}
+                ? `max-w-[800px] h-full max-md:max-h-none` 
+                : 'bg-zinc-100 md:max-w-[200px] max-md:w-full flex-[1.5]'}
 
                 {currentTheme.sideblockopen 
-                ? 'bg-zinc-100 max-w-[1600px] flex-10! w-full flex flex-col items-center justify-center' 
-                : ''}
-            w-full h-full bg-no-repeat bg-cover
-            transition-all duration-500 ease-[cubic-bezier(0,.98,.26,1)] delay-300">
+                ? 'bg-zinc-100 h-full md:max-w-[1600px] flex-10! w-full flex flex-col items-center justify-center' 
+                : 'max-md:max-h-10 max-md:w-full'}
+            w-full bg-no-repeat bg-cover
+            transition-all duration-500 ease-[cubic-bezier(0,.98,.26,1)] delay-300
+            max-md:flex-1 md:h-full">
 
             <!-- Aquí empezamos con los ajustes-->
 

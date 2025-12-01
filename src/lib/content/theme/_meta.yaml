@@ -16,3 +16,8 @@ items:
     color: yellow
     icon: ri-javascript-fill
     href: theme/js
+
+  - title: GitHub
+    color: black
+    icon: ri-github-fill
+    href: theme/github

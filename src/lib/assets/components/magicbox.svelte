@@ -43,7 +43,7 @@
     {mgCode ? 'bg-zinc-950 text-white' : 'bg-white text-zinc-950 shadow-2xl'}">
     {#if mgLogo}
         <div class="flex items-center gap-5 justify-between">
-            <img class="w-12 h-12" src="/src/lib/assets/media/{currentSlug}/{mgLogo}.svg" alt={mgTitle} />
+            <img class="w-12 h-12" src="/media/{currentSlug}/{mgLogo}.svg" alt={mgTitle} />
             <div>
                 <h3 class="text-mg font-regular text-zinc-400">{mgUrlTitle}</h3>
                 <a target="_blank" href={mgUrl} class="text-zinc-400 text-sm">{mgUrl}</a>

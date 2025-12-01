@@ -1,0 +1,62 @@
+- theme: G1
+  slug: github/iniciacion
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-github-line
+  title: Iniciación y GitHub
+  description: >-
+    Guardar, recuperar y compartir versiones de tu proyecto con el poder de Git.
+  coverImg: 
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-branch-fill
+  title: ¿Qué es Git?
+  description: >-
+    Antes de meternos de cabeza en el mundo de GitHub, es necesario entender lo que es Git.
+
+- template: image
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-branch-fill
+  title: ¿Qué es Git?
+  description: >-
+    Git es el sistema de control de versiones más popular del mundo. Permite a los desarrolladores guardar, recuperar y compartir versiones de su proyecto. Cada cambio realizado en el proyecto se registra como un 'commit', lo que permite a los desarrolladores revertir cambios si es necesario sin perder su proyecto. Es como una súper copia de seguridad de tu trabajo.
+  iframe: interactive
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-github-fill
+  title: Github
+  description: >-
+    GitHub es una plataforma en la nube que permite a los desarrolladores almacenar, compartir y colaborar en proyectos de software. Proporciona herramientas para gestionar el código fuente, realizar seguimiento de cambios, colaborar con otros desarrolladores y más.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-github-fill
+  title: GitHub
+  description: >-
+    Para empezar a utilizarlo primero debemos crearnos una cuenta en la página oficial de GitHub.
+  mgLogo: logo
+  mgUrl: https://github.com/
+  mgUrlTitle: GitHub
+  mgTitle: GitHub · Change is constant. GitHub keeps you ahead. · GitHub
+  mgContent: >-
+    From your first line of code to final deployment, GitHub provides AI and automation tools to help you build and ship better software faster. A Copilot chat ...
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-github-fill
+  title: GitHub
+  description: >-
+    Una vez entremos en nuestra cuenta de GitHub tendremos que crear un repositorio. Imagina el repositorio como una carpeta en la nube donde guardaremos nuestro proyecto.
+  image: repositorio
+
+theme 

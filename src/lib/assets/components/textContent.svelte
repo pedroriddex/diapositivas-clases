@@ -30,7 +30,7 @@
             {#key title}
             <div in:fly="{{ y: 5, duration: 200 }}" class="flex items-center justify-start gap-3 mb-6">
                 <Icon icon={icon} color={color} size="large" />
-                <h2 class="text-3xl font-regular max-sm:text-4xl {colorClass[color]}">{title}</h2>
+                <h2 class="text-4xl font-regular max-md:text-2xl {colorClass[color]}">{title}</h2>
             </div>
             {/key}
             {#key description}

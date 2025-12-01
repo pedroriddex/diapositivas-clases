@@ -52,7 +52,7 @@
         {#key title}
             <h2
             in:fly="{{ y: 5, duration: 200 }}"
-            class="text-2xl font-regular {colorClass[color]} max-sm:text-4xl">{title}</h2>
+            class="text-4xl font-regular {colorClass[color]} max-md:text-2xl">{title}</h2>
         {/key}
         
     </div>

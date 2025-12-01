@@ -24,6 +24,6 @@
         {#if icon}
             <Icon icon={icon} color={color} size="title" />
         {/if}
-        <h1 in:fade="{{ duration: 200, delay: 200 }}" class={`text-5xl font-regular ${colorClass[color]} max-sm:text-5xl`}>{title}</h1>
+        <h1 in:fade="{{ duration: 200, delay: 200 }}" class={`text-6xl font-regular ${colorClass[color]} max-md:text-5xl`}>{title}</h1>
     </div>
     <p in:fade="{{ duration: 200, delay: 200 }}" class={`text-zinc-800 font-medium text-left w-full`}>{description}</p>

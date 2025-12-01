@@ -18,14 +18,14 @@
 
     {#if themeIndex.length > 0}
         <div class="flex flex-col items-center justify-center gap-2 w-full
-        max-h-150 relative">
-            <div class="w-full h-10 z-50 absolute top-0 left-0 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
+        max-h-150 max-md:max-h-100 relative">
+            <div class="w-full h-10 z-50 absolute top-0 left-0 bg-linear-to-b from-white to-transparent pointer-events-none"></div>
             <div class="w-full max-h-full overflow-y-auto overflow-x-visible px-2 flex flex-col items-center gap-2 pb-20 pt-20">
                 {#each themeIndex as theme}
                     <ThemeLink target={theme.target} className="animate-fade-in-up animate-duration-500 animate-bezier-cubic-out" linkIcon={theme.icon} color={theme.color} theme={theme.href}>{theme.title}</ThemeLink>
                 {/each}
             </div>
-            <div class="w-full h-10 z-50 absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+            <div class="w-full h-10 z-50 absolute bottom-0 left-0 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
         </div>
 
         {#if goBackLink}

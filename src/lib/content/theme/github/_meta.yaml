@@ -1,0 +1,48 @@
+meta:
+  title: GitHub
+  icon: ri-github-fill
+items:
+  - title: Iniciación y GitHub
+    color: black
+    icon: ri-github-line
+    href: github/iniciacion
+
+  - title: Repositorio
+    color: black
+    icon: ri-git-repository-line
+    href: github/repositorio
+
+  - title: Commit
+    color: black
+    icon: ri-git-commit-fill
+    href: github/commit
+
+  - title: Pull y Push
+    color: black
+    icon: ri-git-pull-request-fill
+    href: github/pull
+
+  - title: Branch
+    color: black
+    icon: ri-git-branch-fill
+    href: github/branch
+
+  - title: Fork
+    color: black
+    icon: ri-git-fork-fill
+    href: github/fork
+
+  - title: Merge
+    color: black
+    icon: ri-git-merge-fill
+    href: github/merge
+
+  - title: Draft
+    color: black
+    icon: ri-git-pr-draft-fill
+    href: github/draft
+
+  - title: Terminología
+    color: black
+    icon: ri-git-repository-commits-line
+    href: github/terminologia

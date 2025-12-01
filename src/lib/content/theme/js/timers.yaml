@@ -165,7 +165,7 @@
 - template: text
   subtemplate: simple
   sideblockopen:
-  icon:
+  icon: ri-book-read-line
   title: Docuentación oficial
   description: >-
     Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
