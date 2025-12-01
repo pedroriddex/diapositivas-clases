@@ -39,7 +39,7 @@ html {
   }
 }
 .card {
-    @apply animate-fade-in animate-duration-200 flex flex-col justify-center gap-4 p-10 rounded-xl bg-white shadow-xl shadow-zinc-200 max-w-[600px] w-full;
+    @apply animate-fade-in animate-duration-200 flex flex-col justify-center gap-4 p-10 max-md:p-5 rounded-xl bg-white shadow-xl shadow-zinc-200 max-w-[600px] w-full;
     animation-delay: 500ms;
 }
 
