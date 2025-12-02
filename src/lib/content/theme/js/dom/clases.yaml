@@ -1,0 +1,122 @@
+- theme: 32.2
+  slug: js/clases
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-input-method-line
+  title: ClassList
+  description: >-
+    Modificar las clases de un elemento HTML, agregar, eliminar o verificar si tiene una clase.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-input-method-line
+  title: classList
+  description: >-
+    Para modificar las clases de un elemento HTML, utilizamos la propiedad 'classList'. Esta propiedad nos permite agregar, eliminar o verificar si el elemento tiene una clase. Veamos como funciona.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: classList
+  description: >-
+    Primero debemos tener un objeto al que acceder para utilizar la propiedad 'classList'. Para ello, utilizamos el método 'querySelector' o 'getElementById'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const btn = document.querySelector('button');
+
+    console.log(btn.classList); // Nos devuelve una lista de clases.
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Métodos de classList
+  description: >-
+    Una vez tenemos dicho objeto, la herramienta classList nos ofrece varios métodos para modificar las clases.
+  listItems: 
+    - num: '1'
+      title: add()
+    - num: '2'
+      title: remove()
+    - num: '3'
+      title: toggle()
+    - num: '4'
+      title: contains()
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: add()
+  description: >-
+    Agrega una clase al elemento.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const btn = document.querySelector('button');
+
+    btn.classList.add('active'); // Agregamos la clase 'active' al botón.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: remove()
+  description: >-
+    Elimina una clase del elemento.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const btn = document.querySelector('button');
+
+    btn.classList.remove('active'); // Eliminamos la clase 'active' del botón.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: toggle()
+  description: >-
+    Alterna una clase del elemento. Si la clase existe, la elimina. Si no existe, la agrega. Funciona como una especie de interruptor, ya que alterna entre agregar y eliminar la clase.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const btn = document.querySelector('button');
+
+    btn.classList.toggle('active'); // Alternamos la clase 'active' del botón.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: contains()
+  description: >-
+    Verifica si el elemento tiene una clase. Devuelve 'true' si la clase existe y 'false' si no existe.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const btn = document.querySelector('button');
+
+    btn.classList.contains('active'); // Verificamos si el botón tiene la clase 'active'.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: ClassList
+      link: https://developer.mozilla.org/es/docs/Web/API/Element/classList

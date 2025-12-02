@@ -1,0 +1,106 @@
+- theme: 32.4
+  slug: js/creacion
+  color: yellow
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-insert-row-bottom
+  title: Creación
+  description: >-
+    Añadir un elemento HTML como hijo de otro.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: # Clase de Remix Icons.
+  title: Creación de elementos HTML
+  description: >-
+    En este tema hablaremos de la creación de elementos HTML desde JavaScript y de cómo mostrarlos en los contenedores que queramos.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Creación de elementos HTML
+  description: >-
+    Primero que nada vamos a necesitar un contenedor HTML donde mostrar el elemento que creemos. En este caso, vamos a utilizar un div con el id 'container'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const container = document.getElementById('container');
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Creación de elementos HTML
+  description: >-
+    Ahora vamos a guardar el nuevo elemento que vamos a generar dentro de una variable. Para esto utilizaremos la función 'createElement'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const container = document.getElementById('container');
+    
+    const newElement = document.createElement('div'); // Crea un nuevo elemento div.
+  postDescription: >-
+    ¡Ojo! Este elemento 'div' aún no existe en el DOM, solo lo tenemos almacenado en la variable y está esperando que le asignemos una etiqueta 'parent' que la contenga.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Creación de elementos HTML
+  description: >-
+    Si quisiéramos podriamos añadirle una clase a este elemento o incluso contenido en su interior antes de pasarla al contenedor.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const container = document.getElementById('container');
+    
+    const newElement = document.createElement('div'); // Crea un nuevo elemento div.
+
+
+    newElement.classList.add('new-element'); // Añade una clase al elemento.
+
+    newElement.innerHTML = '<p>Hola, soy un nuevo elemento!</p>'; // Añade contenido al elemento.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Creación de elementos HTML
+  description: >-
+    Una vez el elemento esté a nuestro gusto, lo añadiremos al contenedor. Para ello utilizaremos el método 'appendChild'. Esto lo que hace es ofrecerle una etiqueta "hija" al contenedor, y por lo tanto, se mostrara en la página.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const container = document.getElementById('container');
+    
+    const newElement = document.createElement('div'); // Crea un nuevo elemento div.
+
+
+    newElement.classList.add('new-element'); // Añade una clase al elemento.
+
+    newElement.innerHTML = '<p>Hola, soy un nuevo elemento!</p>'; // Añade contenido al elemento.
+
+
+    container.appendChild(newElement); // Añade el elemento al contenedor y finalmente lo mostramos en la página.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: createElement
+      link: https://developer.mozilla.org/en/docs/Web/API/Document/createElement
+    - title: appendChild
+      link: https://developer.mozilla.org/en/docs/Web/API/Node/appendChild

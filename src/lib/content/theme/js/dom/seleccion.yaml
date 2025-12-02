@@ -1,4 +1,4 @@
-- theme: 29
+- theme: 32.1
   slug: js/dom
   color: yellow
 
@@ -6,7 +6,7 @@
   subtemplate: simple
   sideblockopen: false
   icon: ri-instance-line
-  title: 'DOM'
+  title: "DOM"
   description: >-
     El poder de convertir el HTML en objetos que puedes manipular con JavaScript.
   coverImg: cover
@@ -14,15 +14,15 @@
 - template: image
   subtemplate: simple
   sideblockopen:
-  icon:
-  title: 'Bueno, pero... ¿Qué es el DOM?'
+  icon: 
+  title: "Bueno, pero... ¿Qué es el DOM?"
   description: >-
     El Document Object Model (DOM) es una representación en forma de árbol de la estructura de un documento HTML. Cada elemento HTML es un nodo en este árbol, y puedes acceder y manipular estos nodos con JavaScript.
 
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: "El objeto 'document'"
   description: >-
     Con el objeto 'document', puedes acceder y manipular cualquier elemento HTML en la página.
@@ -31,58 +31,88 @@
     ```js
 
     document
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: "El objeto 'document'"
   description: >-
     Con el operador '.' puedes acceder a propiedades y métodos del objeto 'document'.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     document.
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: "El objeto 'document'"
   description: >-
     Habiendo accedido al objeto 'document' se abre un puente entre JavaScript y el HTML, permitiéndote manipular y cambiar dinámicamente el contenido de la página.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     document.getElementById('miElemento'); // Acceder al elemento con id 'miElemento'
-
+    
 - template: card
   subtemplate: simple
   sideblockopen: true
-  icon:
+  icon: 
   title: "El objeto 'document'"
   description: >-
     Lo más habitual es guardar estos elementos dentro de una variable para poder manipularlos más tarde.
   mgCode: javascript
   mgContent: >-
     ```js
-
+    
     const miElemento = document.getElementById('miElemento'); // Acceder al elemento con id 'miElemento'
 
 - template: card
   subtemplate: simple
-  sideblockopen: false
-  icon:
-  title: '¿Qué puedo hacer con el DOM?'
+  sideblockopen: true
+  icon: 
+  title: "El objeto 'document'"
   description: >-
-    Algunas de las cosas más simples que puedes hacer con el DOM son:
-  list:
-    - title: Coger un elemento como objeto
-    - title: Modificar el contenido de un elemento
-    - title: Modificar los estilos de un elemento
-    - title: Añadir y eliminar elementos
-    - title: Responder a eventos del usuario
-  postDescription: >-
-    Y muchas más cosas avanzadas que iremos viendo a lo largo del módulo.
+    Existen otras maneras de seleccionar un elemento HTML, no solo por la ID, siempre dependerá de las necesidades que tengamos durante el desarrollo.
+  mgCode: javascript
+  mgContent: >-
+    ```js
+    
+    const miElementoID = document.getElementById('miElemento'); 
+    
+    // Devuelve el primer elemento con esa ID
+
+
+    const miElementoAny = document.querySelector('.miClase'); 
+    
+    // Devuelve el primer elemento que coinsida con el argumento: clase, ID, etiqueta...
+
+
+    const misElementosAny = document.querySelectorAll('.miClase'); 
+    
+    // Devuelve todos los elementos con esa clase en una NodeList.
+
+
+    const misElementosTag = document.getElementsByTagName('p'); 
+    
+    // Devuelve todos los elementos con la etiqueta <p> en una HTMLCollection.
+
+
+    const misElementosClass = document.getElementsByClassName('miClase'); 
+    
+    // Devuelve todos los elementos con esa clase en una HTMLCollection.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: Document
+      link: https://developer.mozilla.org/es/docs/Web/API/Document

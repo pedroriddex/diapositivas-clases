@@ -1,0 +1,24 @@
+meta:
+  title: DOM
+  icon: ri-instance-line
+  color: yellow
+items:
+  - title: Selección de elementos
+    color: yellow
+    icon: ri-fingerprint-line
+    href: 'dom/seleccion'
+
+  - title: Clases
+    color: yellow
+    icon: ri-input-method-line
+    href: 'dom/clases'
+
+  - title: Eventos
+    color: yellow
+    icon: ri-mouse-line
+    href: 'dom/eventos'
+
+  - title: Creación de elementos
+    color: yellow
+    icon: ri-insert-row-bottom
+    href: 'dom/creacion'

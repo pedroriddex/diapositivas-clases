@@ -1,4 +1,4 @@
-- theme: 8
+- theme: 32.3
   slug: js/eventos
   color: yellow
 
@@ -99,4 +99,14 @@
     });
   postDescription: >-
     Para cargar ese objeto debemos pasar como argumento la función 'e' que es el objeto evento. Al recibirlo podemos acceder a sus propiedades y métodos.
-    
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: addEventListener
+      link: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
