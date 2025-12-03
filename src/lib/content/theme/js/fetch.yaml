@@ -1,12 +1,143 @@
-- theme: 21
-  slug: js/constantes-y-variables
+- theme: 34
+  slug: js/fetch
   color: yellow
 
   template: cover
   subtemplate: simple
   sideblockopen: false
-  icon: ri-mouse-fill
-  title: Constantes y variables
+  icon: ri-links-line
+  title: Fetch
   description: >-
-    Constantes y variables en JavaScript.
+    Enlazar y cargar archivos externos en JavaScript.
   coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-links-line
+  title: Qué es Fetch
+  description: >-
+    Fetch es una API de JavaScript que permite hacer peticiones HTTP a servidores... ¡BUM! Te vuela la cabeza. Pues no te preocupes, vamos a traducir esto a un idioma que todos entendamos.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Cómo funciona Fetch
+  description: >-
+    Imagínate que tu JavaScript es un cliente en un restaurante. El cliente tiene hambre, así que pide una pizza (pide datos). En la cocina se encuentran los ingredientes para nuestra pizza (servidor o nuestro archivo .json local). Bien, pues adivina quién es el único que puede ir a la cocina y traer tu pizza... en efecto: el camarero (fetch)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Cómo funciona Fetch
+  description: >-
+    Ahora bien ¿A que la pizza no aparece magicamente en tu mesa? Habitualmente tarda un poco en llegar. Llevando esta analogía a una web, los datos pueden tardar y esto es problematico ya que puede congelar la carga de la página web, así que el camarero tiene algo especial para ti: un ticket de tu pedido, entiendelo como una 'promesa' de que esa pizza llegará en algún momento.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Escribiendo un fetch
+  description: >-
+    Ahora que entendemos más o menos el funcionamiento de fetch vamos a verlo en la práctica.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    fetch('./alumnos.json') // Llamamos al camarero
+
+      .then(response => response.json()) // Se prepara nuestra pizza
+
+      .then(data => console.log(data)); // Nos comemos la pizza
+  postDescription: >-
+    Mucho ojo, el fetch es asíncrono, por lo que el código continuará ejecutándose sin esperar a que la pizza llegue. Hay que tener mucho cuidado con los tiempos.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Escribiendo un fetch
+  description: >-
+    Si en algún punto del proceso algo falla, podemos decirle que haga "algo" al detectar el problema utilizando 'catch'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    fetch('./alumnos.json') // Llamamos al camarero
+
+      .then(response => response.json()) // Se prepara nuestra pizza
+
+      .then(data => console.log(data)) // Nos comemos la pizza
+
+      .catch(error => console.log(error)); // Si algo sale mal, nos lo dice
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Escribiendo un fetch
+  description: >-
+    Si queremos que además haga algo especial cuando termine con el proceso de fetch, también tenemos la posibilidad de utilizar 'finally'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    fetch('./alumnos.json') // Llamamos al camarero
+
+      .then(response => response.json()) // Se prepara nuestra pizza
+
+      .then(data => console.log(data)); // Nos comemos la pizza
+
+      .catch(error => console.log(error)); // Si algo sale mal, nos lo dice
+
+      .finally(data => console.log('Proceso terminado')); // Siempre se ejecuta
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: # Clase de Remix Icons.
+  title: Formatos modernos
+  description: >-
+    Existe una forma moderna de escribir fetch, se utiliza para mejorar la legibilidad y la sintaxis, establecido desde ECMAScript 2017.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Formatos modernos
+  description: >-
+    
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    async function obtenerDatos() {
+        try {
+        // 1. Esperamos la respuesta del servidor.
+        const respuesta = await fetch('./js/gallery.json');
+            
+        // 2. Esperamos a que todo se convierta en JSON.
+        const datos = await respuesta.json();
+
+        // 3. Listo, lo tenemos todo.
+        console.log(datos);
+        return datos;
+
+        } catch (error) {
+          // Si algo falla...
+          console.error("Hubo un error:", error);
+        }
+    }
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: Fetch
+      link: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API

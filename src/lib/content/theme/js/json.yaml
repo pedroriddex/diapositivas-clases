@@ -5,8 +5,152 @@
   template: cover
   subtemplate: simple
   sideblockopen: false
-  icon: ri-mouse-fill
+  icon: ri-file-code-line
   title: JSON
   description: >-
-
+    JavaScript Object Notation
   coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-file-code-line
+  title: JavaScript Object Notation
+  description: >-
+    JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil de leer y escribir. Es ampliamente utilizado para transmitir datos entre un servidor y un cliente web, así como para almacenar y recuperar datos en bases de datos.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-file-code-line
+  title: JavaScript Object Notation
+  description: >-
+    Pero ojo. Aunque parece complejo de entender, para entendernos bien, JSON es simplemente una sintaxis, una forma de escribir objetos y arrays en texto sencillo para interpretar y utilizar.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Sintaxis de JSON
+  description: >-
+    La sintaxis de JSON se asemeja a la sintaxis de objetos y arrays en JavaScript, pero con ciertas diferencias.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    [
+      {
+        "nombre": "Pedro",
+        "edad": 20
+      },
+      {
+        "nombre": "Juan",
+        "edad": 25
+      }
+    ]
+  postDescription: >-
+    En este ejemplo, tenemos un array de objetos, donde cada objeto representa a una persona con sus propiedades 'nombre' y 'edad'. Una diferencia clave con respecto a los objetos es que en JSON las propiedades están rodeadas por comillas dobles, mientras que en JavaScript pueden ser rodeadas por comillas simples o dobles.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Utilidades de un JSON  
+  description: >-
+    Lo interesante de los JSON es que son muy fáciles de leer y escribir, y se pueden utilizar para almacenar y transmitir datos de manera eficiente. Además, son compatibles con casi todos los lenguajes de programación, lo que los convierte en una forma universal de intercambiar información.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Utilidades de un JSON  
+  description: >-
+    Imagina que tienes una súper array, llena de objetos complejos y anidados, y decides que quieres compartirla con alguien. En lugar de enviarte el array completo, puedes convertirlo en un JSON y enviarlo. El receptor puede convertirlo de nuevo en un array y usarlo como desee. Lo cual facilita mucho el manejo de datos en aplicaciones web.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Conversión a JSON
+  description: >-
+    Bien ¿Cómo convierto un objeto o array en un JSON para poder compartirlo? Pues la respuesta es muy sencilla:
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const alumnos = [
+      {
+        nombre: 'Pedro',
+        edad: 20
+      },
+      {
+        nombre: 'Juan',
+        edad: 25
+      }
+    ];
+    
+
+    const json = JSON.stringify(alumnos);
+  postDescription: >-
+    Ahora que tenemos nuestros alumnos en formato JSON, podemos enviarlos a un servidor para tener acceso desde otra aplicacion o almacenarlos en una base de datos.
+
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Conversión a objetos
+  description: >-
+    Ahora el caso contrario. Recibo un JSON y lo quiero convertir en un array de objetos.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const alumnos = '[{"nombre": "Pedro","edad": 20},{"nombre": "Juan","edad": 25}];''
+    
+
+    const json = JSON.parse(alumnos);
+  postDescription: >-
+    Ahora tenemos nuestro array de objetos nuevamente.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  icon: # Clase de Remix Icons.
+  title: JSON a archivo
+  description: >-
+    Ahora viene una parte interesante. Imagina que de alguna manera quieres almacenar ese JSON en un archivo. Lo ideal para esto es automatizarlo, pero para ello necesitarás un servidor. Así que lo haremos manualmente.
+
+- template: card
+  subtemplate: list
+  sideblockopen: true
+  title: JSON a archivo
+  description: >-
+    Simplemente sigue los siguientes pasos:
+  listItems: 
+    - num: '1'
+      title: Crea un archivo .json
+    - num: '2'
+      title: Escribe el JSON en el archivo
+  postDescription: >-
+      ¿Te esperabas 20 pasos? Pues no.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Carganto el JSON
+  description: >-
+    Si tenemos el archivo .json en nuestros archivos locales o incluso en un servidor, podemos cargarlo en JavaScript listo para usar con el método fetch que aprenderás en el tema correspondiente.
+  mgCode: javascript
+    
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: JSON
+      link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
