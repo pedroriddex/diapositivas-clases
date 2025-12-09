@@ -1,0 +1,101 @@
+- theme: G2
+  slug: github/commit
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-commit-fill
+  title: Commit
+  description: >-
+    ¿De que se trata el commit en Git?
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-commit-fill
+  title: ¿Qué es un commit?
+  description: >-
+    Un commit es una instantánea de los cambios realizados en el repositorio. Cada vez que realizamos un cambio en el proyecto, lo registramos como un commit. Esto nos permite rastrear el historial de cambios y revertir a versiones anteriores si es necesario. Imagina el historial de navegación de tu navegador, cuando abres una web se te guarda en el historial y puedes encontrarla rápidamente y volver a abrir dicha página. Un commit funciona de manera similar.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Ejemplo de commit
+  description: >-
+    Vamos a ver un ejemplo de commit y desglosar sus componentes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git
+  postDescription: >-
+    Cualquier comando de Git empezará siempre por la palabra 'git'.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Ejemplo de commit
+  description: >-
+    Vamos a ver un ejemplo de commit y desglosar sus componentes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit
+  postDescription: >-
+    Añadimos la acción de commit para sacar la instantánea de los cambios realizados en el repositorio.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Ejemplo de commit
+  description: >-
+    Vamos a ver un ejemplo de commit y desglosar sus componentes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m
+  postDescription: >-
+    Ahora utilizando la opción '-m' añadimos un mensaje descriptivo al commit.
+  
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Ejemplo de commit
+  description: >-
+    Vamos a ver un ejemplo de commit y desglosar sus componentes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "Añadimos un mensaje descriptivo al commit"
+  postDescription: >-
+    Ponemos el mensaje descriptivo entre comillas dobles justo después de -m.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon:
+  title: Commit
+  description: >-
+    Esto que hemos hecho se almacena en nuestro repositorio local, pero no en GitHub. Para ello debemos subir los cambios a GitHub con el comando 'git push origin main' que veremos en la siguiente sección.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Nuevos elementos
+  description: >-
+    Mucho cuidado. Si creamos o añadimos nuevos archivos al proyecto, debemos añadirlos al índice antes de hacer el commit.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git add .

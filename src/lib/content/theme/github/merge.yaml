@@ -1,0 +1,90 @@
+- theme: G5
+  slug: github/merge
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-merge-fill
+  title: Fusionar (Merge)
+  description: >-
+    Uniendo los caminos. Cómo integrar los cambios de una rama en otra.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-merge-fill
+  title: ¿Qué es el Merge?
+  description: >-
+    Has terminado tu experimento en la rama secundaria y funciona perfectamente. Ahora quieres que esos cambios formen parte del proyecto oficial. El Merge es el proceso de tomar el historial de una rama independiente y fusionarlo con la rama actual.
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Los pasos de 'merge'
+  description: >-
+    Primero veamos cuáles son los pasos para realizar un merge.
+  listItems: 
+    - num: '1'
+      title: Situate en la rama base
+    - num: '2'
+      title: Fusiona la rama nueva
+    - num: '3'
+      title: Limpiar la rama fusionada (Opcional)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 1. Situate en la rama base
+  description: >-
+    Esta es la regla de oro del Merge: Siempre debes situarte en la rama que va a RECIBIR los cambios. Generalmente, queremos llevar los cambios a la rama principal (main).
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git checkout main
+  postDescription: >-
+    Nos aseguramos de estar en la rama base. Si intentas hacer el merge estando en la rama nueva, no pasará nada o te dará error.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 2. Fusiona la rama nueva
+  description: >-
+    Una vez situados en 'main', ordenamos a Git que absorba la rama donde trabajamos.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git merge nueva-funcionalidad
+  postDescription: >-
+    Git comparará los archivos y añadirá las modificaciones de 'nueva-funcionalidad' dentro de 'main'.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  title: Resultado
+  description: >-
+    Ahora tu rama 'main' tiene todo el código nuevo. Es importante entender que la rama 'nueva-funcionalidad' sigue existiendo y no ha cambiado; simplemente hemos copiado su contenido dentro de 'main'.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 3. Limpiar la rama fusionada
+  description: >-
+    Si ya hemos integrado los cambios y no necesitamos seguir trabajando en esa rama secundaria, es una buena práctica borrarla para mantener el proyecto ordenado.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git branch -d nueva-funcionalidad
+  postDescription: >-
+    La opción '-d' (delete) borra la rama. No te preocupes, Git te avisará si intentas borrar una rama que aún no ha sido fusionada para evitar perder datos.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  title: Conflictos
+  description: >-
+    A veces, Git no puede unir los archivos automáticamente porque dos personas han modificado exactamente la misma línea de código de formas distintas. Cuando esto ocurre, Git pausará el proceso y te pedirá que abras los archivos para decidir manualmente qué código se queda y cuál se borra. Esto se conoce como un Conflicto de fusión.

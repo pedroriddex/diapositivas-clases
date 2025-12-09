@@ -1,0 +1,84 @@
+- theme: G4
+  slug: github/branch
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-branch-fill
+  title: Ramas (Branches)
+  description: >-
+    Trabaja en paralelo sin romper tu código principal.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-branch-fill
+  title: ¿Qué es una rama?
+  description: >-
+    Imagina que estás escribiendo un libro y quieres probar un final alternativo sin borrar lo que ya has escrito. En Git, una rama es una línea temporal paralela. Puedes crear una rama, hacer cambios experimentales allí, y tu rama principal (main) seguirá intacta.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Crear una rama
+  description: >-
+    Para crear una nueva línea de trabajo, usamos el comando 'branch' seguido del nombre que queramos darle.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git branch nueva-funcionalidad
+  postDescription: >-
+    ¡Ojo! Esto solo crea la rama, pero no te mueve a ella. Sigues estando en tu rama anterior (normalmente 'main').
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Ver las ramas
+  description: >-
+    ¿Cómo sé qué ramas existen y dónde estoy ahora mismo?
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git branch
+  postDescription: >-
+    Git listará todas las ramas. La que tenga un asterisco (*) a su izquierda y esté resaltada es la rama en la que te encuentras actualmente.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Cambiar de rama
+  description: >-
+    Para "saltar" a esa nueva rama y empezar a trabajar en ella, usamos el comando 'checkout'.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git checkout nueva-funcionalidad
+  postDescription: >-
+    Ahora sí, cualquier archivo que crees o modifiques y confirmes (commit) se guardará SOLO en esta rama 'nueva-funcionalidad'.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: El truco pro
+  description: >-
+    Los desarrolladores suelen crear y cambiar de rama al mismo tiempo muy a menudo. Hay un atajo para hacer los dos pasos anteriores en uno solo:
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git checkout -b mi-rama-rapida
+  postDescription: >-
+    La opción '-b' le dice a Git: Crea esta rama Y muéveme a ella inmediatamente.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: ¿Y ahora qué?
+  description: >-
+    Ahora tienes dos versiones diferentes de tu proyecto viviendo en paralelo. Pero, ¿cómo traemos los cambios de la nueva rama de vuelta a la principal para que formen parte del proyecto final? Ese proceso se llama Fusión (Merge) y es exactamente lo que aprenderemos en la próxima lección.

@@ -71,7 +71,8 @@
                     py-0.5 px-2 rounded-sm uppercase absolute -top-2 left-2
                     {mgCode === 'html' ? 'bg-red-600' : ''}
                     {mgCode === 'css' ? 'bg-blue-600' : ''}
-                    {mgCode === 'javascript' ? 'bg-yellow-600' : ''}">
+                    {mgCode === 'javascript' ? 'bg-yellow-600' : ''}
+                    {mgCode === 'bash' ? 'bg-zinc-900 border' : ''}">
                     {mgCode}
                 </span>
             {/key}

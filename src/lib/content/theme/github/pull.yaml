@@ -1,0 +1,101 @@
+- theme: G3
+  slug: github/pull-push
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-pull-request-fill
+  title: Pull y Push 
+  description: >-
+    Sincronización: Empujar o traer cambios entre tu ordenador y la nube.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-pull-request-fill
+  title: Sincronizando repositorios
+  description: >-
+    Por el momento sabemos cómo almacenar cambios en nuestro repositorio local. Ahora veremos cómo mandar esos cambios a GitHub (Push) para compartirlos, o cómo traer los cambios que otros hayan hecho (Pull) a nuestro ordenador.
+
+# --- SECCIÓN PULL (Traer) ---
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Git Pull (Traer)
+  description: >-
+    Empecemos por traer cambios. Imagina que un compañero ha subido código nuevo y tú no lo tienes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git pull
+  postDescription: >-
+    Este comando descarga los cambios del repositorio remoto y trata de "fusionarlos" automáticamente con lo que tienes en tu pantalla. Es tu botón de "actualizar".
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Pull Específico
+  description: >-
+    A veces es mejor ser explícitos sobre qué queremos actualizar y de dónde.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git pull origin main
+  postDescription: >-
+    Aquí le decimos: "Del repositorio remoto (origin), tráeme lo que haya en la rama principal (main)".
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Pull de otras ramas
+  description: >-
+    ¿Y si queremos bajarnos el trabajo de la rama de un compañero?
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git pull origin pepe
+  postDescription: >-
+    Cambiamos "main" por el nombre de la rama (ej. "pepe"). Esto es muy común cuando quieres revisar el trabajo de otra persona en tu propio ordenador.
+
+# --- SECCIÓN PUSH (Enviar) ---
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  title: Git Push (Empujar)
+  description: >-
+    Ahora el caso contrario. Has hecho tus commits locales y quieres subirlos a GitHub para guardarlos o compartirlos.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Push Básico
+  description: >-
+    Una vez tienes tus commits listos, los enviamos a la nube.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git push
+  postDescription: >-
+    Envía tus cambios recientes al servidor. Nota: La primera vez suele fallar si no especificamos a dónde va (ver siguiente paso).
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Push Específico
+  description: >-
+    Es la forma más segura y común de enviar tus cambios, asegurándote de que van al lugar correcto.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git push origin main
+  postDescription: >-
+    Le ordenamos a Git: "Empuja mis cambios al servidor (origin) dentro de la rama principal (main)".

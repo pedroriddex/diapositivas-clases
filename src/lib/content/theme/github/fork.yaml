@@ -1,0 +1,63 @@
+- theme: G6
+  slug: github/fork
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-fork-fill
+  title: Forks (Bifurcaciones)
+  description: >-
+    Copia, edita y colabora en proyectos que no son tuyos. La base del Open Source.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-fork-fill
+  title: ¿Qué es un Fork?
+  description: >-
+    Imagina que ves un proyecto interesante en GitHub, como una librería famosa, y quieres hacer cambios. Como no eres el dueño, no tienes permiso para modificar su código directamente (no puedes hacer Push). Un Fork es una copia exacta de ese repositorio, pero guardada en TU cuenta. En tu copia, tú eres el dueño y puedes hacer lo que quieras.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: 
+  icon: # Clase de Remix Icons.
+  title: Rama vs Fork
+  description: >-
+    Es común confundirlos. Aquí la diferencia clave:
+  list: 
+    - title: Usa RAMAS cuando trabajas en tu propio proyecto o con tu equipo en el mismo repositorio (tienes permisos de escritura).
+    - title: Usa FORKS cuando quieres contribuir a un proyecto ajeno o de código abierto (no tienes permisos de escritura en el original).
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Crear el Fork
+  description: >-
+    Esto no se hace por terminal, sino desde la web de GitHub. Debes ir al repositorio que te gusta y buscar el botón Fork en la esquina superior derecha.
+  image: Captura
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Clonar tu Fork
+  description: >-
+    Ahora que la copia está en tu cuenta, necesitas descargarla a tu ordenador para trabajar. Usamos el comando 'clone'.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git clone tu-url-de-fork.git
+  postDescription: >-
+    El comando 'clone' descarga todo el proyecto y configura automáticamente la conexión (el remote origin) con tu cuenta.
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: El ciclo de contribución
+  description: >-
+    Una vez has clonado tu Fork, trabajas en tu ordenador normal (creas ramas, haces commits, haces push a tu cuenta). Si al final quieres que el dueño del proyecto original acepte tus cambios, se utiliza una "Pull Request" (solicitud de incorporación), que es pedirle educadamente: Por favor, trae (pull) mis cambios a tu proyecto.

@@ -7,11 +7,6 @@ items:
     icon: ri-github-line
     href: github/iniciacion
 
-  - title: Repositorio
-    color: black
-    icon: ri-git-repository-line
-    href: github/repositorio
-
   - title: Commit
     color: black
     icon: ri-git-commit-fill
@@ -27,22 +22,22 @@ items:
     icon: ri-git-branch-fill
     href: github/branch
 
-  - title: Fork
-    color: black
-    icon: ri-git-fork-fill
-    href: github/fork
-
   - title: Merge
     color: black
     icon: ri-git-merge-fill
     href: github/merge
 
-  - title: Draft
+  - title: Fork
     color: black
-    icon: ri-git-pr-draft-fill
-    href: github/draft
+    icon: ri-git-fork-fill
+    href: github/fork
 
   - title: Terminología
     color: black
     icon: ri-git-repository-commits-line
     href: github/terminologia
+
+  - title: GitHub Pages
+    color: black
+    icon: ri-global-line
+    href: github/github-pages

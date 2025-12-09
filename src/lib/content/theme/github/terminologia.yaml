@@ -1,0 +1,112 @@
+- theme: G7
+  slug: github/terminologia
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-git-repository-commits-line
+  title: Terminologías
+  description: >-
+    Cómo escribir mensajes de commit profesionales usando Conventional Commits.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-git-repository-commits-line
+  title: Conventional Commits
+  description: >-
+    Para mantener el orden en el historial de un proyecto, utilizamos un estándar llamado "Conventional Commits". Consiste en etiquetar cada commit según la naturaleza del cambio. Aquí tienes los tipos más utilizados:
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Tipos de Commits
+  description: >-
+    Estos son los prefijos estándar que usaremos.
+  listItems: 
+    - num: '1'
+      title: Feat
+    - num: '2'
+      title: Fix
+    - num: '3'
+      title: Docs
+    - num: '4'
+      title: Style
+    - num: '5'
+      title: Refactor
+    - num: '6'
+      title: Test
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Feat
+  description: >-
+    Se utiliza cuando añades una nueva funcionalidad al código que antes no existía. Es el tipo de commit más común junto con fix.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "feat: añadir modo oscuro a la página principal"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Fix
+  description: >-
+    Se usa exclusivamente cuando solucionas un error o "bug" en el código.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "fix: corregir error de cálculo en el carrito de compra"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Docs
+  description: >-
+    Cambios que afectan solo a la documentación (como el README o comentarios explicativos), no al funcionamiento del programa.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "docs: actualizar instrucciones de instalación en README"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Style
+  description: >-
+    Cambios de formato (espacios, comas, indentación, puntos y comas faltantes) que no alteran la lógica del código. No confundir con estilos CSS (esos suelen ser 'feat' o 'fix').
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "style: eliminar espacios en blanco sobrantes"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Refactor
+  description: >-
+    Un cambio en el código que ni corrige un error ni añade una funcionalidad, sino que mejora la estructura interna o la legibilidad.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "refactor: simplificar función de validación de email"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Test
+  description: >-
+    Cuando añadimos pruebas nuevas o corregimos las existentes.
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git commit -m "test: añadir pruebas unitarias para el login"

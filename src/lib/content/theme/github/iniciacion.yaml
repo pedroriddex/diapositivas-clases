@@ -9,7 +9,7 @@
   title: Iniciación y GitHub
   description: >-
     Guardar, recuperar y compartir versiones de tu proyecto con el poder de Git.
-  coverImg: 
+  coverImg: cover
 
 - template: text
   subtemplate: simple
@@ -58,3 +58,61 @@
   description: >-
     Una vez entremos en nuestra cuenta de GitHub tendremos que crear un repositorio. Imagina el repositorio como una carpeta en la nube donde guardaremos nuestro proyecto.
   image: repositorio
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Preparar nuestros archivos
+  description: >-
+    Primero debemos convertir nuestra carpeta en un repositorio Git. Para ello, abrimos la terminal en la carpeta y ejecutamos:
+  mgCode: bash
+  mgContent: >-
+    ````
+
+    git init
+  postDescription: >-
+    Esto creará una carpeta oculta llamada '.git' en tu carpeta. Esta carpeta contiene toda la información necesaria para rastrear los cambios en tu proyecto. Como dato importante, debemos usar el comando 'cd' para entrar en la carpeta.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Añadir nuestros archivos
+  description: >-
+    Ahora debemos añadir nuestros archivos al repositorio. Para ello, ejecutamos:
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git add .
+  postDescription: >-
+    Esto añadirá todos los archivos en la carpeta al repositorio. Si queremos añadir solo algunos archivos, podemos especificar su nombre, pero con el '.' al final lo que hacemos es añadir todo el contenido de la carpeta.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Crear nuestro primer commit
+  description: >-
+    Sabrás lo que es un commit más adelante, pero por ahora, debemos crear nuestro primer commit. Para ello, ejecutamos:
+  mgCode: bash
+  mgContent: >-
+    ````
+
+    git commit -m "Primer commit"
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: # Clase de Remix Icons.
+  title: Conectar con GitHub
+  description: >-
+    Ahora debemos conectar nuestro repositorio local con el repositorio remoto en GitHub. Para ello, ejecutamos:
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    git remote add origin https://github.com/<tu-usuario>/<tu-repositorio>.git
+  postDescription: >-
+    Esto conectará tu repositorio local con el repositorio remoto en GitHub. Ahora puedes subir tus cambios a GitHub ejecutando 'git push origin main'.

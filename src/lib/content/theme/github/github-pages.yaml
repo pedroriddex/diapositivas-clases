@@ -1,0 +1,68 @@
+- theme: G8
+  slug: github/pages
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-global-line
+  title: GitHub Pages
+  description: >-
+    Publica tu sitio web gratis y compártelo con el mundo.
+  coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-global-line
+  title: ¿Qué es GitHub Pages?
+  description: >-
+    Hasta ahora, solo tú podías ver el resultado de tu código abriendo el archivo en tu navegador. GitHub Pages es un servicio de hosting gratuito que toma tu repositorio y lo convierte en una página web real con una dirección pública (URL) que cualquiera puede visitar.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: La regla de oro
+  description: >-
+    Para que GitHub sepa cuál es la página principal de tu sitio, tu archivo principal DEBE llamarse obligatoriamente:
+  mgCode: bash
+  mgContent: >-
+    ````
+    
+    index.html
+  postDescription: >-
+    Si tu archivo se llama "inicio.html" o "home.html", GitHub Pages no lo encontrará y dará un error 404.
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Configuración
+  description: >-
+    Activar Pages es muy sencillo. Dentro de tu repositorio en GitHub, ve a la pestaña "Settings" (Configuración) y en el menú lateral izquierdo busca la sección "Pages".
+  image: Captura
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Elegir la fuente
+  description: >-
+    En la sección "Build and deployment", verás un apartado llamado "Branch". Debes seleccionar tu rama principal (generalmente 'main') y pulsar "Save".
+  image: Captura-2
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-loader-4-line
+  title: Espera un momento...
+  description: >-
+    Una vez guardado, GitHub iniciará un proceso automático (Action) para construir tu web. Esto no es instantáneo; suele tardar entre 1 y 3 minutos. Si refrescas la página demasiado rápido, puede que aún no veas el enlace.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: ¡Tu web está online!
+  description: >-
+    Cuando el proceso termine, aparecerá una barra verde en la parte superior de la sección Pages con tu nueva dirección web.
+  mgTitle: Tu URL pública
+  mgContent: >-
+    https://tu-usuario.github.io/nombre-repositorio

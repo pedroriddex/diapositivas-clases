@@ -82,11 +82,11 @@
 
 {:else if data.type === 'slides'}
     <span class="font-mono font-bold text-white absolute  transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'tracking-[-1rem] max-md:tracking-[0rem] text-[10em] max-md:text-[5em] top-0 left-4' : 'tracking-[-2rem] max-md:tracking-[0rem] text-[20em] max-md:text-[10em] -top-20 max-md:-top-4 max-md:-left-8 -left-10'}" 
-    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-600);">
+    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-950);">
         {themeNumb}
     </span>
     <span class="font-mono font-bold text-white absolute max-md:hidden opacity-50 transition-all duration-300 ease-[cubic-bezier(0,.98,.26,1)] {themeId > 0 ? 'tracking-[-1rem] text-[10em] max-md:text-[5em] top-0 left-9' : 'tracking-[-2rem] text-[20em] max-md:text-[10em] -top-20 max-md:top-0 -left-2'}" 
-    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-600);">
+    style="line-height:100%; -webkit-text-stroke: 1px var(--color-{themeColor != 'black' ? themeColor : 'zinc'}-950);">
         {themeNumb}
     </span>
 
