@@ -6,7 +6,7 @@
         red: 'bg-red-600',
         blue: 'bg-blue-600',
         yellow: 'bg-yellow-600',
-        black: 'bg-zinc-960',
+        black: 'bg-zinc-900',
     }
     
 </script>
