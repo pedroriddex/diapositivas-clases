@@ -1,12 +1,131 @@
-- theme: 21
-  slug: js/constantes-y-variables
+- theme: 22
+  slug: js/storage
   color: yellow
 
   template: cover
   subtemplate: simple
   sideblockopen: false
-  icon: ri-mouse-fill
-  title: Constantes y variables
+  icon: ri-database-line
+  title: Web Storage
   description: >-
-    Constantes y variables en JavaScript.
+    Guardando datos en el navegador: localStorage y sessionStorage.
   coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-database-line
+  title: ¿Qué es Web Storage?
+  description: >-
+    Es una API del navegador que nos permite almacenar datos de tipo clave-valor (key-value) directamente en el navegador del usuario. A diferencia de las bases de datos, estos datos viven en el ordenador del cliente. Es ideal para guardar preferencias (modo oscuro), carritos de compra temporales o tokens de sesión.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Las dos variantes
+  description: >-
+    Existen dos tipos de almacenamiento que funcionan exactamente igual (mismos métodos), pero tienen una diferencia crucial en su duración.
+  list: 
+    - title: "localStorage: Los datos PERSISTEN aunque cierres el navegador o apagues el ordenador. Solo se borran si el código los elimina o el usuario limpia la caché."
+    - title: "sessionStorage: Los datos son VOLÁTILES. Se mantienen mientras la pestaña esté abierta. Si cierras la pestaña o el navegador, los datos desaparecen."
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Guardar datos (setItem)
+  description: >-
+    Para guardar información usamos el método 'setItem'. Necesita dos argumentos: la clave (nombre) y el valor.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    localStorage.setItem('usuario', 'Pedro');
+    
+    sessionStorage.setItem('idioma', 'es');
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Leer datos (getItem)
+  description: >-
+    Para recuperar un dato guardado, usamos la clave con la que lo definimos.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const usuario = localStorage.getItem('usuario');
+    
+    console.log(usuario);
+  postDescription: >-
+    Importante: Si intentamos leer una clave que no existe, nos devolverá 'null'.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Borrar datos
+  description: >-
+    Podemos eliminar un dato concreto o limpiar todo el almacenamiento de golpe.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    localStorage.removeItem('usuario');
+    
+    localStorage.clear();
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: 
+  title: La limitación
+  description: >-
+    El Web Storage SOLO puede guardar cadenas de texto (Strings). Si intentas guardar un objeto o un array directamente, JavaScript lo convertirá a texto a la fuerza y obtendrás el temido "[object Object]", perdiendo toda tu información.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Guardar Objetos (JSON)
+  description: >-
+    Para guardar objetos o arrays, primero debemos convertirlos a texto con 'JSON.stringify()'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const usuario = { nombre: 'Pedro', edad: 30 };
+    
+    localStorage.setItem('user', JSON.stringify(usuario));
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: 
+  title: Recuperar Objetos (JSON)
+  description: >-
+    Al recuperar los datos, vendrán como texto plano. Debemos reconvertirlos a objeto JavaScript original usando 'JSON.parse()'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const datoGuardado = localStorage.getItem('user');
+    
+    const usuarioOriginal = JSON.parse(datoGuardado);
+    
+    console.log(usuarioOriginal.nombre);
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: localStorage
+      link: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    - title: sessionStorage
+      link: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage

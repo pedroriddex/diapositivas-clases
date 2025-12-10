@@ -1,12 +1,313 @@
 - theme: 21
-  slug: js/constantes-y-variables
+  slug: js/bom
   color: yellow
 
   template: cover
   subtemplate: simple
   sideblockopen: false
-  icon: ri-mouse-fill
-  title: Constantes y variables
+  icon: ri-window-fill
+  title: BOM
   description: >-
-    Constantes y variables en JavaScript.
+    Objetos del navegador y el entorno.
   coverImg: cover
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-window-fill
+  title: El BOM (Browser Object Model)
+  description: >-
+    Al igual que conocemos el DOM (Document Object Model), que utilizamos para interactuar con el contenido HTML, el BOM es la interfaz que nos permite interactuar con la "caja" del navegador (la ventana, el historial, la barra de direcciones).
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: El objeto 'window'
+  description: >-
+    Al igual que para acceder a las propiedades del DOM se utiliza 'document', en el caso de BOM, se utiliza 'window'. Es el objeto padre de todo en JavaScript del lado del cliente.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: El objeto 'window'
+  description: >-
+    Aunque 'window' es el objeto global, no es necesario escribirlo siempre. El navegador asume que si llamas a una función global, pertenece a 'window'.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.setTimeout()
+    
+    setTimeout()
+  postDescription: >-
+    Por eso nunca escribimos 'window.alert()', aunque técnicamente es ahí donde vive.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Jerarquía
+  description: >-
+    Incluso el DOM ('document') es en realidad una propiedad dentro del objeto 'window'. Es el 'window' quien contiene al documento.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.document
+  postDescription: >-
+    Entendiendo esto, queda claro que 'window' es el "Dios" de JavaScript en el navegador.
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Métodos de control
+  description: >-
+    Empecemos con métodos básicos para manipular la ventana y la navegación.
+  listItems: 
+    - num: '1'
+      title: 'window.location'
+    - num: '2'
+      title: 'window.open'
+    - num: '3'
+      title: 'window.close'
+    - num: '4'
+      title: 'window.moveTo'
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.location'
+  description: >-
+    Propiedad que nos permite acceder a la URL actual o modificarla (redirigir).
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.location
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.location.href'
+  description: >-
+    Es la propiedad más usada. Nos devuelve la URL completa como texto. Si le asignamos un valor nuevo, el navegador redirigirá al usuario a esa página.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.location.href = 'https://google.com'
+  postDescription: >-
+    Es el equivalente a hacer clic en un enlace mediante código.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.location.reload()'
+  description: >-
+    Método que fuerza la recarga de la página actual.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.location.reload()
+  postDescription: >-
+    Sería como hacer click en el botón de "Refrescar" del navegador o pulsar F5.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.location.hostname'
+  description: >-
+    Devuelve el dominio (ej: github.com). Útil para saber si estás en entorno de desarrollo (localhost) o producción.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    if (window.location.hostname === 'localhost') {
+       console.log("Modo desarrollo");
+    }
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.location.search'
+  description: >-
+    Devuelve los parámetros de la URL (lo que va después del ?). Vital para leer datos como '?producto=123' y saber qué mostrar al usuario.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.location.search
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.open'
+  description: >-
+    Abre una nueva ventana o pestaña del navegador con la URL especificada.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const nuevaVentana = window.open('https://google.com', '_blank')
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.close'
+  description: >-
+    Cierra la ventana actual. Nota: Por seguridad, los navegadores solo permiten cerrar con código las ventanas que fueron abiertas con código (script).
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.close()
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.moveTo'
+  description: >-
+    Mueve la ventana a una posición x,y de la pantalla. Actualmente los navegadores bloquean esto en la ventana principal por seguridad, pero funciona en ventanas emergentes (Pop-ups) que hayas creado tú.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    miPopup.moveTo(0, 0)
+
+# --- NUEVA SECCIÓN: INTERACCIÓN ---
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Interacción y Diálogos
+  description: >-
+    Métodos nativos para comunicarnos con el usuario (aunque bloquean la ejecución del código).
+  listItems: 
+    - num: '1'
+      title: 'alert()'
+    - num: '2'
+      title: 'confirm()'
+    - num: '3'
+      title: 'prompt()'
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: alert()
+  description: >-
+    Muestra una ventana modal con un mensaje y un botón de "Aceptar". Es útil para depurar o avisos críticos.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    alert("¡Bienvenido a mi web!")
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: confirm()
+  description: >-
+    Muestra un mensaje con botones "Aceptar" y "Cancelar". Devuelve true si aceptan y false si cancelan.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const respuesta = confirm("¿Seguro que quieres borrar?");
+    if (respuesta) { ... }
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: prompt()
+  description: >-
+    Pide al usuario que introduzca un texto. Devuelve lo escrito o null si cancela.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    const nombre = prompt("¿Cómo te llamas?");
+
+# --- CONTINUACIÓN PROPIEDADES ---
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Propiedades de Entorno
+  description: >-
+    Información sobre el navegador, la pantalla y el historial.
+  listItems: 
+    - num: '1'
+      title: 'window.innerWidth / Height'
+    - num: '2'
+      title: 'window.scrollY'
+    - num: '3'
+      title: 'window.localStorage'
+    - num: '4'
+      title: 'window.history'
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Dimensiones (Viewport)
+  description: >-
+    'innerWidth' e 'innerHeight' nos devuelven el ancho y alto UTIL de la ventana (el área blanca donde se ve la web).
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    console.log(window.innerWidth);
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.scrollY'
+  description: >-
+    Nos dice cuántos píxeles ha bajado el usuario haciendo scroll vertical.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    if (window.scrollY > 500) {
+       mostrarBotonVolverArriba();
+    }
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.localStorage'
+  description: >-
+    Permite guardar datos en el navegador de forma persistente (no se borran al cerrar). Lo veremos a fondo en es próximo tema.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.localStorage.setItem('modo', 'oscuro');
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: 'window.history'
+  description: >-
+    Nos permite movernos por el historial de navegación del usuario.
+  mgCode: javascript
+  mgContent: >-
+    ````
+    
+    window.history.back();
+    window.history.forward();
+
+- template: text
+  subtemplate: simple
+  sideblockopen: 
+  icon: ri-book-read-line
+  title: Documentación oficial
+  description: >-
+    Como siempre, puedes revisar la documentación oficial de MDN Web Docs para más información.
+  linksList:
+    - title: window
+      link: https://developer.mozilla.org/en-US/docs/Web/API/Window
