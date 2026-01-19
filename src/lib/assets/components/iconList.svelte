@@ -5,9 +5,9 @@
     export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';  
 </script>
 
-<div class="flex items-center justify-center gap-2"
+<div class="flex items-center justify-center gap-5"
     in:fade="{{ duration: 300 }}">
     {#each iconListItems as eachIcon}
-        <Icon color={color} icon="{eachIcon.icon}" size="large" />
+        <Icon color={color} icon="{eachIcon.icon}" size="extra" />
     {/each}
 </div>

@@ -41,7 +41,7 @@
 
 <div class="card {isPresentation === 'presentation' ? 'items-center' : 'items-start'}">
     {#if isPresentation === 'presentation'}
-        <img class="max-w-[200px] w-full" src="/src/lib/assets/media/{currentSlug}/pedro.webp" alt="">
+        <img class="max-w-[200px] w-full" src="/media/intro/pedro.webp" alt="">
     {/if}
 
     <div class="flex justify-center items-center gap-2 mb-6">

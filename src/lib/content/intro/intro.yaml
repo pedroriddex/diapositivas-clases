@@ -1,0 +1,287 @@
+- theme: 0
+  slug: intro
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon:
+  title: Diseño web
+  description: >-
+    Con HTML, CSS y JavaScript.
+  coverImg: cover
+
+- template: card
+  subtemplate: presentation
+  sideblockopen: false
+  title: Pedro José Reyes Rodríguez
+  description: >-
+    Las herramientas que utilizo.
+  iconList:
+    - icon: ri-figma-fill
+    - icon: ri-wordpress-fill
+    - icon: ri-html5-fill
+    - icon: ri-css3-fill
+    - icon: ri-javascript-fill
+    - icon: ri-svelte-fill
+    - icon: ri-tailwind-css-fill
+    - icon: ri-github-fill
+
+- template: card
+  subtemplate: presentation
+  sideblockopen: false
+  title: Pedro José Reyes Rodríguez
+  description: >-
+    Lo que me gusta hacer.
+  iconList:
+    - icon: ri-bell-fill
+    - icon: ri-gamepad-fill
+    - icon: ri-smartphone-fill
+    - icon: ri-book-shelf-fill
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: ¿Qué vamos a ver?
+  description: >-
+    ¿Sobre que hablaremos hoy? Muchas cosas, pero vamos a desglosarlas para entendernos mejor.
+  listItems:
+    - num: '1'
+      title: Plataformas
+    - num: '2'
+      title: Clases
+    - num: '3'
+      title: Herramientas
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-google-fill
+  title: Google Classroom
+  description: >-
+    El lugar donde encontrarás todo el material.
+  mgLogo: googleclassroom
+  mgUrl: https://classroom.google.com/
+  mgUrlTitle: Google Classroom
+  mgTitle: Google Classroom
+  mgContent: >-
+    Google Classroom es una plataforma educativa gratuita, fácil de usar y completa del gigante de TI. El programa está disponible como parte de G ...
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-google-fill
+  title: Google Classroom - Tablón de anuncios
+  description: >-
+    Aquí encontrarás todo lo relacionado con el módulo. En la pantalla principal encontrarás el tablón de anuncios, donde tanto vosotros como la escuela pondrá mensajes importantes para todos los alumnos del módulo.
+  image: classroom1
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-google-fill
+  title: Google Classroom - Trabajos de clase
+  description: >-
+    Todo el material importante estará aquí: grabaciones, proyectos, enlaces importantes, etc.
+  image: classroom2
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-google-fill
+  title: Google Classroom
+  description: >-
+    Algunos de los archivos más importantes que encontrarás en Google Classroom.
+  list:
+    - title: Guía del alumn@
+    - title: Manual de la asignatura
+    - title: Programa académico
+    - title: Sistema de evaluación
+  postDescription: >-
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Guia del alumn@
+  description: >-
+    Es uno de los documentos más importantes para los estudiantes de la escuela, contiene toda la información necesaria para que comprendas cómo funciona la escuela y las normas. Es vital que lo leas y comprendas.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Manual de la asignatura
+  description: >-
+    Es el documento que que contiene todo el material de la asignatura, el que deberás estudiar para comprender el tema, aunque todo se dará en clase es otra forma de tener el contenido.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Programa académico
+  description: >-
+    Si tienes dudas sobre lo que se verá en el módulo en ambitos generales, puedes consultar el programa académico para ver un índice general de lo que vas a estudiar.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sistema de evaluación
+  description: >-
+    Toda la información sobre cómo funciona el sistema de evaluación de la escuela se encuentra en este módulo. Si es la primera vez que estudias en CEI es recomendable que lo leas.
+
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-gemini-fill
+  title: NotebookLM
+  description: >-
+    NotebookLM es una herramienta de IA integrada en el Classroom, que te ayudará a resolver tus dudas y a aprender de manera más eficiente.
+  image: classroom3
+
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-bookmark-fill
+  title: Clases
+  description: >-
+    Hablemos sobre cómo funcionarán las clases en este módulo.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - En el aula
+  description: >-
+  list:
+    - title: Aprovechad las 3 horas
+    - title: Podéis traer vuestros propios portátiles
+    - title: Descanso de 10 minutos (15 minutos como máximo)
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Durante las clases
+  description: >-
+  list:
+    - title: Normalmente será teórica + práctica de la teoría (katas)
+    - title: Los primero días serán mas teóricas
+    - title: A mitad de Asignatura más prácticas
+  postDescription: >-
+    Si tenéis libre os recomendaría en casa practicar los ejercicios o terminarlos si nos quedamos a medias.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Ejercicios
+  description: >-
+    En las clases trabajaremos varias topologías de ejercicios:
+  list:
+    - title: Katas
+    - title: Proyectos
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Katas
+  description: >-
+  list:
+    - title: Ejercicios cortos para practicar la sintaxis
+    - title: No es importante acabar rápido sino escribir bien
+    - title: Si nos equivocamos, borramos esa línea y comenzamos de nuevo
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Proyectos
+  description: >-
+  list:
+    - title: Son webs / aplicaciones completas que trabajamos poco a poco
+    - title: Se irán completando a lo largo de la asignatura
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Ejercicios
+  description: >-
+    Cuando hagas una práctica te recomiendo que:
+  list:
+    - title: Como normal general no copies línea a línea desde una captura de pantalla o desde otro ejercicio
+    - title: La primera vez puedes ver y mirar código de una captura u otro ejericicio
+    - title: Repite el ejercicio hasta que puedas hacerlo prácticamente sin mirar
+    - title: Apúntate dónde fallas porque los fallos se repiten
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Asistencia y horario
+  list:
+    - title: Si por algún motivo tenéis que faltar a clase escribir directamente a coordinacion@cei.es
+    - title: La cámara es obligatoria siempre cuando estamos online, si por algún casual no podéis conectarla escribir directamente a coordinacion@cei.es
+    - title: Los días festivos de clase son los días del calendario donde se imparta presencialmente la clase, ejemplo. Si la clase se imparte en Valencia, el calendario de festivos es el de Valencia.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-bookmark-fill
+  title: Clases - Contenido asíncrono
+  description: >-
+    Son ejercicios que debéis de intentar resolver “sin ayuda”, es decir con lo aprendido en clase pero se pueden preguntar dudas del contenido asíncrono en clase.
+  list:
+    - title: El contenido teórico se aprenderá en clase
+    - title: El contenido práctico se comenzará a trabajar en clase
+    - title: La revisión de éstos se realizará sólo durante la asignatura, no al acabar
+    - title: Se entregan antes del final de Asignatura
+
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  icon: ri-pencil-ruler-fill
+  title: Herramientas
+  description: >-
+    Hablemos sobre las herramientas que usaremos en la asignatura.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-pencil-ruler-fill
+  title: Visual Studio Code
+  description: >-
+    El editor de código que usaremos en la asignatura.
+  mgLogo: vscode
+  mgUrl: https://code.visualstudio.com/
+  mgUrlTitle: Visual Studio Code
+  mgTitle: Visual Studio Code
+  mgContent: >-
+    Visual Studio Code redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. Visual Studio Code is free ...
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-pencil-ruler-fill
+  title: GitHub
+  description: >-
+    El repositorio remoto que nos ayudará a gestionar nuestros proyectos.
+  mgLogo: github
+  mgUrl: https://github.com/
+  mgUrlTitle: GitHub
+  mgTitle: GitHub
+  mgContent: >-
+    Accelerate your entire workflow. From your first line of code to final deployment, GitHub provides AI and automation tools to help you build and ship better ...
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-pencil-ruler-fill
+  title: Google Chrome
+  description: >-
+    El navegador por excelencia para los desarrollos web.
+  mgLogo: chrome
+  mgUrl: https://www.google.com/intl/es_es/chrome/
+  mgUrlTitle: Google Chrome
+  mgTitle: Google Chrome
+  mgContent: >-
+    Chrome, el navegador web oficial de Google, está diseñado para que sea rápido, seguro y personalizable. Descárgalo ahora y adáptalo a tu gusto.

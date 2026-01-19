@@ -14,6 +14,7 @@
         'small' : 'text-md',
         'medium' : 'text-lg',
         'large' : 'text-xl ',
+        'extra' : 'text-3xl',
         'title' : 'text-5xl'
     }
 

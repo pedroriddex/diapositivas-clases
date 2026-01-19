@@ -1,4 +1,12 @@
 meta:
   title: Introducción
   icon: ri-emotion-laugh-fill
-items: []
+items:
+  - title: Presentación
+    color: black
+    icon: ri-user-6-fill
+    href: intro/intro
+  - title: Módulo
+    color: black
+    icon: ri-bookmark-fill
+    href: intro/modulo

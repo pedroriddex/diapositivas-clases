@@ -1,0 +1,234 @@
+- theme: 0
+  slug: intro
+  color: black
+
+  template: cover
+  subtemplate: simple
+  sideblockopen: false
+  icon:
+  title: Sobre el módulo
+  description: >-
+    Hablemos sobre lo que veremos en este módulo y detalles importantes para entenderlo.
+  coverImg: coverinit
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Roadmap
+  description: >-
+    ¿Cuál será el recorrido durante el módulo? ¿Qué tecnologías aprenderemos? ¿En qué orden?
+  listItems:
+    - num: '1'
+      title: HTML
+    - num: '2'
+      title: CSS
+    - num: '3'
+      title: JavaScript
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-html5-fill
+  title: HTML
+  description: >-
+    Primero aprenderemos HTML (HyperText Markup Language), que es el lenguaje de marcado que usamos para crear la estructura de una página web. Aunque empezaremos con HTML, agregaremos CSS en conjunto para darle un aspecto visual.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-css3-fill
+  title: CSS
+  description: >-
+    CSS (Cascading Style Sheets) es el lenguaje que usamos para darle un aspecto visual a la página web. Lo usaremos junto con HTML.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon: ri-javascript-fill
+  title: JavaScript
+  description: >-
+    JavaScript es el lenguaje que usamos para darle funcionalidad a la página web. Se verá en una segunda parte del módulo.
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Definiciones
+  description: >-
+    Definiciones básicas en el módulo. Tenemos que entender, o al menos que nos suenen ciertos conceptos básico.
+  listItems:
+    - num: '1'
+      title: Lenguaje
+    - num: '2'
+      title: Preprocesador
+    - num: '3'
+      title: Librería
+    - num: '4'
+      title: Framework
+    - num: '5'
+      title: CMS
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Lenguajes
+  description: >-
+    Un lenguaje es, términos generales un idioma que el ordenador puede interpretar para realizar ciertas acciones.
+
+  iconList:
+    - icon: devicon-html5-plain colored
+    - icon: devicon-css3-plain colored
+    - icon: devicon-javascript-plain colored
+    - icon: devicon-php-plain colored
+    - icon: devicon-cplusplus-plain colored
+    - icon: devicon-csharp-plain colored
+    - icon: devicon-python-plain colored
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Preprocesadores
+  description: >-
+    Un preprocesador es un tipo de lenguaje que parte de otro establecido para mejorarlo y darle una serie de herramientas que de forma normal no sería tan sencillo de ejecutar. Sería como agregar súper poderes a un lenguaje.
+
+  iconList:
+    - icon: devicon-pug-plain colored
+    - icon: devicon-sass-original colored
+    - icon: devicon-stylus-original colored
+    - icon: devicon-less-plain-wordmark colored
+    - icon: devicon-coffeescript-original colored
+    - icon: devicon-typescript-plain colored
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Librerías
+  description: >-
+    Muchas veces es más sencillo utilizar una solución ya desarrollada por un equipo de desarrolladores que intentar desarrollar nosotros la misma solución.
+
+  iconList:
+    - icon: devicon-bootstrap-plain colored
+    - icon: devicon-tailwindcss-plain colored
+    - icon: devicon-materializecss-plain colored
+    - icon: devicon-jquery-plain colored
+    - icon: devicon-bulma-plain colored
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Frameworks
+  description: >-
+    Si una librería fuese el equivalente a un “ladrillo prefabricado” un framework vendría a ser el equivalente a una casa prefabricada. Nos permite crear aplicaciones más complejas de manera más fácil.
+
+  iconList:
+    - icon: devicon-react-original colored
+    - icon: devicon-angularjs-plain colored
+    - icon: devicon-vuejs-plain colored
+    - icon: devicon-nodejs-plain colored
+    - icon: devicon-svelte-plain colored
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: CMS
+  description: >-
+    Un CMS es un gestor de contenido que nos hace más sencillo y visual el desarrollo de una web y el control de las bases de datos que pertenecen a dichas webs.
+
+  iconList:
+    - icon: devicon-wordpress-plain colored
+    - icon: devicon-drupal-plain colored
+
+- template: card
+  subtemplate: list
+  sideblockopen: false
+  title: Stacks
+  description: >-
+    Un stack es el conjunto de lenguajes que conocemos y por lo tanto los que determina nuestra manera y área de trabajo.
+  listItems:
+    - num: '1'
+      title: Frontend Developer
+    - num: '2'
+      title: Backend Developer
+    - num: '3'
+      title: Fullstack Developer
+    - num: '4'
+      title: AI First Developer
+    - num: '5'
+      title: Frontend AI Developer
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Frontend
+  description: >-
+    Un frontend se encarga de todo el apartado visual e interactivo con el usuario que accede a la web o app. Por lo que es una parte fundamental en el desarrollo.
+
+  iconList:
+    - icon: devicon-html5-plain
+    - icon: devicon-css3-plain
+    - icon: devicon-javascript-plain
+  postDescription: >-
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Frontend
+  description: >-
+    Un frontend se encarga de todo el apartado visual e interactivo con el usuario que accede a la web o app. Por lo que es una parte fundamental en el desarrollo.
+
+  iconList:
+    - icon: devicon-html5-plain
+    - icon: devicon-css3-plain
+    - icon: devicon-javascript-plain
+    - icon: devicon-react-original
+
+  postDescription: >-
+    En la mayoría de casos, el frontend debe conocer también algún framework o librería para poder crear interfaces más interactivas y modernas.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Backend
+  description: >-
+    Se encarga de conectar la aplicación o web con el sistema de base de datos y servidor, para poder guardar, modifica y mostrar la información requerida.
+
+  iconList:
+    - icon: devicon-php-plain
+    - icon: devicon-nodejs-plain
+    - icon: devicon-python-plain
+    - icon: devicon-mysql-plain
+  postDescription: >-
+    Dependiendo de la tecnología que se utilice, el backend puede variar enormemente.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: Fullstack
+  description: >-
+    Un fullstack es un desarrollador que puede trabajar tanto en el frontend como en el backend.
+
+  iconList:
+    - icon: devicon-html5-plain
+    - icon: devicon-css3-plain
+    - icon: devicon-javascript-plain
+    - icon: devicon-react-original
+    - icon: devicon-nodejs-plain
+    - icon: devicon-firebase-plain
+  postDescription: >-
+    Las tecnologías que se utilizan deben hacer match con el proyecto y las necesidades del cliente además de entre si mismas.
+
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  icon:
+  title: AI First & Frontend AI
+  description: >-
+    No es solo un stack nuevo, es un cambio de mentalidad en el que el desarrollo se centra en el usuario y su experiencia a través de la inteligencia artificial, integrándola en la aplicación y conociendo en profundidad el funcionamiento de la IA.
