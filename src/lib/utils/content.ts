@@ -1,4 +1,3 @@
-import fs from 'node:fs/promises';
 import path from 'node:path';
 import YAML from 'yaml';
 import { siteVariant } from '$lib/config/site';
@@ -6,7 +5,13 @@ import type { HomeSection } from '$lib/config/site';
 
 const themeColors = new Set<HomeSection['color']>(['red', 'blue', 'yellow', 'black']);
 const ROOT_META_FILE_NAME = '_meta.yaml';
-const CONTENT_BASE_DIRECTORY = path.resolve(process.cwd(), 'src', 'lib', 'content');
+const CONTENT_SOURCE_ROOT = '/src/lib/content';
+const CONTENT_SOURCE_PREFIX = `${CONTENT_SOURCE_ROOT}/`;
+const yamlContentModules = import.meta.glob('/src/lib/content/**/*.yaml', {
+	eager: true,
+	query: '?raw',
+	import: 'default'
+}) as Record<string, string>;
 
 function normalizeThemeColor(value: unknown): HomeSection['color'] {
 	if (typeof value === 'string' && themeColors.has(value as HomeSection['color'])) {
@@ -69,20 +74,16 @@ function parseYamlSafe<T>(raw: string | null): T | null {
 	}
 }
 
-async function readFileSafe(filePath: string) {
-	try {
-		return await fs.readFile(filePath, 'utf8');
-	} catch {
-		return null;
-	}
+function toModulePath(filePath: string) {
+	const relativePath = path
+		.relative(path.resolve(process.cwd(), 'src', 'lib', 'content'), filePath)
+		.split(path.sep)
+		.join('/');
+	return `${CONTENT_SOURCE_ROOT}/${relativePath}`;
 }
 
-async function readDirectorySafe(directoryPath: string) {
-	try {
-		return await fs.readdir(directoryPath, { withFileTypes: true });
-	} catch {
-		return [];
-	}
+function readFileSafe(filePath: string) {
+	return yamlContentModules[toModulePath(filePath)] ?? null;
 }
 
 interface HomeIndexDocument {
@@ -127,8 +128,12 @@ interface TopLevelNodeMeta {
 	icon: string;
 }
 
+function variantPrefix() {
+	return `${CONTENT_SOURCE_ROOT}/${siteVariant}`;
+}
+
 function variantDirectory() {
-	return path.join(CONTENT_BASE_DIRECTORY, siteVariant);
+	return path.resolve(process.cwd(), 'src', 'lib', 'content', siteVariant);
 }
 
 export async function getContent(pathInput: string) {
@@ -137,7 +142,7 @@ export async function getContent(pathInput: string) {
 	const indexPath = path.join(siteRoot, normalizedPath, ROOT_META_FILE_NAME);
 	const slidesPath = path.join(siteRoot, `${normalizedPath}.yaml`);
 
-	const indexRaw = await readFileSafe(indexPath);
+	const indexRaw = readFileSafe(indexPath);
 	if (indexRaw !== null) {
 		const parsed = parseYamlSafe<unknown>(indexRaw);
 		if (parsed !== null) {
@@ -145,7 +150,7 @@ export async function getContent(pathInput: string) {
 		}
 	}
 
-	const slidesRaw = await readFileSafe(slidesPath);
+	const slidesRaw = readFileSafe(slidesPath);
 	if (slidesRaw !== null) {
 		const parsed = parseYamlSafe<unknown>(slidesRaw);
 		if (parsed !== null) {
@@ -157,22 +162,57 @@ export async function getContent(pathInput: string) {
 }
 
 async function buildTopLevelNodeMap(siteRoot: string) {
-	const entries = await readDirectorySafe(siteRoot);
 	const nodes = new Map<string, TopLevelNodeMeta>();
+	const topLevelEntries = new Map<
+		string,
+		{
+			type: 'directory' | 'file';
+			logicalPath: string;
+			modulePath: string;
+		}
+	>();
 
-	for (const entry of entries) {
-		if (entry.isDirectory()) {
-			const logicalPath = normalizeTopLevelHref(entry.name);
-			if (!logicalPath) continue;
-			const indexPath = path.join(siteRoot, logicalPath, ROOT_META_FILE_NAME);
-			const indexRaw = await readFileSafe(indexPath);
+	for (const modulePath of Object.keys(yamlContentModules)) {
+		if (!modulePath.startsWith(`${variantPrefix()}/`)) continue;
+		const relativePath = modulePath.slice(`${variantPrefix()}/`.length);
+		const segments = relativePath.split('/').filter(Boolean);
+		if (segments.length === 0) continue;
+
+		if (segments.length === 2 && segments[1] === ROOT_META_FILE_NAME) {
+			const logicalPath = normalizeTopLevelHref(segments[0]);
+			if (logicalPath) {
+				topLevelEntries.set(`dir:${logicalPath}`, {
+					type: 'directory',
+					logicalPath,
+					modulePath
+				});
+			}
+			continue;
+		}
+
+		if (segments.length === 1 && segments[0].endsWith('.yaml') && segments[0] !== ROOT_META_FILE_NAME) {
+			const logicalPath = normalizeTopLevelHref(segments[0].replace(/\.yaml$/, ''));
+			if (logicalPath) {
+				topLevelEntries.set(`file:${logicalPath}`, {
+					type: 'file',
+					logicalPath,
+					modulePath
+				});
+			}
+		}
+	}
+
+	for (const entry of topLevelEntries.values()) {
+		if (entry.type === 'directory') {
+			const indexPath = path.join(siteRoot, entry.logicalPath, ROOT_META_FILE_NAME);
+			const indexRaw = readFileSafe(indexPath);
 			const parsed = parseYamlSafe<HomeIndexDocument>(indexRaw);
 			if (!parsed) continue;
 
 			const fallbackIcon = parsed.items?.[0]?.icon;
 			const fallbackColor = parsed.items?.[0]?.color;
-			nodes.set(logicalPath, {
-				path: logicalPath,
+			nodes.set(entry.logicalPath, {
+				path: entry.logicalPath,
 				title: nonEmptyString(parsed.meta?.title),
 				color: normalizeThemeColor(parsed.meta?.color || fallbackColor),
 				icon: normalizeIcon(parsed.meta?.icon || fallbackIcon, 'ri-bookmark-fill')
@@ -180,18 +220,15 @@ async function buildTopLevelNodeMap(siteRoot: string) {
 			continue;
 		}
 
-		if (entry.isFile() && entry.name.endsWith('.yaml') && entry.name !== ROOT_META_FILE_NAME) {
-			const logicalPath = normalizeTopLevelHref(entry.name.replace(/\.yaml$/, ''));
-			if (!logicalPath) continue;
-
-			const deckPath = path.join(siteRoot, entry.name);
-			const deckRaw = await readFileSafe(deckPath);
+		if (entry.type === 'file') {
+			const deckPath = path.join(siteRoot, `${entry.logicalPath}.yaml`);
+			const deckRaw = readFileSafe(deckPath);
 			const parsed = parseYamlSafe<TopLevelDeckSlide[]>(deckRaw);
 			if (!Array.isArray(parsed) || parsed.length === 0) continue;
 			const first = parsed[0] || {};
 
-			nodes.set(logicalPath, {
-				path: logicalPath,
+			nodes.set(entry.logicalPath, {
+				path: entry.logicalPath,
 				title: nonEmptyString(first.title),
 				color: normalizeThemeColor(first.color),
 				icon: normalizeIcon(first.icon, 'ri-bookmark-fill')
@@ -226,7 +263,7 @@ export async function getHomeSections(): Promise<HomeSection[]> {
 		left.path.localeCompare(right.path, 'es')
 	);
 	const rootIndexPath = path.join(siteRoot, ROOT_META_FILE_NAME);
-	const rootIndexRaw = await readFileSafe(rootIndexPath);
+	const rootIndexRaw = readFileSafe(rootIndexPath);
 	const rootIndexDocument = parseYamlSafe<RootIndexDocument>(rootIndexRaw);
 
 	if (!rootIndexDocument || !Array.isArray(rootIndexDocument.items) || rootIndexDocument.items.length === 0) {
