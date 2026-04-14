@@ -1,0 +1,459 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: WordPress
+  description: Diseño y desarrollo web con WordPress
+  icon: ri-wordpress-fill
+  theme: "0"
+  slug: intro
+  color: black
+  showThemeNumber: false
+  coverImg: cover
+- template: about
+  subtemplate: simple
+  sideblockopen: false
+  title: Pedro José Reyes Rodríguez
+  description: Las herramientas que utilizo.
+  icon:
+  image: pedroreyes
+  iconList:
+    - icon: ri-wordpress-line
+    - icon: ri-figma-fill
+    - icon: ri-html5-fill
+    - icon: ri-css3-fill
+    - icon: ri-javascript-fill
+- template: about
+  subtemplate: simple
+  sideblockopen: false
+  title: Pedro José Reyes Rodríguez
+  description: Lo que me gusta hacer.
+  icon:
+  image: pedroreyes
+  iconList:
+    - icon: ri-bell-fill
+    - icon: ri-gamepad-fill
+    - icon: ri-folder-music-fill
+    - icon: ri-book-shelf-fill
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Qué vamos a ver hoy
+  description: ¿Sobre que hablaremos hoy? Muchas cosas, pero vamos a desglosarlas para entendernos mejor.
+  icon:
+  listItems:
+    - num: "1"
+      title: Plataformas
+      description: Con las que trabajaremos a diario.
+    - num: "2"
+      title: Clases
+      description: Normas a tener en cuenta.
+    - num: "3"
+      title: Herramientas
+      description: Que debemos dominar durante el módulo.
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: " Google Classroom"
+  description: |
+    El lugar donde encontrarás todo el material.
+  icon: ri-google-fill
+  postDescription:
+  mgContent: Google Classroom es una plataforma educativa gratuita, fácil de usar y completa del gigante de TI. El programa está disponible como parte de G ...
+  mgCode:
+  mgLogo: googleclassroom
+  mgTitle: Google Classroom
+  mgUrl: https://classroom.google.com/
+  mgUrlTitle: Google Classroom
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Google Classroom - Tablón de anuncios
+  description: |
+    Aquí encontrarás todo lo relacionado con el módulo. En la pantalla principal encontrarás el tablón de anuncios, donde tanto vosotros como la escuela pondrá mensajes importantes para todos los alumnos del módulo.
+  icon: ri-google-fill
+  image: classroom1
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Google Classroom - Trabajos de clase
+  description: "Todo el material importante estará aquí: grabaciones, proyectos, enlaces importantes, etc."
+  icon: ri-google-fill
+  image: classroom2
+  iframe:
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Google Classroom
+  description: Algunos de los archivos más importantes que encontrarás en Google Classroom.
+  icon: ri-google-fill
+  list:
+    - title: GUÍA DEL ALUMN@
+      description:
+    - title: MANUAL DE LA ASIGNATURA
+      description:
+    - title: PROGRAMA ACADÉMICO
+      description:
+    - title: SISTEMA DE EVALUACIÓN
+      description:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Guia del alumn@
+  description: Es uno de los documentos más importantes para los estudiantes de la escuela, contiene toda la información necesaria para que comprendas cómo funciona la escuela y las normas. Es vital que lo leas y comprendas.
+  icon: ri-book-2-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Manual de la asignatura
+  description: Es el documento que que contiene todo el material de la asignatura, el que deberás estudiar para comprender el tema, aunque todo se dará en clase es otra forma de tener el contenido.
+  icon: ri-book-2-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Programa académico
+  description: Si tienes dudas sobre lo que se verá en el módulo en ambitos generales, puedes consultar el programa académico para ver un índice general de lo que vas a estudiar.
+  icon: ri-book-2-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sistema de evaluación
+  description: Toda la información sobre cómo funciona el sistema de evaluación de la escuela se encuentra en este módulo. Si es la primera vez que estudias en CEI es recomendable que lo leas.
+  icon: ri-book-2-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: NotebookLM
+  description: |
+    NotebookLM es una herramienta de IA integrada en el Classroom, que te ayudará a resolver tus dudas y a aprender de manera más eficiente.
+  icon: ri-gemini-fill
+  image: classroom3
+  iframe:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Clases
+  description: Hablemos sobre cómo funcionarán las clases en este módulo.
+  icon: ri-bookmark-fill
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: En el aula
+  description:
+  icon: ri-bookmark-fill
+  postDescription:
+  list:
+    - title: APROVECHAD LAS 3 HORAS
+      description:
+    - title: PODÉIS TRAER VUESTROS PROPIOS PORTÁTILES
+      description:
+    - title: DESCANSO DE 10 MINUTOS (15 MINUTOS COMO MÁXIMO)
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Durante las clases
+  description: Si tenéis libre os recomendaría en casa practicar los ejercicios o terminarlos si nos quedamos a medias.
+  icon: ri-bookmark-fill
+  postDescription:
+  list:
+    - title: NORMALMENTE SERÁ TEÓRICA + PRÁCTICA DE LA TEORÍA
+      description:
+    - title: LOS PRIMERO DÍAS SERÁN MAS TEÓRICAS
+      description:
+    - title: A MITAD DE ASIGNATURA MÁS PRÁCTICAS
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Ejercicios
+  description: "En las clases trabajaremos varias topologías de ejercicios:"
+  icon: ri-bookmark-fill
+  list:
+    - title: Proyectos guiados
+      description: Me seguiréis durante el desarrollo de un proyecto completo.
+    - title: Proyectos en solitario
+      description: Totalmente desarrollado por vosotros. Suele haber parte de teoría.
+    - title: Asíncronos
+      description: Proyectos obligatorios del módulo para hacer en casa.
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Ejercicios - Proyectos guiados
+  description: Estos ejercicios sirven para comprender en profundidad el tema. Se hará un desarrollo de manera pausada, donde se irán viendo diferentes conceptos. Es importantísimo que en los proyectos guiados el alumno esté totalmente concentrado.
+  icon: ri-bookmark-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Ejercicios - Proyectos en solitario
+  description: Se desarrolla en solitario por el alumno, buscando reforzar la búsqueda de soluciones a problemas habituales. En estos proyectos hay un bloque de teoría de por medio.
+  icon: ri-bookmark-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Ejercicios - Asíncronos
+  description: Son ejercicios obligatorios que se irán subiendo en Classroom y que se deben resolver en solitario desde casa. Son tareas que contienen explicaciones escritas y en video. El contenido asíncrono no se ve en clase y pueden haber preguntas de los asíncronos en el examen.
+  icon: ri-bookmark-fill
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Asistencia y horario
+  description:
+  icon: ri-bookmark-fill
+  list:
+    - title: Faltas
+      description: Si por algún motivo tienes que faltar a clase, debes escribir directamente a coordinación@cei.es
+    - title: Cámara
+      description: Los alumnos que se conectan online tienen la obligación de encender la cámara. Si esto no es posible por algún problema técnico, contactar con coordinacion@cei.es
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Asistencia y horario - Faltas
+  description: Normas de asistencia de alumnos presenciales.
+  icon: ri-bookmark-fill
+  postDescription:
+  listItems: []
+  list:
+    - title: Hasta 3 faltas
+      description: "Si tienes 3 faltas o más: perderás el derecho a repetición gratuita y de obtención del diploma."
+    - title: Hasta 5 asistencias online
+      description: A partir de la 5ª asistencia online, el resto de asistencias serán consideradas como una falta.
+    - title: Retraso
+      description: Si se acumulan varios retrasos se considerará como falta.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Asistencia y horario - Faltas
+  description: Normas de asistencia de alumnos online.
+  icon: ri-bookmark-fill
+  postDescription:
+  list:
+    - title: HASTA 3 FALTAS
+      description: "Si tienes 3 faltas o más: perderás el derecho a repetición gratuita."
+    - title: RETRASO
+      description: |
+        Si se acumulan varios retrasos se considerará como falta.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Normas de la clase
+  description:
+  icon: ri-bookmark-fill
+  list:
+    - title: Si tengo una duda le pregunto al profesor
+      description: No a un compañero, no a ChatGPT.
+    - title: No usar el móvil en clase a no ser que se especifique.
+      description: Si lo usas en clase mientras se está explicando, no se resolverá tu duda.
+    - title: No hablar mientras se está explicando
+      description: Aprovecha el descanso para hablar, no la clase.
+    - title: Confirmarle a Pedro que lo he entendido.
+      description: Pedro pregunta mucho si todo se ha entendido, le respondo. Si estoy online pongo un pulgar hacia arriba o hacia abajo.
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Herramientas
+  description: Hablemos sobre las herramientas que usaremos en la asignatura.
+  icon: ri-apps-ai-fill
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Google Chrome
+  description: Nos ofrece herramientas de desarrollo vitales para el día a día.
+  icon: ri-apps-ai-fill
+  postDescription:
+  mgContent: Descarga Chrome Ahora — Continúa tu experiencia de navegación del ordenador en el teléfono con Chrome. Descárgalo. Sincroniza Chrome en varios dispositivos para usar tus marcadores y...
+  mgCode:
+  mgLogo: google-chrome-icon-february-2022-svg.png
+  mgTitle: Google Chrome - Sitio Oficial
+  mgUrl: https://www.google.com
+  mgUrlTitle: Google Chrome
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Local WP
+  description: Genera un servidor local en nuestro ordenador para trabajar con WordPress.
+  icon: ri-apps-ai-fill
+  postDescription:
+  mgContent: "The #1 local WordPress® development tool."
+  mgCode:
+  mgLogo: cropped-local-favicon.webp
+  mgTitle: Local WP
+  mgUrl: https://localwp.com/
+  mgUrlTitle: localwp.com
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Figma
+  description: Software de diseño y prototipado de interfaces
+  icon: ri-apps-ai-fill
+  postDescription:
+  mgContent: Redesign how you design. · Generate simple UI with AI · Design consistently with Auto Layout · Scale your edits instantly · Make prototypes with AI · Embed ...
+  mgCode:
+  mgLogo: figma-logo-icon-147289-png.webp
+  mgTitle: "Figma: The Collaborative Interface Design Tool"
+  mgUrl: https://www.figma.com/
+  mgUrlTitle: Figma
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Visual Studio Code
+  description: Es una aplicación entorno de desarrollo integrado que nos permite programar.
+  icon: ri-apps-ai-fill
+  postDescription:
+  mgContent: Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and ...
+  mgCode:
+  mgLogo: visual-studio-code-1-35-icon-svg.png
+  mgTitle: Visual Studio Code - Code Editing. Redefined
+  mgUrl: https://code.visualstudio.com
+  mgUrlTitle: Visual Studio Code
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: WordPress
+  description: La herramienta por excelencia, la que nos permitirá crear nuestras webs.
+  icon: ri-apps-ai-fill
+  postDescription:
+  mgContent: Únete a WordPress. La plataforma de código abierto elegida por millones de webs en todo el mundo, desde creadores y pequeños negocios hasta grandes empresas.
+  mgCode:
+  mgLogo: wordpress.png
+  mgTitle: WordPress.org
+  mgUrl: https://es.wordpress.org/
+  mgUrlTitle: WordPress.org
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false

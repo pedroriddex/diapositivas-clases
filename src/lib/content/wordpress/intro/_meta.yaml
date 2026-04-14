@@ -1,0 +1,10 @@
+meta:
+  title: Introducción
+  icon: ri-emotion-laugh-fill
+  color:
+items:
+  - title: Presentación
+    color: black
+    icon: ri-user-6-fill
+    href: intro/intro
+    target:

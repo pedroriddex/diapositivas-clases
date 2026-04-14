@@ -1,0 +1,18 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Prueba
+  description: Esto es una prueba.
+  icon:
+  theme: ""
+  slug: ejercicios/prueba
+  color: black
+  coverImg: img-3584.jpg
+- template: image
+  subtemplate: simple
+  sideblockopen: false
+  title: Esto es un título
+  description: Bueno,bueno,bueno
+  icon: ri-24-hours-line
+  image: img-3584.jpg
+  iframe:

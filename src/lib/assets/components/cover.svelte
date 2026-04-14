@@ -2,28 +2,25 @@
     export let title: string;
     export let description: string;
     export let icon: string;
-    export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';
-
-    const colorClass = {
-        red: 'text-red-600',
-        blue: 'text-blue-600',
-        yellow: 'text-yellow-600',
-        black: 'text-zinc-960',
-    }
-    const bgColorClass = {
-        red: 'bg-red-600',
-        blue: 'bg-blue-600',
-        yellow: 'bg-yellow-600',
-        black: 'bg-zinc-960',
-    }
+    export let theme: string | number = '';
+    export let showThemeNumber = true;
 
     import { fade, fly } from 'svelte/transition';
-    import Icon from '$lib/assets/components/icon.svelte';
 </script>
-    <div class="flex items-center justify-start gap-6 mb-6">
+
+<div class="slide-cover">
+    {#if showThemeNumber && theme !== '' && theme !== undefined && theme !== null}
+        <span in:fade={{ duration: 200, delay: 100 }} class="slide-cover__number">{theme}</span>
+    {/if}
+
+    <div class="slide-heading">
         {#if icon}
-            <Icon icon={icon} color={color} size="title" />
+            <i in:fade={{ duration: 200, delay: 150 }} class="{icon} slide-heading__icon slide-heading__icon--lg"></i>
         {/if}
-        <h1 in:fade="{{ duration: 200, delay: 200 }}" class={`text-6xl font-regular ${colorClass[color]} max-md:text-5xl`}>{title}</h1>
+        <h1 in:fade={{ duration: 220, delay: 180 }} class="slide-cover__title">{title}</h1>
     </div>
-    <p in:fade="{{ duration: 200, delay: 200 }}" class={`text-zinc-800 font-medium text-left w-full`}>{description}</p>
+
+    {#if description}
+        <p in:fade={{ duration: 220, delay: 220 }} class="slide-body">{description}</p>
+    {/if}
+</div>

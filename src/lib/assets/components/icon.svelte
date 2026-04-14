@@ -1,7 +1,7 @@
 <script lang="ts">
     export let icon;
     export let color: 'red' | 'blue' | 'yellow' | 'black' = 'black';
-    export let size: 'small' | 'medium' | 'large' | 'title' = 'small';
+    export let size: 'small' | 'medium' | 'large' | 'extra' | 'title' = 'small';
 
     const colors = {
         'red' : 'text-red-600',

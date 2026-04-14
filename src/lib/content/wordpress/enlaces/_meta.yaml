@@ -1,0 +1,15 @@
+meta:
+  title: Enlaces de utilidad
+  icon: ri-link
+items:
+  - title: Documentación oficial de WordPress
+    color: black
+    icon: ri-book-shelf-fill
+    href: https://developer.wordpress.org/
+    target: _blank
+
+  - title: Learn WordPress
+    color: black
+    icon: ri-graduation-cap-fill
+    href: https://learn.wordpress.org/
+    target: _blank

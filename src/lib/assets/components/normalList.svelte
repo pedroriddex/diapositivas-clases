@@ -2,8 +2,16 @@
     export let normalListItems;
 </script>
 
-<ul class="p-5">
+<ul class="slide-normal-list">
     {#each normalListItems as eachItem}
-        <li class="text-zinc-800 font-bold text-md list-disc"> {eachItem.title} </li>
+        <li class="slide-normal-list__item">
+            <div class="slide-normal-list__row">
+                <span class="slide-normal-list__bullet"></span>
+                <span class="slide-normal-list__title">{eachItem.title}</span>
+            </div>
+            {#if eachItem.description}
+                <span class="slide-normal-list__description">{eachItem.description}</span>
+            {/if}
+        </li>
     {/each}
 </ul>

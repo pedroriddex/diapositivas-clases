@@ -1,0 +1,25 @@
+meta:
+  title: Web
+  icon:
+  color:
+items:
+  - title: Introducción
+    color: black
+    icon: ri-emotion-laugh-fill
+    href: intro
+    target:
+  - title: Temarios
+    color: black
+    icon: ri-bookmark-fill
+    href: theme
+    target:
+  - title: Ejercicios
+    color: black
+    icon: ri-apps-2-fill
+    href: ejercicios
+    target:
+  - title: Enlaces de utilidad
+    color: black
+    icon: ri-link
+    href: enlaces
+    target:

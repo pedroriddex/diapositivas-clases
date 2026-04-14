@@ -1,0 +1,171 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Introducción a HTML
+  description: Entendamos qué es HTML, cómo se estructura y cuáles son sus etiquetas más comunes.
+  icon: ri-html5-fill
+  theme: 1
+  slug: html/introduccion
+  color: red
+  coverImg:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Etiquetas HTML
+  description: Lo primero que debemos entender es que HTML se compone de etiquetas, y cada etiqueta tiene una función diferente. Estas etiquetas se escriben siempre entre los símbolos “menor que” y “mayor que”, y a partir de esta apertura se agregaría lo que se denomina como el contenido de la etiqueta. Por ejemplo, en el caso de un título el contenido sería el texto que contiene dicho título. Una vez terminamos de agregar el contenido es necesario agregar el “cierre” de la etiqueta para poder dar lugar a la creación de próximas etiquetas de otro tipo. Se escribe la misma etiqueta pero esta vez agregando un “slash” justo antes del nombre.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Apertura de etiqueta
+  description: Estás etiquetas se escriben siempre entre los símbolos “menor que” y “mayor que”
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Apertura de etiqueta
+  description: Luego añadimos el nombre de la etiqueta, que es lo que define el tipo de elemento que se va a crear, por ejemplo un título, un párrafo, una imagen...
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <etiqueta>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Contenido de la etiqueta
+  description: A esto se le denomina apertura de etiqueta, y a partir de esta apertura se agregaría lo que se denomina como el contenido de la etiqueta. Por ejemplo, en el caso de un título el contenido sería el texto que contiene dicho título.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <etiqueta> Contenido de mi etiqueta
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Cierre de etiqueta
+  description: Una vez terminamos de agregar el contenido es necesario agregar el “cierre” de la etiqueta para poder dar lugar a la creación de próximas etiquetas de otro tipo. Se escribe la misma etiqueta pero esta vez agregando un “slash” justo antes del nombre.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <etiqueta> Contenido de mi etiqueta </etiqueta>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Atributos
+  description: Las etiquetas en muchas ocaciones pueden tener atributos extras que nos e pueden agregar desde el contenido, sino que debemos agregarlos dentro de la apertura como un atributo con un valor designado.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <etiqueta atributo="valor"> Contenido de mi etiqueta </etiqueta>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Etiquetas sin cierre
+  description: Hay otros casos en los que la etiqueta en cuestión no tiene un contenido escrito como tal, como puede ser el caso de una imagen. En estos casos no es requerido un cierre de la etiqueta ya que todos los valores irán dados desde los atributos.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <img src="mi_imagen.png">
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Etiquetas iniciales
+  description: Aquí una lista de etiquetas iniciales.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <h1> Primer título</h1>
+    <h2> Segundo título </h2>
+    <h3> Tercer título </h3>
+    <h4> Cuarto título </h4>
+    <h5> Quinto título </h5>
+    <h6> Sexto título </h6>
+
+    <p> Párrafos y textos largos. </p>
+    <a> Enlaces </a>
+    <img>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false

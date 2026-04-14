@@ -1,32 +1,32 @@
 <script lang="ts">
-    import Icon from '$lib/assets/components/icon.svelte';
-    export let theme;
-    export let linkIcon;
-    export let color;
-    export let className;
-    export let target;
+    import { getAccentStyle, type ThemeAccentColor } from '$lib/utils/themeColor';
+
+    export let theme = '';
+    export let linkIcon = '';
+    export let color: ThemeAccentColor = 'black';
+    export let className = '';
+    export let target = '_self';
+    export let disabled = false;
+
+    $: linkStyle = getAccentStyle(color, '--index-accent');
 </script>
 
-<a target={target || '_self'} class="
-    {className}
-    flex items-center justify-between
-    font-regular text-zinc-800 w-full bg-zinc-100 p-3 
-    rounded-sm
-    
-    group hover:bg-zinc-200 hover:scale-102 transition-all" 
-    href="{theme}">
-    <div class="flex items-center justify-center gap-3">
-        <Icon icon={linkIcon} color={color} />
-        <slot />
+{#if disabled}
+    <div class="{className} index-link index-link--disabled" style={linkStyle}>
+        {#if linkIcon}
+            <i class="{linkIcon} index-link__icon"></i>
+        {/if}
+        <span class="index-link__label">
+            <slot />
+        </span>
     </div>
-
-    <i class="
-    ri-arrow-right-long-line
-    opacity-0 -translate-x-3
-
-    group-hover:opacity-100 
-    group-hover:translate-x-0
-    transition-all
-    "
-    ></i>
-</a>
+{:else}
+    <a target={target} class="{className} index-link" href="{theme}" style={linkStyle}>
+        {#if linkIcon}
+            <i class="{linkIcon} index-link__icon"></i>
+        {/if}
+        <span class="index-link__label">
+            <slot />
+        </span>
+    </a>
+{/if}

@@ -1,0 +1,10 @@
+meta:
+  title: Temarios
+  icon: ri-bookmark-fill
+  color:
+items:
+  - title: Introducción
+    color: black
+    icon: ri-artboard-2-line
+    href: /theme/introduccion
+    target: /introduccion

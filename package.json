@@ -5,8 +5,16 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"dev:web": "vite dev --mode web",
+		"dev:wordpress": "vite dev --mode wordpress",
+		"dev:studio": "cd .internal/slide-studio && npm run dev -- --host localhost --port 5175",
+		"dev:all": "node scripts/dev-all.mjs",
+		"build": "rm -rf .svelte-kit/output && vite build",
+		"build:web": "rm -rf .svelte-kit/output && vite build --mode web",
+		"build:wordpress": "rm -rf .svelte-kit/output && vite build --mode wordpress",
 		"preview": "vite preview",
+		"preview:web": "vite preview --mode web",
+		"preview:wordpress": "vite preview --mode wordpress",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -36,10 +44,10 @@
 		"vite": "^7.1.10"
 	},
 	"dependencies": {
+		"@midudev/tailwind-animations": "^0.2.0",
 		"highlight.js": "^11.9.0",
 		"marked": "^12.0.2",
-		"yaml": "^2.7.0",
-		"@midudev/tailwind-animations": "^0.2.0",
-		"remixicon": "^4.7.0"
+		"remixicon": "^4.7.0",
+		"yaml": "^2.7.0"
 	}
 }

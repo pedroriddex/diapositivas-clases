@@ -1,0 +1,193 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Briefing
+  description: Toda la información que necesitamos en un único archivo.
+  icon: ri-file-text-line
+  theme: 2
+  slug: introduccion/briefing
+  color: black
+  coverImg: adrien-olichon-rcahigjsuue-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: La importancia del briefing
+  description: Un briefing es un documento que recoge toda la información clave necesaria para iniciar un proyecto, como sus objetivos, público objetivo, requisitos, plazos y limitaciones.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: La importancia del briefing
+  description: Este documento recoge preguntas clave que debemos hacerle al cliente y debemos conocer para poder comenzar el trabajo, donde empezaríamos a desarrollar toda la parte UX del proyecto antes de pasar a la interfaz.
+  icon:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre el proyecto
+  description: Preguntas básicas que nos ayudarán a comprender el proyecto que debemos desarrollar de manera general.
+  icon: ri-number-1
+  postDescription:
+  list:
+    - title: ¿Cuál es el objetivo principal del proyecto?
+      description:
+    - title: ¿Qué problema queremos resolver?
+      description:
+    - title: ¿Cuál es el alcance del proyecto?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre la marca o empresa
+  description: Buscamos la comprensión de la empresa, qué los mueve.
+  icon: ri-number-2
+  postDescription:
+  list:
+    - title: ¿Quién es la empresa o cliente?
+      description:
+    - title: ¿Qué valores representa?
+      description:
+    - title: ¿Cuál es su propuesta de valor?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre el público objetivo
+  description: A quién vamos a venderle. Esto puede cambiar totalmente el enfoque del proyecto y la linea de diseño.
+  icon: ri-number-3
+  postDescription:
+  list:
+    - title: ¿A quién va dirigido?
+      description:
+    - title: ¿Qué características tiene (edad, hábitos, necesidades, etc.)?
+      description:
+    - title: ¿Qué espera encontrar el usuario en la web/app?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre contenido y funcionalidades
+  description: Buscamos saber la dificultad del proyecto. Nos ayudará también a dar un precio estimado.
+  icon: ri-number-4
+  postDescription:
+  list:
+    - title: ¿Qué secciones o páginas debe incluir?
+      description:
+    - title: ¿Qué funcionalidades son imprescindibles (ej. buscador, login, ecommerce)?
+      description:
+    - title: ¿Hay contenido existente o hay que crearlo desde cero?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre diseño y estilo
+  description: El apartado estético es lo primero que va a ver el cliente. Un paso muy importante que nos ayudará a comprender qué es lo que busca.
+  icon: ri-number-5
+  postDescription:
+  list:
+    - title: ¿Hay una identidad visual ya definida?
+      description:
+    - title: ¿Qué estilo o tono debe tener el diseño?
+      description:
+    - title: ¿Hay referencias o ejemplos de webs que gusten?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre plazos y presupuesto
+  description: Preguntas que no sirven para cerrar un presupuesto con el cliente y comprender la urgencia.
+  icon: ri-number-6
+  postDescription:
+  list:
+    - title: ¿Cuál es la fecha límite?
+      description:
+    - title: ¿Qué presupuesto hay disponible?
+      description:
+    - title: ¿Hay hitos o entregas parciales?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sobre competencia
+  description: Comprender contra quién compite.
+  icon:
+  postDescription:
+  list:
+    - title: ¿Quiénes son los competidores?
+      description:
+    - title: ¿Qué hacen bien o mal?
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Briefing personalizado
+  description: Aunque estas son preguntas generales, cada profesional tiene su manera de hacer las cosas, y es muy normal encontrar distintos tipos de briefings que se amoldan a la forma de trabajar del desarrollador/diseñador.
+  icon:
+  download: false
+  downloadLink:

@@ -1,0 +1,75 @@
+meta:
+  title: JavaScript
+  icon: ri-javascript-fill
+  color: yellow
+items:
+  - title: Introducción
+    color: yellow
+    icon: ri-arrow-up-box-fill
+    href: js/introduccion
+    target:
+  - title: Constantes y variables
+    color: yellow
+    icon: ri-price-tag-3-fill
+    href: js/constantes-y-variables
+    target:
+  - title: Tipos de datos
+    color: yellow
+    icon: ri-numbers-fill
+    href: js/datos
+    target:
+  - title: Arrays
+    color: yellow
+    icon: ri-list-ordered-2
+    href: js/arrays
+    target:
+  - title: Funciones
+    color: yellow
+    icon: ri-functions
+    href: js/funciones
+    target:
+  - title: Operadores
+    color: yellow
+    icon: ri-divide-line
+    href: js/operadores
+    target:
+  - title: Math
+    color: yellow
+    icon: ri-calculator-line
+    href: js/math
+    target:
+  - title: Estructuras de control
+    color: yellow
+    icon: ri-repeat-2-line
+    href: js/estructuras
+    target:
+  - title: DOM
+    color: yellow
+    icon: ri-instance-line
+    href: js/dom
+    target:
+  - title: BOM
+    color: yellow
+    icon: ri-window-fill
+    href: js/bom
+    target:
+  - title: JSON
+    color: yellow
+    icon: ri-file-code-line
+    href: js/json
+    target:
+  - title: Fetch
+    color: yellow
+    icon: ri-links-line
+    href: js/fetch
+    target:
+  - title: Storage
+    color: yellow
+    icon: ri-database-line
+    href: js/storage
+    target:
+  - title: Timers
+    color: yellow
+    icon: ri-time-line
+    href: js/timers
+    target:

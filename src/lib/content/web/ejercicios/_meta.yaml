@@ -1,0 +1,10 @@
+meta:
+  title: Ejercicios
+  icon: ri-apps-2-fill
+  color:
+items:
+  - title: Prueba
+    color: black
+    icon: ri-24-hours-line
+    href: ejercicios/prueba
+    target:

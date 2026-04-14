@@ -1,0 +1,81 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Wireframe
+  description: Primeros bocetos y organización de contenido.
+  icon: ri-page-separator
+  theme: 5
+  slug: introduccion/wireframe
+  color: black
+  coverImg: kamran-abdullayev-9v1cyw4jifq-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: El boceto web
+  description: Un Wireframe es un boceto esquemático de una página o pantalla que muestra la disposición de los elementos clave (como menús, botones, imágenes o bloques de texto), sin entrar en detalles visuales.
+  icon:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Objetivo
+  description: Esta herramienta se utiliza para establecer la organización de la información y de las secciones dentro de una pantalla más cercana a lo que se transformará posteriormente la web.
+  icon:
+  postDescription: No tiene que ser bonito, ni estar lleno de detalles. Simplemente debe cumplir con la función de "marcar" las posiciones y el orden. Siempre siguiendo lo establecido previamente por el User Flow y el Sitemap.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-14-a-las-13-56-32.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Fidelidad
+  description: "Existe un concepto de fidelidad del diseño que también se aplica en los Wireframes. Lo que acabáis de ver en la imagen anterior es un wireframe denominado como Lo-Fi, es decir: Low Fidelity (baja fidelidad), un boceto sin adornos, sin textos. Pero por otro lado también existe el concepto Hi-Fi, High Fidelity (alta fidelidad), donde se podrían ver los textos y más detalles del apartado del diseño."
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-14-a-las-14-04-49.png
+  iframe:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Enlaces de interés
+  description: Por aquí hay algunas herramientas que os pueden servir, aunque trabajaremos en Figma.
+  icon:
+  linksList:
+    - title: WireframeCC
+      link: https://wireframe.cc
+    - title: Miro
+      link: https://miro.com/wireframe/
+    - title: MockFlow
+      link: https://mockflow.com
+  download: false
+  downloadLink:

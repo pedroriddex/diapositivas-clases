@@ -1,0 +1,361 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Diseño web y flujo
+  description: Comprendamos primero algunos conceptos del diseño web.
+  icon: ri-global-line
+  theme: "1"
+  slug: introduccion/ecosistema-del-diseno-web
+  color: black
+  coverImg: andrew-kliatskyi-jpu0gmxt9to-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Ecosistema del diseño web
+  description: Vamos a entrar de lleno en el mundo web, y para ello primero debemos entender ciertos conceptos importantes antes de comenzar.
+  icon: ri-global-line
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Qué es realmente una web
+  description: Antes de adentrarnos en el módulo, es importante comprender cómo funciona una página web. Y aunque puede sonar sencillo, la complejidad siempre depende del tipo de web que se busque.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Qué es realmente una web
+  description: Primero hay que entender, que a grandes rasgos, una página web no es más que un conjunto de archivos de texto. Estos archivos están escritos en un lenguaje que el navegador interpreta y da lugar a un diseño dentro de tu ventana. Estos lenguajes los veremos en profundidad más adelante en el módulo.
+  icon:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: false
+  title: Tipos de web
+  description: Existen diversos tipos de web. Aquí solo veremos unos pocos, sobre todo, los más habituales en el ecosistema WordPress.
+  icon:
+  postDescription:
+  list:
+    - title: Corporativa
+      description:
+    - title: Blog
+      description:
+    - title: Portfolio
+      description:
+    - title: E-commerce
+      description:
+    - title: Landing page
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Corporativa
+  description: La clásica web de empresa o profesional. Sirve para presentar quién eres, qué haces, tus servicios, contacto y credibilidad.
+  icon:
+  postDescription: "Objetivo:"
+  list:
+    - title: Presentar
+      description:
+    - title: Generar confianza
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Stripe
+      link: https://stripe.com/es
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-13-a-las-18-53-18.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Blog
+  description: Centrada en publicar artículos, noticias, guías o contenido informativo. Puede ser personal, de marca o un medio digital.
+  icon:
+  postDescription: Objetivo
+  list:
+    - title: Informar
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: BBC News
+      link: https://www.bbc.com
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-13-a-las-18-57-32.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Portfolio
+  description: Pensada para mostrar trabajos, proyectos o casos de estudio. Muy común en diseñadores, desarrolladores, arquitectos, fotógrafos o agencias.
+  icon:
+  postDescription: "Objetivos:"
+  list:
+    - title: Mostrar trabajos
+      description:
+    - title: Contacto
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Jessica Hische
+      link: https://jessicahische.is
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-13-a-las-18-59-54.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: E-commerce
+  description: Su objetivo principal es vender productos o servicios. Incluye catálogo, ficha de producto, carrito, checkout, pagos, etc.
+  icon:
+  postDescription: "Objetivo:"
+  list:
+    - title: Venta
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Apple
+      link: https://www.apple.com/es/store
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-13-a-las-19-02-11.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Landing page
+  description: "Una página muy enfocada a conversión: vender, captar leads, conseguir registros o promocionar algo concreto."
+  icon:
+  postDescription: "Objetivos:"
+  list:
+    - title: Captar
+      description:
+    - title: Convertir
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Notion AI
+      link: https://www.notion.com/product/ai
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-13-a-las-19-03-56.png
+  iframe:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Proceso de desarrollo
+  description: Conociendo algunos de los tipos de web más clásicos, ahora debemos entender cómo se planea el desarrollo de una página web desde que recibimos el proyecto por parte del cliente, hasta que lanzamos el producto al mercado.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Proceso de desarrollo
+  description: Las decisiones que tomamos en este plan será esencial para comprender la magnitud del proyecto y finalizar con un producto coherente en todos sus aspectos.
+  icon:
+  listItems:
+    - num: "1"
+      title: Entender el encargo
+      description: Debemos comprender el encargo del cliente en profundidad.
+    - num: "2"
+      title: Orden y estructura
+      description: Ordenar el contenido que el cliente nos proporciona.
+    - num: "3"
+      title: Bocetar, prototipar y propuesta visual
+      description: Crear bocetos sencillos pero claros.
+    - num: "4"
+      title: Desarrollar, revisar y ajustar
+      description: Llevar el diseño a la realidad.
+    - num: "5"
+      title: Publicar, medir y seguir mejorando
+      description: Seguimiento continuo de la web y mejoras. La web está viva.
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Entender el encargo
+  description: "Debemos comprender el encargo del cliente en profundidad, aunque muchas veces el propio cliente tiene dificultades para aterrizar su idea, nuestra tarea inicial es bajar a tierra esa idea y convertirla en un plan sólido. Para ello debemos comprender cual es el público al que va destinado el producto y el objetivo del mismo. Por ejemplo, el objetivo de un e-commerce es: vender."
+  icon:
+  postDescription: Para esto se suele utilizar un documento llamado briefing, donde el cliente rellena preguntas claves que nos ayudarán a asentar las bases del proyecto.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Orden y estructura
+  description: Como segundo paso, debemos ordenar el contenido que el cliente nos proporcione y planear una estructura para el mismo. Cómo vamos a dividir el contenido, cómo vamos a organizarlo en la web. Para esto se suelen utilizar herramientas de UX, de las cuales hablaremos más adelante.
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Bocetar, prototipar y propuesta visual
+  description: A partir de aquí, comienza nuestra tarea de trabajar en el apartado visual. Creando bocetos sencillos pero claros, donde podamos centrarnos en la estructura de cada sección dentro de la web, cada apartado, pestaña. Estableciendo qué vamos a mostrar en cada lugar.
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Bocetar, prototipar y propuesta visual
+  description: Esto abre la puerta al prototipado. Pasando de un boceto sencillo a un diseño completo e interactivo que presentaremos nuestro cliente para una primera revisión visual.
+  icon:
+  postDescription: Para esta tarea, la herramienta por excelencia es Figma, con la cual trabajaremos en clase y conoceremos en profundidad.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Desarrollar, revisar y ajustar
+  description: Con un diseño claro, la aprobación del cliente, y ya frente a nuestro lienzo web. Nos tocaría trabajar en lo que denominamos como “la maquetación”. De forma resumida, una tarea en la que llevaremos el diseño a la realidad, realizando el mismo prototipo desarrollado en el apartado anterior, en una web completa.
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Desarrollar, revisar y ajustar
+  description: Este punto tiende a estar lleno de revisiones, cambios y ajustes propuestos por el cliente. Es el paso en el que la web se lanza al mercado y se abre a los usuarios, por lo que es vital.
+  icon:
+  postDescription: Para este punto, nosotros usaremos WordPress, pero hay diversas formas de desarrollar una página web.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Publicar, medir y seguir mejorando
+  description: Lanzamos la web. Si, pero esto no termina aquí. Nuestro trabajo aún está lejos de terminar, puesto que lo que hemos hecho debe ser medido con herramientas que nos permitan ver el flujo de navegación del usuario. Si hay cuello de botella, si debemos mejorar o facilitar algún proceso. Retocamos, mejoramos y repetimos.
+  icon:
+  postDescription: Es un proceso continuo que nunca termina.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false

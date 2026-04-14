@@ -1,0 +1,123 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: User Flow
+  description:
+  icon: ri-flow-chart
+  theme: 3
+  slug: introduccion/user-flow
+  color: black
+  coverImg: andrew-kliatskyi-7og8gybwczw-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: El camino de A -> B
+  description: Cuando hablamos del User Flow, nos referimos a una herramienta vital dentro del mundo de la experiencia de usuario (UX), aunque no vamos a tocarlo en profundidad, puesto que ya hay un módulo específico para ello, si tenemos que comprender su funcionamiento.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Objetivo
+  description: El objetivo del User Flow es comprender cómo el usuario interactúa y se mueve por nuestra interfaz, ya sea una web o una aplicación de cualquier tipo. La idea es comprender el punto que debe alcanzar dicho usuario, comenzando desde su entrada a la web (A), hasta la acción que queremos conseguir con la interfaz (B), que puede ir desde comprar, hasta suscribirse.
+  icon:
+  listItems:
+    - num: "1"
+      title: Identificar al usuario
+      description: Primero debemos comprender al usuario que accede a nuestra interfaz.
+    - num: "2"
+      title: Definir el objetivo
+      description: Cuál es el punto al que el usuario debe llegar. Nuestro punto B.
+    - num: "3"
+      title: Trazar el camino
+      description: Desde el punto de inicio hasta nuestro punto final, cuál es el camino.
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Identificar al usuario
+  description: Debemos comprender en profundidad qué es lo que mueve al usuario. Para ello se usan otras herramientas como el User Persona, que nos ayuda a poner sobre la mesa todos los datos importantes de quien accede a nuestra interfaz.
+  icon: ri-number-1
+  postDescription: En muchos casos, es el propio cliente quien nos explica en el briefing cuál es su público objetivo, lo cual ya nos facilita esta tarea. Pero si no es así, nos tocaría tratar de estudiar el mercado y el negocio de nuestro cliente para comprender a qué tipo de usuario va dirigido.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Identificar al usuario
+  description: "¿Qué debemos conocer de nuestro usuario? "
+  icon: ri-number-1
+  postDescription:
+  list:
+    - title: "Perfil demografico "
+      description: Edad, ubicación, estudios, ingresos...
+    - title: Objetivos y motivaciones
+      description: ¿Qué es lo que quiere conseguir este usuario?
+    - title: Puntos de dolor
+      description: Barreras técnicas, profesionales o económicas si es preciso.
+    - title: Propuesta de valor
+      description: Cómo podemos ayudar a conseguir sus objetivos.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Definir el objetivo
+  description: Debemos comprender el negocio de nuestro cliente para poder definir cuál es el objetivo que se desea alcanzar. Puede ser una compra, rellenar un formulario, suscripción, una llamada, agendar una cita, reservar una consultoría...
+  icon: ri-number-2
+  postDescription: Esto influirá enormemente en el tipo de diseño y las herramientas visuales que usaremos.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Trazar el camino
+  description: Aquí es cuando entramos a trabajar en el User Flow, a marcar todo el recorrido del usuario, desde el momento en el que entra a la web/app, hasta que conseguimos que alcance la meta que hemos definido en el paso anterior.
+  icon: ri-number-3
+  postDescription: Para esta tarea existen multitud de herramientas que podemos utilizar de manera gratuita. Empecemos con Figma.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Figma
+      link: https://www.figma.com/es-es/
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Ejemplos
+  description: Aquí tenéis un ejemplo real de User Flow pensado para una aplicación.
+  icon:
+  linksList:
+    - title: Aimo - User Flow
+      link: https://www.figma.com/board/I2X4dGkbxjSOFryneuJ0fI/Aimo---User-Flow---Community-?node-id=0-1&t=SN8RYqRUHyfeQY7Y-1
+  download: false
+  downloadLink:

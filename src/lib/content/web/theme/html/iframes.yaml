@@ -1,0 +1,107 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Iframes
+  description: Agregar elementos externos a una página web, como videos, mapas o contenido de otro sitio.
+  icon: ri-pin-distance-fill
+  theme: 9
+  slug: html/iframes
+  color: red
+  coverImg: cover
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen:
+  title: ¿Añadir elementos externos?
+  description: Un iframe es un elemento que nos permite abrir una "ventana" hacia otro sitio web. Permitiéndonos ver contenido de otro sitio dentro del nuestro propio. Un ejemplo de esto sería un mapa de Google Maps.
+  icon:
+  image:
+  iframe: map
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Mucho más de lo que parece
+  description: "Un iframe puede hacer más de lo que parece. Podemos incrustar otra web completa en esa ventana y darle el tamaño que queramos. Tenemos el control total de la ventana que generamos, pero ojo: no podemos acceder a sus elementos ni modificar sus estilos."
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: ¿Cómo funciona?
+  description: Aunque es cierto que habitualmente copiaremos y pegaremos el código de iframe en nuestra web, es importante entender cómo se construye.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <iframe></iframe>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: ¿Cómo funciona?
+  description: En este caso este iframe no está mostrando nada, pero podemos agregar el atributo 'src' para indicar la web que queremos añadir.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <iframe src="url_que_queremos_añadir"></iframe>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: ¿Cómo funciona?
+  description: En este caso este iframe no está mostrando nada, pero podemos agregar el atributo 'src' para indicar la web que queremos añadir.
+  icon:
+  postDescription:
+  mgContent: |-
+    ```html
+    <iframe src="url_que_queremos_añadir"></iframe>
+    ```
+  mgCode: html
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false

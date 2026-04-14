@@ -1,0 +1,133 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Sitemap
+  description: El esqueleto inicial de la estructura web.
+  icon: ri-map-pin-4-line
+  theme: 4
+  slug: introduccion/sitemap
+  color: black
+  coverImg: shubham-dhage-nspqv-wszyy-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: La estructura de una web
+  description: Un sitemap es un esquema visual o jerárquico que muestra la estructura de navegación de un sitio web o aplicación. Representa cómo se organizan las páginas y cómo se relacionan entre sí.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: La estructura de una web
+  description: También podemos usarla para estructurar las secciones de una página web de la forma más eficiente posible, siguiendo siempre el camino trazado con anterioridad en el User Flow.
+  icon:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Tipologías
+  description: Pero antes de adentrarnos en el diseño de un Sitemap, debemos de conocer las diferentes tipologías que se utilizan en un diseño web. No podemos llamar a las cosas como nos venga en gana, para poder trabajar en un equipo o una empresa, debemos de conocer los nombres correctos de los apartados de una web.
+  icon:
+  postDescription: Partimos de la base de que cada "bloque" que separa el contenido dentro de una web se le llama "sección", veamos los distintos tipos de secciones que existen.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Tipologías
+  description: "Algunas secciones son:"
+  icon:
+  postDescription:
+  list:
+    - title: Hero
+      description: Sección inicial de la web, grande, llamativa, visual.
+    - title: Call to action
+      description: "Secciones informativas que incitan a la participación del usuario. "
+    - title: Features
+      description: Se muestran características del producto o servicio que se ofrece.
+    - title: Testimonial
+      description: Sección de testimonios de clientes.
+    - title: Contact
+      description: Formulario de contacto y otros métodos.
+    - title: Y mucho más...
+      description:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Enlaces interesantes sobre tipologías
+  description: Aquí os dejo algunos enlaces interesantes sobre el tema con ejemplos visuales antes de continuar.
+  icon:
+  linksList:
+    - title: One Page Love
+      link: https://onepagelove.com/sections
+    - title: Hero Gallery
+      link: https://hero.gallery/
+    - title: Landbook
+      link: https://land-book.com/sections
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Volviendo al Sitemap
+  description: Ahora que conocemos las tipologías podemos empezar a organizar las secciones de la web organizadas para que cumplan con el objetivo del User Flow diseñado con anterioridad.
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title:
+  description:
+  icon:
+  image: captura-de-pantalla-2026-04-14-a-las-13-34-07.png
+  iframe:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Herramienta
+  description: Volveremos a Figma para crear un Sitemap, ya que será nuestra herramienta por excelencia para todo el proceso, desde la experiencia de usuario hasta el diseño final.
+  icon:
+  postDescription: Pero existen otras herramientas útiles para esto.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: Miro
+      link: https://miro.com/es/diagrama/sitemap/
+    - title: Gloomaps
+      link: https://www.gloomaps.com
+    - title: Octopus.do
+      link: https://octopus.do
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false

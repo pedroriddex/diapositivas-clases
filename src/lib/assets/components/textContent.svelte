@@ -1,61 +1,89 @@
 <script lang="ts">
+    import { fade, fly } from 'svelte/transition';
+    import { resolveSelectivePhase, type SlideBodyPhase } from '$lib/utils/slideTransition';
+
+    interface ComparisonSlide {
+        description?: string;
+        listItems?: unknown[];
+        list?: unknown[];
+        download?: boolean;
+        downloadLink?: string;
+        linksList?: { title: string; link: string }[];
+    }
+
     export let title: string;
     export let description: string;
     export let icon: string;
     export let download: boolean = false;
     export let downloadLink: string = '';
     export let linksList: {title: string, link: string}[] = [];
-    export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';
+    export let numberListItemsToShow;
+    export let normalListItemsToShow;
+    export let bodyPhase: SlideBodyPhase = 'idle';
+    export let comparisonSlide: ComparisonSlide | null = null;
+    import NumberList from '$lib/assets/components/numberList.svelte';
+    import NormalList from '$lib/assets/components/normalList.svelte';
 
-    const colorClass = {
-        red: 'text-red-600',
-        blue: 'text-blue-600',
-        yellow: 'text-yellow-600',
-        black: 'text-zinc-960',
-    }
-    const bgColorClass = {
-        red: 'bg-red-600',
-        blue: 'bg-blue-600',
-        yellow: 'bg-yellow-600',
-        black: 'bg-zinc-960',
-    }
-
-    import { fade, fly } from 'svelte/transition';
-    import Icon from '$lib/assets/components/icon.svelte';
-
+    $: descriptionPhase = resolveSelectivePhase(bodyPhase, description, comparisonSlide?.description || '');
+    $: numberListPhase = resolveSelectivePhase(bodyPhase, numberListItemsToShow, comparisonSlide?.listItems || []);
+    $: normalListPhase = resolveSelectivePhase(bodyPhase, normalListItemsToShow, comparisonSlide?.list || []);
+    $: downloadPhase = resolveSelectivePhase(
+        bodyPhase,
+        { download, downloadLink },
+        { download: comparisonSlide?.download || false, downloadLink: comparisonSlide?.downloadLink || '' }
+    );
+    $: linksPhase = resolveSelectivePhase(bodyPhase, linksList, comparisonSlide?.linksList || []);
 </script>
 
-    <div class="animate-fade-in animate-duration-200 animation-delay-500 flex flex-col items-center justify-center gap-10 p-5 rounded-xl max-w-[700px] w-full">
-        <div class="flex flex-col gap-3 w-full">
-            {#key title}
-            <div in:fly="{{ y: 5, duration: 200 }}" class="flex items-center justify-start gap-3 mb-6">
-                <Icon icon={icon} color={color} size="large" />
-                <h2 class="text-4xl font-regular max-md:text-2xl {colorClass[color]}">{title}</h2>
+<div class="slide-text">
+    <div class="slide-text__content">
+        {#if title || icon}
+            <div class="slide-heading">
+                {#if icon}
+                    <i in:fade={{ duration: 180 }} class="{icon} slide-heading__icon slide-heading__icon--section"></i>
+                {/if}
+                {#if title}
+                    <h2 in:fly={{ y: 5, duration: 200 }} class="slide-section__title">{title}</h2>
+                {/if}
             </div>
-            {/key}
-            {#key description}
-                <p in:fade="{{ duration: 200, delay: 200 }}" class="font-regular text-md text-zinc-950">{description}</p>
-            {/key}
-            {#if download}
-                <a href={downloadLink} download class="animate-fade-in animate-delay-600 flex items-center justify-center gap-3 mt-10 self-start
-                hover:opacity-50 transition-all">
-                    <Icon icon="ri-download-line" color={color} size="medium" />
-                    Descargar proyecto de ejemplo
-                </a>
+        {/if}
+
+        <div class="slide-text__body">
+            {#if description}
+                <p class="slide-body slide-body-shell slide-body-shell--{descriptionPhase}">{description}</p>
             {/if}
+
+            {#if numberListItemsToShow}
+                <div class="slide-body-shell slide-body-shell--{numberListPhase}">
+                    <NumberList numberListItems={numberListItemsToShow} />
+                </div>
+            {/if}
+
+            {#if normalListItemsToShow}
+                <div class="slide-body-shell slide-body-shell--{normalListPhase}">
+                    <NormalList normalListItems={normalListItemsToShow} />
+                </div>
+            {/if}
+
+            {#if download}
+                <div class="slide-body-shell slide-body-shell--{downloadPhase}">
+                    <a href={downloadLink} download class="slide-links__item">
+                        <i class="ri-download-line slide-links__icon"></i>
+                        Descargar proyecto de ejemplo
+                    </a>
+                </div>
+            {/if}
+
             {#if linksList.length > 0}
-                <div class="flex flex-col gap-3 mt-10">
-                    <ul class="flex flex-col gap-3">
-                        {#each linksList as link}
-                            <li class="flex items-center justify-start gap-3">
-                                <Icon icon="ri-link" color={color} size="medium" />
-                                <a href={link.link} target="_blank" class="font-regular text-md text-zinc-950 hover:opacity-50 transition-all">
-                                    {link.title}
-                                </a>
-                            </li>
-                        {/each}
-                    </ul>
+                <div class="slide-links slide-body-shell slide-body-shell--{linksPhase}">
+                    {#each linksList as link}
+                        <a href={link.link} target="_blank" class="slide-links__item" rel="noreferrer">
+                            <i class="ri-link-m slide-links__icon"></i>
+                            {link.title}
+                        </a>
+                    {/each}
                 </div>
             {/if}
         </div>
     </div>
+</div>

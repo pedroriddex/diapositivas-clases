@@ -36,3 +36,21 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Site Variants
+
+This repo can now build two separate sites from the same codebase:
+
+- `npm run dev:web`
+- `npm run build:web`
+- `npm run preview:web`
+- `npm run dev:wordpress`
+- `npm run build:wordpress`
+- `npm run preview:wordpress`
+
+Each deployment reads a different content tree:
+
+- `src/lib/content/web`
+- `src/lib/content/wordpress`
+
+The active site is selected with `PUBLIC_SITE_VARIANT`, loaded from `.env.web` or `.env.wordpress`.

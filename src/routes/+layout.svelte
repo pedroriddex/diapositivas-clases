@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { siteConfig } from '$lib/config/site';
 	import { page } from '$app/state';
 
 	let { children } = $props();
@@ -16,7 +17,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Súper diapositivas | Peter J. K. Roderickson</title>
+	<title>{siteConfig.title}</title>
 </svelte:head>
 
 <svelte:window on:keydown={activeFullscreen} />

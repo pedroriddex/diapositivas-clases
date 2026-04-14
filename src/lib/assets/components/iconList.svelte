@@ -1,13 +1,10 @@
 <script lang="ts">
     export let iconListItems;
-    import Icon from '$lib/assets/components/icon.svelte';
     import { fade } from 'svelte/transition';
-    export let color: 'red' | 'blue' | 'yellow' | 'black' = 'red';  
 </script>
 
-<div class="flex items-center justify-center gap-5"
-    in:fade="{{ duration: 300 }}">
+<div class="slide-icon-list" in:fade={{ duration: 300 }}>
     {#each iconListItems as eachIcon}
-        <Icon color={color} icon="{eachIcon.icon}" size="extra" />
+        <i class="{eachIcon.icon} slide-icon-list__icon"></i>
     {/each}
 </div>
