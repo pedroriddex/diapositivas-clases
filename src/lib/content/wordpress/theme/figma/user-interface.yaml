@@ -1,0 +1,61 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Introducción a Figma
+  description: Conociendo nuestra principal herramienta de diseño.
+  icon: ri-color-filter-fill
+  theme: "6"
+  slug: figma/user-interface
+  color: red
+  coverImg: forest-s-1q6gfwhc5gi-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: ¿Qué es Figma?
+  description: Por si no lo conoces, Figma es un software de diseño de interfaces que nos ayudará a crear un diseño web profesional para posteriormente poder llevarlo a cabo en una web real.
+  icon:
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Nuestra herramienta por excelencia
+  description: Aunque veremos que hacer una web en WordPress no es ni de lejos complejo y la mayoría de veces dedicaremos más tiempo en el diseño en Figma que en el propio desarrollo como tal, es un paso vital para poder plantear la estructura de nuestra web, secciones, bloques, elementos...
+  icon:
+  postDescription:
+  mgContent: Redesign how you design. · Generate simple UI with AI · Design consistently with Auto Layout · Scale your edits instantly · Make prototypes with AI · Embed ...
+  mgCode:
+  mgLogo: figma-logo-icon-147289-png.webp
+  mgTitle: "Figma: The Collaborative Interface Design Tool"
+  mgUrl: https://www.figma.com/
+  mgUrlTitle: Figma
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Herramienta colaborativa
+  description: Uno de los puntos más fuertes de Figma es que pueden acceder varios usuarios a un mismo proyecto y hacer modificaciones en tiempo real. Incluso podremos ver el cursor moverse y las selecciones que hacen nuestros compañeros, y esto es importante para el trabajo en equipo, ya que agiliza la colaboracion entre los participantes de un proyecto.
+  icon:
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Figma para estudiantes
+  description: Como estudiantes en CEI podéis tener acceso. las funcionalidades premium de Figma. Para ello solo tenéis que rellenar el formulario de el enlace que os dejo aquí abajo.
+  icon:
+  linksList:
+    - title: Figma para estudiantes
+      link: https://www.figma.com/education/apply
+  download: false
+  downloadLink:

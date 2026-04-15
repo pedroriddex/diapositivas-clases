@@ -1,0 +1,20 @@
+meta:
+  title: Figma
+  icon: ri-figma-line
+  color:
+items:
+  - title: Introducción a Figma
+    color: red
+    icon: ri-pencil-ai-2-fill
+    href: figma/user-interface
+    target:
+  - title: User Interface
+    color: red
+    icon: ri-box-2-line
+    href: figma/user-interface-1
+    target:
+  - title: Atomic Design
+    color: red
+    icon: ri-atom-fill
+    href: figma/atomic-design
+    target:

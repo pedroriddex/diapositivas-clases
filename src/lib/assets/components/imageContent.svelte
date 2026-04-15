@@ -1,8 +1,10 @@
 <script lang="ts">
     import { fade, fly } from 'svelte/transition';
     import { resolveSelectivePhase, type SlideBodyPhase } from '$lib/utils/slideTransition';
+    import { autoHeight } from '$lib/actions/autoHeight';
 
     interface ComparisonSlide {
+        template?: string;
         description?: string;
         image?: string;
         iframe?: string;
@@ -22,6 +24,7 @@
         : '';
     $: descriptionPhase = resolveSelectivePhase(bodyPhase, description, comparisonSlide?.description || '');
     $: mediaPhase = resolveSelectivePhase(bodyPhase, { image, iframe }, { image: comparisonSlide?.image || '', iframe: comparisonSlide?.iframe || '' });
+    $: canAnimateMediaHeight = comparisonSlide?.template === 'image';
 </script>         
 
 <div class="slide-image">
@@ -43,11 +46,32 @@
             {/if}
 
             {#if image}
-                <img class="slide-image__media slide-body-shell slide-body-shell--{mediaPhase}" src={imageSrc} alt="">
+                <img
+                    class="slide-image__media slide-body-shell slide-body-shell--{mediaPhase}"
+                    src={imageSrc}
+                    alt=""
+                    use:autoHeight={{
+                        duration: 260,
+                        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                        delay: 24,
+                        enabled: canAnimateMediaHeight
+                    }}
+                >
             {/if}
 
             {#if iframe}
-                <iframe title={title} class="slide-image__media slide-body-shell slide-body-shell--{mediaPhase}" src=/media/{currentSlug}/{iframe}/index.html frameborder="0"></iframe>
+                <iframe
+                    title={title}
+                    class="slide-image__media slide-body-shell slide-body-shell--{mediaPhase}"
+                    src=/media/{currentSlug}/{iframe}/index.html
+                    frameborder="0"
+                    use:autoHeight={{
+                        duration: 260,
+                        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                        delay: 24,
+                        enabled: canAnimateMediaHeight
+                    }}
+                ></iframe>
             {/if}
         </div>
     </div>

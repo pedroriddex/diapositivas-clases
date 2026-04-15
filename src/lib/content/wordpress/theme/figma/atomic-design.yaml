@@ -1,0 +1,114 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: Atomic Design
+  description: La metodología de diseño de interfaces que gobierna el mundo.
+  icon: ri-atom-fill
+  theme: 8
+  slug: figma/atomic-design
+  color: red
+  coverImg: jc-dela-cuesta-mgg-w0dg-ek-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: Átomos, moléculas, organísmos...
+  description: Se que esto suena a química, física o cualquier rama de la investigación molecular, pero no. Hablamos de un sistema de diseño que nos va a ayudar a que todos nuestros diseños sean perfectos. Nos ayudará a mantener una coherencia a lo largo de nuestro diseño de interfaz, y no solo esto, sino que nos permitirá hacer cambios de manera más eficiente.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title:
+  description: "Por el momento no te imaginas como debe de funcionar un sistema de diseño con un nombre tan raro como “Atomic Design” pero creeme, es muy sencillo:"
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title:
+  description:
+  icon:
+  listItems:
+    - num: 1. Átomos
+      title:
+      description:
+    - num: 2. Moléculas
+      title:
+      description:
+    - num: 3. Organismos
+      title:
+      description:
+    - num: 4. Plantillas
+      title:
+      description:
+    - num: 5. Páginas
+      title:
+      description:
+  download: false
+  downloadLink:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Átomos
+  description:
+  icon: ri-number-1
+  image: captura-de-pantalla-2026-04-15-a-las-13-55-53.png
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Átomos
+  description: Como se puede ver, los átomos son las partes más pequeñas e indivisibles de una web; colores, fuentes, botones, iconos, campos de formulario y cualquier otro elemento que se te ocurra.
+  icon: ri-number-1
+  image: captura-de-pantalla-2026-04-15-a-las-13-55-53.png
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Moléculas
+  description:
+  icon: ri-number-2
+  image: captura-de-pantalla-2026-04-15-a-las-14-52-41.png
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Moléculas
+  description: Las moléculas son la unión de dos o más átomos, generando así elementos de mayor tamaño que después darán forma a nuestro diseño final.
+  icon: ri-number-2
+  image: captura-de-pantalla-2026-04-15-a-las-14-52-41.png
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Organismos
+  description:
+  icon: ri-number-3
+  image: captura-de-pantalla-2026-04-15-a-las-14-53-42.png
+  iframe:
+- template: image
+  subtemplate: simple
+  sideblockopen: true
+  title: Organismos
+  description: Los organismos se basan en la unión de moléculas con otras moléculas o incluso con átomos. Esto ya sería como una “sección” completa.
+  icon: ri-number-3
+  image: captura-de-pantalla-2026-04-15-a-las-14-53-42.png
+  iframe:
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Plantillas
+  description: En el momento en el que comenzamos a unir organismos para dar forma a las distintas páginas de nuestro diseño, a esto se le denomina “plantilla”, y es el penúltimo paso del proceso de diseño atómico. Es importante entender que no es necesario que estas plantillas tengan las imágenes finales ni los textos reales.
+  icon: ri-number-4
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: Páginas
+  description: Ahora con las plantillas hechas, nuestra misión va a ser rellenar todo con el contenido real. Textos, imágenes, cualquier cosa. De esta forma conseguimos el diseño final de nuestra interfaz.
+  icon: ri-number-5
+  download: false
+  downloadLink:

@@ -213,6 +213,33 @@
         isNavigating = false;
     }
 
+    function isTypingTarget(target: EventTarget | null) {
+        if (!(target instanceof HTMLElement)) return false;
+        const tagName = target.tagName.toLowerCase();
+        return (
+            target.isContentEditable ||
+            tagName === 'input' ||
+            tagName === 'textarea' ||
+            tagName === 'select'
+        );
+    }
+
+    function handleSlideKeyboardNavigation(event: KeyboardEvent) {
+        if (data.type !== 'slides') return;
+        if (isTypingTarget(event.target)) return;
+
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            event.preventDefault();
+            void navigateToSlide(themeId - 1);
+            return;
+        }
+
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            event.preventDefault();
+            void navigateToSlide(themeId + 1);
+        }
+    }
+
     onMount(() => {
         if (!browser) return;
 
@@ -324,6 +351,8 @@
         }
     }
 </script>
+
+<svelte:window on:keydown={handleSlideKeyboardNavigation} />
 
 {#if data.type === 'index'}
     <ThemeIndex

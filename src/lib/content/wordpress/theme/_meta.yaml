@@ -8,3 +8,8 @@ items:
     icon: ri-artboard-2-line
     href: /theme/introduccion
     target: /introduccion
+  - title: Figma
+    color: red
+    icon: ri-figma-line
+    href: theme/figma
+    target:

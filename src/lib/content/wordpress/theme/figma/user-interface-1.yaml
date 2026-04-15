@@ -1,0 +1,110 @@
+- template: cover
+  subtemplate: simple
+  sideblockopen: false
+  title: User Interface
+  description: El poder del diseño de interfaces.
+  icon: ri-box-2-line
+  theme: 7
+  slug: figma/user-interface
+  color: red
+  coverImg: codioful-formerly-gradienta-2yvx68thypm-unsplash.jpg
+- template: text
+  subtemplate: simple
+  sideblockopen: false
+  title: La interfaz de usuario
+  description: Cuando hablamos del UI (User Interface), nos referimos al apartado estético de la web. A diferencia de UX (User Experience) con lo que hemos trabajado en los temas anteriores, donde se centra en diseñar una experiencia.
+  icon:
+  download: false
+  downloadLink:
+- template: text
+  subtemplate: simple
+  sideblockopen: true
+  title: El paso anterior al desarrollo
+  description: El diseño de la interfaz es el punto intermedio entre el desarrollo y el diseño de la experiencia. En este punto ya vamos a entregar al cliente un resultado fiel a lo que finalmente se convertirá en el desarrollo final.
+  icon:
+  listItems:
+    - num: "1"
+      title: Sistema de diseño
+      description: Nos permite mantener una coherencia visual en todo el proyecto.
+    - num: "2"
+      title: Diseño de alta fidelidad
+      description: Aquí ya tenemos un diseño muy pulido y listo para compartir.
+    - num: "3"
+      title: Prototipado
+      description: Creación de interacciones con los elementos webs y animaciones.
+    - num: "4"
+      title: Pruebas y ajustes
+      description: Testear la interfaz con usuarios reales para mejorar la usabilidad.
+  download: false
+  downloadLink:
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Sistema de diseño
+  description: El sistema de diseño o UI Kit se basa en una librería de estilos establecidos con elementos, colores y fuentes que nos van a ayudar a crear un diseño eficiente y sobre todo un diseño coherente en todas las partes de la web.
+  icon: ri-number-1
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgLinksList:
+    - title: HeroUI
+      link: https://heroui.com
+    - title: Material Design
+      link: https://m3.material.io
+    - title: Apple
+      link: https://developer.apple.com/design/resources/
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Diseño de alta fidelidad
+  description: Cuando comenzamos a juntar todos los elementos de la UI Kit, dando lugar a secciónes, juntándolas para generar una interfaz completa. Aquí ya comenzamos a dar forma al diseño final. A partir de aquí ya solo tenemos que trabajar con el contenido establecido, siempre siguiendo las indicaciones anteriormente estudiadas dentro del proceso de UX.
+  icon: ri-number-2
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Prototipo
+  description: Aunque en muchos casos de proyectos pequeños no es esencial. Si es cierto que mejora mucho la experiencia de nuestro cliente, poder ver las funcionalidades de interacción de manera más realista. Para esto, Figma tiene herramientas muy potentes que nos permiten animar elementos y crear interacciones reales, casi como una web real.
+  icon: ri-number-3
+  postDescription:
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
+- template: card
+  subtemplate: simple
+  sideblockopen: true
+  title: Pruebas y ajustes
+  description: En muchas ocasiones este paso no termina de realizarse, ya que es el cliente el que decide cuál quiere que sea el resultado final. Pero en grandes empresas es un proceso importante. Validar un diseño de interfaz es vital para comprobar que hemos llevado a cabo un buen estudio previo en los pasos de UX.
+  icon: ri-number-4
+  postDescription: Imponer retos como intentar hacer una compra, llegar al formulario, rellenarlo, etc. Nos da una idea de si nuestro diseño funciona o no.
+  mgContent:
+  mgCode:
+  mgLogo:
+  mgTitle:
+  mgUrl:
+  mgUrlTitle:
+  mgListType: bullet
+  mgIconListSpace: false
+  mgIconListSeparator: false
